@@ -1,0 +1,11 @@
+		==================================================
+			Types of Arguments / Parameter Passing Mechanisms.
+		==================================================
+=>We know that All Values of Arguments of Function Calls are passing to Formal Parameters in Function Heading / Definition.
+=>Based on Passing the arguments values to Formal parameters , we have 5 Types of  Arguments / Parameter Passing Mechanisms. They are
+		1) Possitional Arguments / Parameters
+		2) Deafult Arguments / Parameters
+		3) Keyword Arguments / Parameters
+		4) Variable Length Arguments / Parameters
+		5) KeyWord Variable Length Arguments / Parameters
+======================X========================================

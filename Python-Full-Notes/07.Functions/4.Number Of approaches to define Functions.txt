@@ -1,0 +1,90 @@
+==================================================
+	Number Of approaches to define Functions
+==================================================
+=>We have 4 approaches to define Functions.
+-----------------
+Approach-1
+-----------------
+Input--->Taking From Function Call(s)--Outside
+Process--->Function Definition---Inside
+Output---->Function Call(s)---Outside
+-------------------
+Examples:
+-------------------
+#addition1.py
+#This porogram computes addition of two values by using Functions
+def  addop(a,b):
+	c=a+b
+	return c
+
+#main program
+k=float(input("Enter First Value:"))
+v=float(input("Enter Second Value:"))
+res=addop(k,v)
+print("Sum={}".format(res))
+-------------------------------------------------------------------------------------------------------------------
+Approach-2
+-----------------
+Input--->Taking From Function Definition--Inside
+Process--->In  Function Definition--Inside
+Output----> Function Definition--Inside
+---------------
+Example:
+---------------
+#addition2.py
+def  addop():
+	#taking Input 
+	a=float(input("Enter First Value:"))
+	b=float(input("Enter Second Value:"))
+	#process
+	c=a+b
+	#display result 
+	print("Val of a={}".format(a))
+	print("Val of b={}".format(b))
+	print("Sum={}".format(c))
+
+#main program
+addop()
+------------------------------------------------------------------------------------------------------------------
+Approach-3
+-------------------
+Input--->Taking From Function Call(s)--outside
+Process--->In  Function Definition--Inside
+Output----> Function Definition--Inside
+--------------------
+Examples:
+--------------------
+#addition3.py
+def   addop(k,v):
+	r=k+v
+	print("Sum({},{})={}".format(k,v,r))
+
+
+#main program
+m,n=float(input("Enter First value:")), float(input("Enter Second Value:"))
+addop(m,n)
+-----------------------------------------------------------------------------------------------------------------
+Approach-4
+--------------------
+Input--->Taking in Function Definition--inside
+Process--->In  Function Definition--Inside
+Output----> Function Calls--outside
+----------------
+Example:
+----------------
+#addition4.py
+def   addop():
+	#taking input
+	m,n=float(input("Enter First value:")), float(input("Enter Second Value:"))
+	#process
+	k=m+n
+	#return the result
+	return m,n,k
+
+#main program
+m,n,k=addop()
+print("sum({},{})={}".format(m,n,k))
+print("---------------OR-----------------------")
+kvr=addop()  # here kvr is variable / object of type <class,'tuple'>
+print("Sum({},{})={}".format(kvr[0],kvr[1],kvr[2]))
+=========================X======================================

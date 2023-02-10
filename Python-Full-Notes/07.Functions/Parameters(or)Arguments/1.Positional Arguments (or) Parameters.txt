@@ -1,0 +1,19 @@
+		=========================================
+			1) Positional Arguments (or) Parameters
+		=========================================
+=>The Concept of Positional Parameters (or) arguments says that "The Number of Arguments (Actual Parameters) must be equal to the number of formal paraemeters ".
+=>This Parameter mechanism also recommends Order of Parameters for Higher accuracy.
+=>Python Programming Environment follows by default Positional Parameters. 
+-----------------------------------------------
+Syntax for Function Definition :
+-----------------------------------------------
+	def    functionname(parm1,param2.....param-n):
+		-------------------------------------------------
+		-------------------------------------------------
+
+-----------------------------------------------
+Syntax for Function Call:
+-----------------------------------------------
+		functionname(arg1,arg2....arg-n)
+=>Here the values of arg1,arg2...arg-n are passing to param-1,param-2..param-n respectively.
+================================X==============================

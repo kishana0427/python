@@ -1,0 +1,17 @@
+		==============================================
+						c) reduce()
+		==============================================
+=>The purpose of reduce() is that "To obtain single result from list of elements by applying to the function"
+=>reduce() present in pre-defined module called 'functools' module.
+
+Syntax:-    varname=functools.reduce(funcname,iterable_object)
+=>varname is of type int, float, bool, complex and str.
+--------------------------------------------
+Internal flow of of reduce()
+-------------------------------------------
+Step-1) reduce() selects  First two element of any iterable object and place them First variable and		    Second Variable( say K and V ) 
+Step-2) reduce() applies the First and Second  Variable values to the function and computed  and		    Resultant Value placed in First Variable (say K).
+Step-3) reduce() select next succeding element from Iterable object and place it into second		    Variable (say V) 
+Step-4) Repeate Step-(2) and Step-(3) until all elements of iterable object completed
+Step-5) reduce() automatically Returns Result of First Variable ( Say K)
+=========================X=====================================

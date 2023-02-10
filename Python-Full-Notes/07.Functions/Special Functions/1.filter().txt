@@ -1,0 +1,13 @@
+		======================================
+				a) filter()
+		======================================
+=>The purpose of filter() is that "To filter out some elements from list of elements by applying to the function"
+=>Syntax:-       objectname=filter(function name, iterableobject)
+------------------
+Explanation:-   
+------------------
+=>"objectname" is of type <class,'filter'> and it contains filtered elements and an object of filter can be converted into any iterable object type
+=>'functionname' is either Normal Function or anonymous Function name
+=>"Iterable object" can be either str,bytes,bytearray,range,list,tuple,dict.
+=>The execution behaviour of filter() is that " filter() applies every element of iterbale object to the function name, if the function name returns  True then that elements will filtered otherwise neglected (or not filtered) "
+========================================================

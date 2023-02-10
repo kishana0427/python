@@ -1,0 +1,8 @@
+		===============================================
+			Special Functions in Python Programming
+		===============================================
+=>In python Programming, we have 3 types of special functions. They are
+		a) filter()
+		b) map()
+		c) reduce()
+-----------------------------------------------------------------------------------------------------------

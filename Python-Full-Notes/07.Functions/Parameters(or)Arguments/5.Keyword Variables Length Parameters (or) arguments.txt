@@ -1,0 +1,16 @@
+	=======================================================
+		5) Keyword Variables Length Parameters (or) arguments
+	=======================================================
+=>When we have familiy of multiple function calls with Keyword Variable number of values / arguments then with normal python programming, we must define mutiple function defintions. This process leads to more development time. To overcome this process, we must use the concept of Keyword Variable length Parameters .
+=>To Impelement,  Keyword Variable length Parameters concept, we must define single Function Definition and takes a formal Parameter preceded with a symbol called double astrik ( ** param) and the formal parameter with double astrik symbol is called Keyword Variable length Parameter  and whose purpose is to hold / store any number of Keyword Variable length values coming from similar function calls and whose type is <class, 'dict'>.
+------------------------------------------------------------------------------------------------------
+Syntax for function definition with Keyword Variables Length Parameters:
+------------------------------------------------------------------------------------------------------
+	def   functionname(list of formal params, **param) :
+	        --------------------------------------------------
+		--------------------------------------------------
+
+=>Here **param is called  Keyword Variable Length parameter and it can hold any number   Keyword variable number of argument values and **param type is <class,'dict'>
+
+=>Rule:- The **param must always written at last part of Function Heading and it must be only one (but not multiple)
+==============================X================================

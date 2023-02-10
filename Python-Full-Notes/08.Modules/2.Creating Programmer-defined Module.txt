@@ -1,0 +1,15 @@
+	 ==================================================
+				Creating Programmer-defined Module
+	==================================================
+=>Creating Programmer-defined Module is nothing but
+		a) Define / choose  the Variables with Values (Global variables)
+		b) Define the Functions for performing Common Operations 
+		c) Define the classes (In OOPs we discuss )
+	Save the above on some file name with an extension .py (FileName.py)
+=>Hence FileName.py compiled Version(FileName.cpyhon-310.pyc) is treated as Module Name	
+=>Once the a module is created , whose module name is placed within a folder which is created automatically by Python Environment.
+
+Examples:                 __pycache__
+                                 ----------------------------
+				           filename.cpython-310.pyc
+==============================X================================

@@ -1,0 +1,12 @@
+#FilterEx4.py
+line=input("Enter a line of text:")
+print("----------------------------------")
+print("Given Line=%s" %line)
+print("----------------------------------")
+vowlst=list(filter(lambda ch: ch in ['a','e','i','o','u','A','E','I','O','U'], line))
+conslst=tuple(filter(lambda ch: ch not in ['a','e','i','o','u','A','E','I','O','U'], line))
+print("Vowels=",vowlst)
+print("No. of vowels =", len(vowlst))
+print("----------------------------------------")
+print("Consonants=",conslst)
+print("No. of Consonants  =", len(conslst))

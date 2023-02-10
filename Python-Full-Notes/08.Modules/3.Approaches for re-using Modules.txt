@@ -1,0 +1,60 @@
+  	====================================================
+					Approaches for re-using Modules
+	====================================================
+=>We have two approches to re-use the modules. They are
+		1) By using import statement 
+		2) By Using from..... import statement
+-----------------------------------------------------------------------------------------------------
+1) By using import statement:
+------------------------------------------------
+=>Here import is a key word
+=>import statement is used for importing or accessing the information about modules (Variables,Functions and classes) of one program into another program and we can access the variables , functions and classes by using Module Name / alias name.
+----------------
+Syntax1:-
+----------------
+                       import  moduleName
+----------------
+Syntax2:-
+---------------
+                       import  moduleName as aliasName
+
+=>here alias name is an alternative name for moudle name.
+---------------
+Syntax3:-
+---------------
+            import  moduleName1,moduleName2.....moduleName-n
+---------------
+Syntax4:-
+---------------
+       import  moduleName1 as aliasName1 ,moduleName2 as aliasName-2                                        .....moduleName-n as aliasName-n
+----------------------------------------------------------------------------------------------------------
+=>After import the module names with import statement,we must access the variables , functions and classes w.r.t Module name / alias name otherwise we get NameError
+-------------------------------------------------------------------------------------------------------------
+Syntax for accessing Variables , Function Names and Class Names
+-------------------------------------------------------------------------------------------------------------
+ModuleName.Variable Name
+ModuleName.Function Name
+ModuleName.Class Name
+-------------------------------------------------------------------------------------------------------------
+2) By Using from..... import statement:
+-------------------------------------------------------------------------------------------------------------
+=>Here 'form' and 'import' are the key words
+=>from......import statement is also used for importing or accessing the information about modules (Variables,Functions and classes) of one program into another program and we can access the variables , functions and classes directly without using Module Name
+----------------
+Syntax1:-
+----------------
+from moduleName import   Variable Name(s), Function Name(s) , class name(s)
+----------------
+Syntax-2:-
+----------------
+from moduleName import  Variable Name(s) as alias name, Function Name(s) as alias name , class name(s) as alias name
+-------------------
+Syntax-3:-
+-------------------------------------------------------------------------------------------------------------------
+from moduleName  import  *                 (Not Recommened)
+-------------------------------------------------------------------------------------------------------------------
+
+Note:-  The Modules concept provides the code re-usablity across the programs provided The program ( Modules ) present in same Folder but not able to provide code re-usablity across the folders / Drives / Enviroments / Networks / Machines.
+
+Note:-  To get the code re-usability across the folders / Drives / Enviroments / Networks / Machines, we must go for packages.
+=========================X=====================================

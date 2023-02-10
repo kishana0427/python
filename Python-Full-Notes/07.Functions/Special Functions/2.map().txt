@@ -1,0 +1,13 @@
+		==========================================
+						b) map()
+		==========================================
+=>The purpose of map() is that "To get new list of elements from old list of elements by applying to the function".
+=>Syntax:-      objectname=map(functionname,iterable_object)
+---------------------
+Explanation:-  
+---------------------
+=>"objectname" is of type <class,'map'> and it contains new list elements and an object of map can be converted into any iterable object type
+=>'functionname' is either Normal Function or anonymous Function name
+=>"Iterable object" can be either str,bytes,bytearray,range,list,tuple,dict.
+=>The execution behaviour of map() is that "map() applies every element of iterbale object to the function name and obtains new list of elements based on the logic"
+============================X===================================

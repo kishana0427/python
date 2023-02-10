@@ -1,0 +1,12 @@
+		==============================================
+			Parameters  and Arguments 
+		==============================================
+=>Parameters are those which are used in Function Definition.
+=>In Python Programming, we have two types of Parameters. They are
+			a) Formal parameters
+			b) Local Parameters
+=>Formal parameters are those which are used in Function Heading and they are always used for storing  the input values coming from Function call(s)
+=>Local Parameters / Variables are those which are used in Function Body and they are used for storing temporary results.
+=>Arguments are those which are used in Function Calls  they are available  either in the form of variable names or values.
+=>All Values of Arguments of Function Calls are passing to Formal Parameters in Function Heading / Definition.
+=============================X===============================

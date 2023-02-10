@@ -1,0 +1,28 @@
+		=========================================
+						Modules In python
+		=========================================
+=>We know that Functions concept meant for performing certain Operation and provides Code Re-usability within in the same program but not able to provide code-reusbality across the programs. To over come this problem we use Modules.
+
+=>The purpose of Modules concept is that To provide code-reusbality across the programs.
+-------------------------------------
+=>Definition of Module:
+-------------------------------------
+=>A Module is a collection of Variables (Global Variables) , Functions and Classes.
+
+=>In Python we have two type of Modules. They are
+		a) Pre-defined Module
+		b) Programmer-defined module
+------------------------------------
+a) Pre-defined Module:
+------------------------------------
+=>These modules are already developed by Python Software developers and available in Python software and whose role is to deal with Universal Requirements.
+  
+=>Examples:-  builtins     functools     calendar  math   cmath  re  cx_Oracle
+                           mysql-connector, threading, numpy  pandas...etc
+---------------------------------------------------------
+b) Programmer-defined module:
+--------------------------------------------------
+=>These modules are developed by Python Language Programmers and available in Python Project  and whose role is to deal with Common Requirements.
+
+Examples:    banking,   mathformulas,   otpgen.....etc
+============================X==================================

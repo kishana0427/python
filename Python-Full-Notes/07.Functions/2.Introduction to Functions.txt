@@ -1,0 +1,27 @@
+		========================================
+				Introduction to Functions
+		========================================
+=>The Purpose of Functions is that "To Perform Certain Operation and Provide Code Re-usability".
+----------------------------------------
+=>Definition of Function:
+----------------------------------------
+=>Sub Program of main program is called Function.
+			(OR)
+=>A part of main program is called Function.
+-------------------------------------------------------------------------------
+Parts of Functions:
+-------------------------------------------------------------------------------
+=>When we are dealing with Functions Programming, we must ensure that there must exists 2 parts. They are
+		a) Function Definition (Function heading + Function Body)
+		b) Funcation Calls
+=>The Perticular Function Definition exists only Once.
+=>For One Function Definition, we can have multiple Function calls.
+=>For Every Function Call, there must exists Function Definition otherwise we get NameError.
+=>Function Definition will execute when we call through its Function Call(s).
+-------------------------------------------------------------------------------------------------------------------
+Phases in Function:
+------------------------------------
+=>Function Definition Takes INPUT
+=>Function Definition  PROCESS the input
+=>Function Definition gives RESULT / OUTPUT
+=============================X==================================
