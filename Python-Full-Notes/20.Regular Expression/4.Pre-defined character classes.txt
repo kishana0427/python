@@ -1,0 +1,17 @@
+		===========================================
+			Pre-Defined Character Classes
+		===========================================
+=>Pre-Defined Character Classes are already defined python software and they helps us to prepare search patterns and they are used to search in the given data for obtaining desired result.
+=>The Syntax for applying Pre-Defined Character Classes is shown bellow.
+		
+		" \ Pre-defined character class "
+
+=>We have  6 pre-defined Pre-Defined Character Classes. They are
+
+1) \s ----->It searches for space character only                            
+2) \S----->It searches for all except space character
+3) \d----->It searches for digit only    (or)  [ 0-9]
+4) \D---->It searches for all except digit (or) [^0-9]
+5) \w---->It searchers for word character (or ) [A-Za-z0-9]
+6) \W---->It searcher for special symbols (or) [^A-Za-z0-9]
+========================X================================

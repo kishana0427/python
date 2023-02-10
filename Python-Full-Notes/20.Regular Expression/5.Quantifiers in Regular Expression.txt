@@ -1,0 +1,21 @@
+		========================================
+			Quantifiers in Regular Expression
+		========================================
+=>Quantifiers in Regular Expression makes us understand the number of occurences of search pattern searching in given data for obtaining desired result.
+
+=> a----->searches only one a 
+=> a+---->searches one  'a'  or more  'a' s
+=>a*-----> Searches for zero 'a' or one 'a' or more 'a' s
+=>a?----> Searches for zero 'a' or one 'a' 
+=> . ------> searches for all the values present in given data
+----------
+Note:
+----------
+=>\d+ ------>searches for one or more digits  [0-9]+
+=>\w+   (or)  [a-zA-Z]+----->searches for one alphabet or more 
+
+=>\ddddd-----------or  d{5}---->searches for five digit number
+=>\dd.\dd-----(or) \d{2}.\d{2}---->searches for 2 Integers and 2 decimals
+							Ex: 23.45   	99.78
+-----------------------------------------------------------------------------------------------------
+

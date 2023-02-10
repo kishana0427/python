@@ -1,0 +1,52 @@
+		=================================
+				Network Programming
+		=================================
+=>The Purpose of Network Programming is that "To share the data / information between two machines "
+=>In Network Programming, we develop two types of Programs. They are
+		1) Server Side Program
+		2) Client Side Program
+-------------------------------------------------
+1) Definition of Server Side Program:
+-------------------------------------------------
+=>A Server Side Program is one which accept Client Request, Process the Client Request and Gives Response back to Client Side Program.
+-------------------------------------------------
+2) Definition of Client Side Program:
+-------------------------------------------------
+=>A Client Side Program is one, which sends request to the server side propgram and gets the response from Server Side Program.
+---------------------------------------------------------------
+3) Definition of DNS ( Domain Naming Service):
+-----------------------------------------------------------------------------------------------------
+=>The DNS is the name of Physical Machine where Server Side Program Resides
+=>The default DNS of every Computer is "localhost"
+------------------------------------------------------------------------------------------------------
+4) Definition of IP Address ( Internet Protocal Address):
+-----------------------------------------------------------------------------------------------------
+=>The IP Address is the name of Address of the Physical Machine where Server Side Program Resides.
+=>The default IP Address of every computer is 127.0.0.1(Loop Back address)
+----------------------------------------------------------------------------------------------
+5) Definition of Port Number:
+-------------------------------------------------------------------------------------------------
+=>A Port Number is a Logical numerical Id, where Server Side Program is Running.
+--------------------------------------------------------------------------------------------------
+Steps for developing Server Side Application:
+------------------------------------------------------------
+1) Every Server Side Program must run at Certain DNS / IP Address and Unique Port 
+    Number.
+2) Every Server Side  Program ACCEPT the Client  Side Program Request, 
+3) Every Server Side  Program must READ client Side Program request, PROCESS 
+    the client side program request ( decode() )
+4) Server Side Program SEND the response back to Client Side Program ( encode() )
+    
+Note:- As long as Client Side Program  makes request , The Server Side Program pefroms steps(2), (3) and (4)
+-------------------------------------------------------------------------------------------------------
+Steps for developing Client Side Application:
+--------------------------------------------------------------------------------------------------
+1) Every Client Side Program must get CONNECTION from Server Side Program by 
+    passing ( DNS / IP Address , Portno)
+2) Every Client Side Program must SEND a request to the Server Side Program 
+    (encode() )
+3) Every Client Side Program must RECEIVE the response from Server Side Program 
+   (decode)
+
+Note:- When Client Side Program want make many request to the server side program  then it has repeat steps (2) and (3)
+===============================X================================

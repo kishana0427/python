@@ -1,0 +1,26 @@
+		==========================================
+			Regular Expression in Python--Most Imp
+		==========================================
+Index:
+----------
+=>Purpose of Regular Expression
+=>Definition of Regular Expression
+=>Module Name used in Regular Expression
+		=> re
+=>Functions used in "re" module 
+		1) finditer()
+		2) start()
+		3) end()
+		4) group()
+		5) findall()
+		6) search()
+=>Programmer-Defined Character Classes
+		=>Programming Examples
+=>Pre-Defined Character Classes
+		=>Programming Examples
+=>Quantifiers in Regular Expressions
+		=>Programming Examples
+=>=>Programming Examples( Combination of Programmer, pre0defined classes and Quatifiers)
+
+
+

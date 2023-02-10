@@ -1,0 +1,88 @@
+		==========================================
+			Pre-defined Module for Network Programming
+		==========================================
+=>To develop Network Programming Applications, we have a pre-defined Inbuilt mdule called "socket".
+=>This Module "socket" contains Various Functions for Server Side Program and Client Side Program Development.
+----------------------------------------------------------------------------
+=>Functions in "socket" module used Server Side Program
+----------------------------------------------------------------------------
+1) socket():
+----------------------
+=>This Function used for creating an object socket class at Both Server side and Client Side Programs. So that It acts as Bi-Directional Communication Entity.
+Syntax:-    varname=socket.socket()
+Example:    s=socket.socket()                        
+-------------------------------------------------------------------------------------------
+2) bind():
+-----------------------------------------------------------------------------------------
+=>This Function is used making the Program as server side program by binding at Certain DNS and Port Number
+=>Syntax:-   socketobj.bind( (DNS/IP Address, portno) )
+=>Examples:     s.bind( ("localhost", 8558))
+			     print("Server Side is Ready to accept Requests:")
+				(OR)
+=>Examples:     s.bind( ("127.0.0.1", 8558))
+			     print("Server Side is Ready to accept Requests:")
+---------------------------------------------------------------------------------
+3) listen():--
+---------------------------------------------------------------------------------
+=>This Function is used for configuring the server side program in such a way that to how many client, The server Side Program can take requests and Responds.
+Syntax:-     socketobj.listen(no. of client side Programs)
+Example:     s.listen(2)
+---------------------------------------------------------------------------------
+4) accept()
+---------------------------------------------------------------------------------
+=>This Function is used for accepting the request of Client Side Program
+
+=>Syntax:           conn, addr =socketobj.accept()
+	=>Here "conn" is an object, which makes us understand, Server Gave the connection conformation to client side program
+	=>here "addr" is an object and it contains address of Client Side program.
+------------------------------------------------------------------------------------------------------
+5) recv()<--decode()
+------------------------------------------------------------------------------------------------------
+=>This Function is used for receiving the client side data at Server Side Program and receives the server side program data at client side .
+=>Syntax:-           varname=socketobj.recv(1024 / 2048/ 4098).decode()----client side
+                      Here varname is containing  server data in the form str at client side
+				(OR)
+				
+=>Syntax:-           varname=conn.recv(1024 / 2048/ 4098).decode()----server side
+                       Here varname is containing client  data in the form str at server side
+
+------------------------------------------------------------------------------------------------------------
+6) send()-->encode():
+-----------------------------------
+=>This Function used for sending request to the server by client  /  sending response to the client by server.
+=>Syntax:-       socketobj.send(str.encode())  # client side program
+				(or)
+			conn.send(str.encode() )  # server side program
+----------------------------------------------------------------------------
+=>Functions in "socket" module used Client Side Program
+----------------------------------------------------------------------------
+1) socket():
+------------------------------
+=>This Function used for creating an object socket class at Both Server side and Client Side Programs. So that It acts as Bi-Directional Communication Entity.
+Syntax:-    varname=socket.socket()
+Example:    s=socket.socket()        
+---------------------------------------------------------------------------------------
+2) connect()
+-----------------------
+=>This function is used for getting the connection from server side program.
+=>Syntax:-         socketobject.connect( ("DNS/IP address",portno)  )
+=>Example:-      socketobject.connect( ("localhost",8558))
+		print("Client Side Program got connection from Server Side Progam")
+---------------------------------------------------------------------------------------
+3) send()--->encode()
+-----------------------------------------
+=>This Function used for sending request to the server by client  /  sending response to the client by server.
+=>Syntax:-       socketobj.send(str.encode())  # client side program
+				(or)
+			conn.send(str.encode() )  # server side program
+---------------------------------------------------------------------------------------
+4) recv()<---decode():
+----------------------------------------------------------------------------------
+=>This Function is used for receiving the client side data at Server Side Program and receives the server side program data at client side .
+=>Syntax:-           varname=socketobj.recv(1024 / 2048/ 4098).decode()----client side
+                      Here varname is containing  server data in the form str at client side
+				(OR)
+				
+=>Syntax:-           varname=conn.recv(1024 / 2048/ 4098).decode()----server side
+                       Here varname is containing client  data in the form str at server side
+=============================X=================================

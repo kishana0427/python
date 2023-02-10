@@ -1,0 +1,21 @@
+		==========================================
+			Regular Expression in Python--Most Imp
+		==========================================
+=>Regular Expression is one of Indepenedent Concept of all Programming 
+    Language.
+=>Regular Expressions can be used in PYTHON, java, .Net...etc
+=>The purposes of Regular Expression  are:
+	1. Regular Expression used in development of Language Compilers and	           Interpreters.
+	2. Regular Expression used in development of Operating System
+	3. Regular Expression are used in Pattern Matching
+	4. Regular Expression are used in Electronics Circuits 
+	5. Regular Expression are used in Universal Protocols
+--------------------------------------------------------------------------------------------------------------
+Definition of Regular Expression:
+-------------------------------------------------------------------------------
+=>Regular Expression is one of String Pattern( Combination of Alphabets,Digits and Special Symbols ) which is used to search in Given Data for obtaining desired result.
+---------------------------------------------------------------------------------------------------------------
+=>To deal with Regular Expression, we use a pre-defined module called "re".
+
+
+

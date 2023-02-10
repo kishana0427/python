@@ -1,0 +1,43 @@
+		===========================================
+			Programmer-Defined Character Classes
+		===========================================
+=>Programmer-Defined Character Classes are prepared by Programmers and they helps us to prepare search patterns and they are used to search in the given data for obtaining desired result.
+=>The syntax for Programmer-Defined Character Classes is given bellow.
+        [Search Pattern-Programmer-Defined Character Classes ]
+=>We can create 14  Programmer-Defined Character Classes. They are
+
+1)  [abc]--->It searches for either 'a' or 'b' or 'c' only              
+
+2) [^abc]---->It searches for all except  'a' or 'b' or 'c' 
+
+3) [a-z]--->It searches for all lower case alphabets only.
+
+4) [^a-z]--->It searches for all except lower case alphabets .
+
+5) [A-Z]--->It searches for all Upper case alphabets only.
+
+6) [^A-Z]--->It searches for all  except Upper case alphabets 
+
+7) [0-9]----->It searches for all digits only.
+
+8) [^0-9]----->It searches for all  except digits.
+
+9) [a-z 0-9]--->It searches for lower case alphabets and digits only
+
+10) [^a-z 0-9]--->It searches for all except lower case alphabets and digits.
+
+11) [A-Za-z]--->It searches for all alphabets (lower and upper) only
+
+12)[^A-Za-z]--->It searches for all alphabets (lower and upper) only
+13) [A-Za-z0-9]-->It searches for all alphabets (lower and upper) and digits (except					special symbols)
+
+14) [^A-Za-z0-9]-->It searches for all special symbols 
+==========================================================
+
+
+
+
+
+
+
+
