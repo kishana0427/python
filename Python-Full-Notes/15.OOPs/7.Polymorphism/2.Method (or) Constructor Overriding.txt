@@ -1,0 +1,9 @@
+		=======================================
+				Method (or) Constructor Overriding
+		=======================================
+=>Method Overriding= Method Heading is Same + Method Body is Different
+=>Constructor Overriding= Constructor Heading is Same + Constructor Body is Different
+					(OR)
+=>The Process of re-defining / overriding the  Original method of base class in various derived classes is called Method / Constructor  Overriding
+
+=>To use Method / Constructor Overriding , we must apply Inheritance.

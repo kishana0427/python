@@ -1,0 +1,12 @@
+		===========================================
+				Python OOPs Principles / Features / Concepts
+		===========================================
+=>To say a Programming Language is Object Oriented , It has to satisfy Object Oriented Principles. They are
+		1) Class
+		2) Object
+		3) Data Encapsulation
+		4) Data Abstraction
+		5) Inheritance
+		6) Polymorphism
+		7) Message Passing ( already discussed ) 
+==========================X=====================================

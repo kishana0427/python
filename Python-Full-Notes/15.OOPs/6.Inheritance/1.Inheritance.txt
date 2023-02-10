@@ -1,0 +1,23 @@
+		====================================
+					Inheritance 
+		====================================
+=>"Inheritance" is one of the distinct feature of OOPs
+=>The main purpose of Inheritance is that "To Develop Re-usable Applications."
+-----------------------------------
+=>Definition of Inheritance:
+-----------------------------------
+=>The Process of obtaining The Data Members , Methods and Constructors (Features) from one class into another class is called "Inheritance".
+=>The class, which is Giving Data Members, Constructors  and Methods is called Base / Super / Parent Class
+=>The class, which is Taking Data Members, Constructors  and Methods is called Derived / Sub / Child Class.
+=>Inheritance concept / principle always provides Logical memory management. This Memory Management says that "Neither we write Physical Source Code nor takes Physical Memory Space".
+=>Hence All Features ( Data Members , Methods and Constructors ) of Base Class are available in Derived Class Logically.
+----------------------------------
+Advatages of Inheritance:
+----------------------------------
+=>If we develop any Inheritance Application then we get the following advantages. They are
+		1) Application development time is Less
+		2) Application Memory Space is Less
+		3) Application Execution Time is less
+		4) Application Performnace is Enhanced (Improved )
+		5) Redundency(Duplication)  of the code is Minimized 
+================================X==============================

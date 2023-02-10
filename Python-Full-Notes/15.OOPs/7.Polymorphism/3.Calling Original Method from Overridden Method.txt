@@ -1,0 +1,31 @@
+	===============================================
+			Calling Original Method from Overridden Method
+						(or)
+					      super()		
+	===============================================
+=>To call Original Methods from Overridden Methods, we have two approaches. They are.
+		a) by using  super()
+		b) By using Class Name
+---------------------------
+a) by using  super()
+---------------------------
+=>super() is one of the pre-defined function, which is used for calling Base class Original Method / Constructor from Overridden Method / Constructor of derived class. 
+
+=>Syntax1:-      super().method name()
+=>Syntax2:-      super().method name(list of values)
+
+=>Syntax3:-      super().__init__()
+=>Syntax4:-      super().__init__(list of values)
+
+=>super() can work efficiently to call base class methods from derived class methods provided the inheritance can be single, multi level and Hierarchical but not Multiple and Hybrid. To overcome this problem, we must use another approach "by using class name"
+--------------------------------
+b) By using Class Name:
+--------------------------------
+=By using Class Name,we can call  Base class Original Method / Constructor from Overridden Method / Constructor of derived class. 
+
+=>Syntax1:-      class name.method name(self)
+=>Syntax2:-      class name.method name(self , list of values)
+
+=>Syntax3:-      classname.__init__(self)
+=>Syntax4:-      classname.__init__(self,list of values)
+===========================X===================================

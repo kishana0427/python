@@ -1,0 +1,16 @@
+		===============================
+				Polymorphism in Python
+		===============================
+=>Polymorphism is one of the distinct principle in OOPs.
+=>The Real Time Purpose of Polymorphism is that "It Provides Efficient Memory Management ".
+---------------------------------------
+=>Definition of Polymorphism:
+---------------------------------------
+=>The process of representing "One Form in Multiple Forms" is called Polymorphism .
+=>Polymorphism is one best principle but it is not a programming concept.
+=>The best principle Polymorphism is implemented ( bring into action ) by using all Object Oriented Programming Languages for getting Efficient Memory Management  .
+=>The best principle Polymorphism is implemented in Python by using a Programming concept called "Method / Constructor Overriding".
+=>Hence In the definition of Polymorphism, One Form represents Original Method and Multiple Forms represents Overridden methods.
+=>A Form is nothing but state of existence of the method. If the Method exist in base class then it is called Original Form/ Method and if it is existing in derived Classes then it is Multiple Forms / Overridden Methods.
+=>Hence Polymorphism uses Method Overriding and Method Overriding uses Inheritance
+================================X===============================

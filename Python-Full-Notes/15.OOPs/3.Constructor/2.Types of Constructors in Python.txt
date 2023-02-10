@@ -1,0 +1,35 @@
+		====================================
+			Types of Constructors in Python
+		====================================
+=>In Python Programming, we have two types of constructors. They are
+		a) Default Constructor
+		b) Parameterized Constructor
+-------------------------------
+a) Default Constructor:
+-------------------------------
+=>A constructor is said to be default if and only if it never takes any values / 
+    Parameters
+=> The purpose of default construtor is that "To Initlize the multiple objects of same class  with same Values.
+--------------
+=>Syntax:
+--------------
+		def    __init__(self):
+		     --------------------------
+		     Block of statements---Initlization
+		     --------------------------
+===================================================
+b) Parameterized Constructor:
+---------------------------------------
+=>A constructor is said to be Parameterized if and only if italways  takes  values / 
+    Parameters
+=> The purpose of Parameterized construtor is that " To Initlize the multiple objects of same class  with different  Values".
+--------------
+=>Syntax:
+--------------
+		def    __init__(self, list of formal params):
+		     --------------------------
+		     Block of statements---Initlization
+		     --------------------------
+===================================================
+=>In a class of Python we can't define both Default and Parameterized constructors bcoz PVM can remember only latest defined constructor even we define multiple types of constructors (bcoz PVM is an Interpreter) . To solve this issue , and to fullfill the functionality of Both default and parameterized constructors we must define single parameterized constructor( To Fullfill parameterized constructor Functionality ) with default Params (To Full fill default constructor Functionality ).
+====================================X========================

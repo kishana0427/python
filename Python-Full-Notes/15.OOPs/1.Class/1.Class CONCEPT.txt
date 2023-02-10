@@ -1,0 +1,36 @@
+		==================================
+					Class
+		==================================
+=>class concept is one of distinct features of OOPs
+=>The purpose of Class concept is that "To develop Programmer-defined data type and to develop any real time application."
+=>The reason for developing programmer-defined data type is that to customize the operations of real time application.
+=>To develop programmer-defined data type with classes concept , we use a keyword 'class'.
+=>Programatically Every Class Name is treated as Programmer-defined data type.
+=>In OOPs, Every Python program must starts with class concept. 
+-----------------------
+Def. of Class:
+-----------------------
+=>A class is a collection of Data Members and Methods.
+=>When we define a class, we never get any memory space for Data Members and Methods of a class but whose memory space is created when we create  an object w.r.t class name.
+=>All The values are stored in the form of Objects and to create an objects we need class definition.
+-------------------------------------------------
+Syntax  for Defining a class
+--------------------------------------------------
+class <Class Name>:
+         Class Level Data Members
+	 def   instancemethodname(self, list of formal params if any):
+	         --------------------------------------------
+		 ----Specify Instance Data Members------
+		 Block of Statements--Specific Operations
+		 --------------------------------------------
+	@classmethod
+	def     classlevelmethods( cls, list of formal params if any):
+		--------------------------------------------
+		 Block of Statements--Common Operations
+		 --------------------------------------------
+	@staticmethod
+	def  staticmethodname(list of formal params if any):
+		--------------------------------------------
+		 Block of Statements--Utility / Universal Operations
+		 --------------------------------------------
+=============================X================================

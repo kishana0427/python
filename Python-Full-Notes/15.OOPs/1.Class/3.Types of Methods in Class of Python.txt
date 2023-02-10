@@ -1,0 +1,68 @@
+		==========================================
+				Types of Methods in Class of Python
+		==========================================
+=>In a class of Python, we can defined 3 types of Methods. They are
+		1) Instance Methods
+		2) Class Level Methods
+		3) Static Methods.
+-------------------------
+1) Instance Methods
+-------------------------
+=>Instance methods are always used for performing Specific Operations (or) Object Level Operations.
+=>Instance Methods always takes First Parameter as "self".
+=>Syntax:-    
+	def   instancemethodname(self, list of formal params if any):
+		--------------------------------------------
+		----Specify Instance Data Members------
+		Block of Statements--Specific Operations
+		--------------------------------------------
+
+=>Instance Methods can be accessed w.r.t object name (or) self
+		Syntax:-     objectname.instancemethodname()
+						(OR)
+					self.instancemethodname()
+
+----------------------------
+2) Class Level Methods
+----------------------------
+=>Class Level methods are always used for performing Common Operations (or) Class  Level Operations.
+=>Every Class Level Method Definition must be preceded with a pre-defined decorator called @classmethod and First formal parameter must be cls.
+=>Syntax:-
+		@classmethod
+		def     classlevelmethods( cls, list of formal params if any):
+			--------------------------------------------
+			--------Specify Class Level Data Members------------
+			 Block of Statements--Common Operations
+			 --------------------------------------------
+
+=>Class Level  Methods can be accessed w.r.t Class  Name (or) cls (or) object name (or)  self
+	Syntax:-		classname.classlevlmethodname()
+						(OR)
+					cls.classlevelmethodname()
+						(OR)
+				objectname.classlevelmethodname()
+						(OR)
+					self.classlevelmethodname()
+
+-----------------------
+3) Static Methods
+---------------------
+=>Static Methods are always used for Performing Utility Operations / Universal Operations. 
+=>Every Static Method Definition must be preceded with a pre-defined decorator called @staticmethod. static method definition will not take "self" and "cls" as formal params.
+=>Syntax:
+		@staticmethod
+		def  staticmethodname(list of formal params if any):
+			--------------------------------------------
+			 Block of Statements--Utility / Universal Operations
+			 --------------------------------------------
+
+=>Static Method can be accessed w.r.t Class  Name (or) cls  (or) object name (or) self.
+	Syntax:-		classname.staticmethodname()
+						(OR)
+					cls.staticmethodname()
+						(OR)
+				objectname.staticmethodname()
+						(OR)
+					self.staticmethodname()
+
+==========================X===================================

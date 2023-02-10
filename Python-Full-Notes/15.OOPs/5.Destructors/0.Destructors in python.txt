@@ -1,0 +1,20 @@
+			===========================================
+					Destructors in Python
+						   (or)
+					  Garbage Collector 
+			===========================================
+=>We know that Garbage Collector is one of the background program in python software, which is running with our regular python program and whose purpose is to collect the un-used memory space and improves the performance of Python based Applications.
+=>Every Garbage Collector program is internally executing its Destructor program for removing un-used memory space.
+=>In general Once the program execution is completed , Garbage Collector program collects the objects memory space automatically by executing Destructor program.
+=>If we want to make the Garbage Collector program forcefully to collect any object memory  space then the object must assigned with "None".
+
+		objname=None
+
+=>The syntax for defining Destructor is shown bellow.
+
+		def  __del__(self):
+		      -------------------
+		      -------------------
+		      block of stmts--executed by Garbage Collector
+		      ------------------
+		      ------------------

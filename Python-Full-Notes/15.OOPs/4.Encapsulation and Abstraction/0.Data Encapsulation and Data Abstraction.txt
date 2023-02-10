@@ -1,0 +1,93 @@
+		=======================================
+				Data Encapsulation and Data Abstraction
+		=======================================
+Data Encapsulation:
+-------------------------
+=>Data Encapsulation is one of distinct feature of OOPs
+=>The Purpose of Data Encapsulation is that "To Secure the confidential data from Extrenal Programmers / Users" for preveting un-authorized modifications.
+----------------------------------------------
+=>Definition of Data Encapsulation:
+----------------------------------------------
+=>The process Hiding the confidential  / Secured Information ( Data members / Methods / Constructors) from extrenal programmers / users is called "Data Encapsulation ".
+=>In Python Programming, To implement Data Encapsulation, we must use double underscore before data memebrs , methods and constructors.
+-----------
+Syntax:-                         _ _ Data Member Name
+-----------			     def  _ _Method Name(self,list of formal params if any):
+                                                 ---------------------
+						 ---------------------
+				     
+				     def   _ _ __init__(self,list of formal params if any):
+				                 -------------------------
+						 -------------------------
+Examples:
+----------------
+#accountinfo.py---FILE NAME nad treated as module name
+class Account:
+	def __init__(self):
+		self.__acno=345123567     # Data members level encapsulation
+		self.cname="Guido Van Rossum"
+		self.__bal=5.6    # # Data members level encapsulation
+		self.__pin=5634 # # Data members level encapsulation
+		self.bname="SBI"
+-----------------------------------------------      
+#accountinfo1.py---FILE NAME nad treated as module name
+class Account:
+	def __getaccountdetails(self):  #method Level Encapsulation
+		self.acno=345123567    
+		self.cname="Guido Van Rossum"
+		self.bal=5.6   
+		self.pin=5634
+		self.bname="SBI"
+-----------------------------------------------------------------------------
+#accountinfo2.py---FILE NAME nad treated as module name
+class Account:
+	def ____init__(self):  #constructor  Level Encapsulation
+		self.acno=345123567    
+		self.cname="Guido Van Rossum"
+		self.bal=5.6   
+		self.pin=5634
+		self.bname="SBI"
+
+==============
+Data Abstraction
+==============
+=>The Process of extracting / Retrieving the essential data without considering the hidden information  is called Data Abstraction.
+
+Examples:
+----------------
+#others.py---Other Programmer attempting to access the data of other class object
+from accountinfo import Account
+ac=Account()
+print("\nOBJECT data successfully Created:")
+print("------------------------------------------------")
+#print("Account Number={}".format(ac.acno))  can't acess
+print("Account Holder Name={}".format(ac.cname))
+#print("Account Balance={}".format(ac.bal)) can't access
+#print("Account Pin={}".format(ac.pin)) can't access
+print("Account Branch Name={}".format(ac.bname))
+print("------------------------------------------------")
+------------------------------------------------------------------------------
+#others1.py---Other Programmer attempting to access the data of other class object
+from accountinfo1 import Account
+ac=Account()  # ac--- {}
+print("\nOBJECT data successfully Created:")
+# ac.getaccountdetails() can't access
+"""print("------------------------------------------------")---Can't access at all
+print("Account Number={}".format(ac.acno)) 
+print("Account Holder Name={}".format(ac.cname))
+print("Account Balance={}".format(ac.bal))
+print("Account Pin={}".format(ac.pin)) 
+print("Account Branch Name={}".format(ac.bname))
+print("------------------------------------------------")"""
+----------------------------------------------------------------------------------
+#others2.py---Other Programmer attempting to access the data of other class object
+from accountinfo2 import Account
+ac=Account()  
+print("------------------------------------------------")
+#print("Account Number={}".format(ac.acno))   Can't access at all
+#print("Account Holder Name={}".format(ac.cname))
+#print("Account Balance={}".format(ac.bal))
+#print("Account Pin={}".format(ac.pin)) 
+#print("Account Branch Name={}".format(ac.bname))
+print("------------------------------------------------")
+==========================================

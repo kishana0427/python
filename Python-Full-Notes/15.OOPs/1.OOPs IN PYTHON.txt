@@ -1,0 +1,22 @@
+		==========================================
+			 Object Oriented Programming (OOPs) in Python
+		==========================================
+=>In Real Time , To develop any Project , we need to choose a language and it can satisfy two types of principles. They are
+			a) Procedure Oriented Principles
+			b) Object Oriented Principles
+=>In otherwords , we have two types of Programming languages. They are
+		a) Procedure Oriented Programming Languages
+				Examples: C, Pascal, CoBOL,  PYTHON
+		b) Object Oriented Programming Languages:
+				Examples:   Lisp,Java, PYTHON
+						    .net, CPP...etc
+=>Hence Python is one of the Both Procedure(Functional ) and Object Orinted Programming	Language.
+=>Even though, "Python is one of the Procedure Oriented and Object Oriented . Internally Every Thing is treated as objects."
+------------------------------------------------------------------------------------------------
+=>Benifits of treating "Every Thing is an object in Python "
+------------------------------------------------------------------------------------------------
+=>Objects in Python allows us to store un-limited amount of Data.
+=>The Large Volume of Data can be transfered between Two Remote Appications all at once and we can get Effective Communication.
+=>When we transfer the confidential Data in the form of object  from one Remote machine to another remote machine then It can be trasfered in the form Cipher Text ( Encrypted format) So that security can be enhaced.
+=>By using Object Orientation, we can get high degree of re-usability ( Through Functions, Modules and Packages) 
+================================X=============================
