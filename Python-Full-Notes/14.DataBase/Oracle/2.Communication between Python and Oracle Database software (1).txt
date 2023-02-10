@@ -1,0 +1,72 @@
+	==========================================================
+			Communication between Python and Oracle Database software
+	==========================================================
+=>To Communicate between Python program and Oracle Database software, we use 5 steps.
+	1) import cx_Oracle
+	2) Python Program must obtain connection from Oracle DB.
+	3) Create an object of Cursor 
+	4) Design the Query , place it into the object of cursor and execute the Query
+	5) Process the Result of the Query.
+---------------------------
+1) import cx_Oracle
+--------------------------
+=>If a Python Program want to communicate with Oracle database  then we must import cx_Oracle Module. 
+=>Examples:             import cx_Oracle
+					or
+			   from cx_Oracle import  *
+------------------------------------------------------------------------
+2) Python Program must obtain connection from Oracle DB.
+------------------------------------------------------------------------
+=>Before doing any database operations through python program, Python Program must get connection from Oracle DB by using connect() , which is present in cx_Oracle.
+
+=>Syntax:-
+		varname=cx_Oracle.connect("username/password@DNS/Serviceid")
+=>here "username/password@DNS/Serviceid" is called Connection url
+				(OR)
+		varname=cx_Oracle.connect("connection url ")
+Here Connection Url represents the following
+=>User Name:- It represents User Name of Oracle Data base
+=>Pass word: -It represents Password of Oracle Data base
+=> DNS / IP Address: It is the name of machine (DNS) OR Address of the machine(IP Address) where Database software installed. The default DNS is localhost and default IP Address is 127.0.0.1
+=>Service ID:- It represents on which name, Oracle database software is installed in the current working machine. To find Service id of oracle database, we must use the following Query at SQL Prompt.
+=>'varname' represents object of <class, cx_Oracle.Connection> 
+------------------
+Examples:
+-----------------
+SQL> select * from global_name;
+					GLOBAL_NAME
+					-------------------------------
+						ORCL  <-----Service id
+----------------------------------------------------------------------------------------------------------
+Example:  get the connection Oracle DB from Python Program
+		
+		import cx_Oracle
+		kvrcon=cx_Oracle.connect("scott/tiger@localhost/orcl")
+		print("Python Program got connection fromn Oracle DB")
+				(OR)
+		import cx_Oracle
+		kvrcon=cx_Oracle.connect("scott/tiger@127.0.0.1/orcl")
+		print("Python Program got connection fromn Oracle DB")
+
+--------------------------------------
+3) Create an object of Cursor :
+--------------------------------------
+=>Here cursor is an object whose purpose is that to carry the query from Python Program to Database software and cursor object brings the result from database software to python program.
+=>To create an object of cursor, we use a pre-defined function called cursor() which is present in connection object.
+
+=>Syntax:	curobj=conobj.cursor()	
+=>Examples:-		curobj=kvrcon.cursor()
+print("type of curobj=",type(curobj)) #type of curobj =<class, cx_Oracle.Cursor)
+-------------------------------------------------------------------------------------------
+4. Design the Query , place it into the object of cursor and execute the Query
+-------------------------------------------------------------------------------------------
+=>Query is a request / Question to the database software.
+=>To execute the Query, we use a pre-defined function called execute(), which is present in cursor object.
+
+=>Syntax:      varname=curobj.execute("Query")		
+---------------------------------------------------------------------
+5) Process the result which is available in cursor object.
+---------------------------------------------------------------------
+=>This process makes us to understand, retrieve the data from cursor object and display it on the console.
+Example:  Handling exception messages dealing with results.
+-------------------------------------------------------------------------------------------------

@@ -1,0 +1,32 @@
+		=============================================
+			Python Data Base  Communication (PDBC)
+		=============================================
+=>The main advantages of Python Database communication (PDBC)   OR  Database software are
+	1) Database softwares are Secured. All types of RDBMS (Oracle, MYSQL,MongoDB,DB2, SQL Server...etc) provides User Names and passwords.
+	2) The Processing the data present in tables of Database is quite easy.
+	3) Database softwares allows us to store large amount of data
+	4) The Artchiture of of Database softwares remains same on all types of Oses
+	5) Hence Database Softwares are Highly recommened  for achieving Data persistency.
+---------------------------------------------------------------------------------------------------------------
+=>To do the programming with Python to communication with Database softwares , we need  two things. They are
+		a) Python Program   (required Python Software)
+		b) Tables in Database ( required data base software)
+---------------------------------------------------------------------------------------------------------------
+=>If the Python Program want to communicate with any Database Softwares, we need a pre-defined module for corresponding database softwares.
+=>Examples:  
+=>For dealing with Oracle Database we need a module called "cx_Oracle".
+=>For dealing with MySQL Database we need a module called "mysql-connector".	
+=>All types Database corresponding Modules are in disabled form and to enable them we must install explicitly by using a tool called "pip"
+=>We use the following syntax for installing any module.
+
+			pip   install  modulename
+-------------------------------------------------------------------
+Examples:		install   the oracle data base module
+-----------------------------------------------------------------
+			pip  install  cx_Oracle
+-----------------------------------------------------------------
+Examples:		install   the mysql  data base module
+-----------------------------------------------------------------
+			pip  install  mysql-connector
+
+===========================X===================================

@@ -1,0 +1,117 @@
+		=========================================
+				Types of Queries 
+		=========================================
+=>A Query a Request / Question to the database to perform Various Operations.
+=>In any RDBMS softwraes (Oracle, MySQL,DB2,....etc) , we have three types of Queries. They are
+			1. DDL(Data Definition Language )  Queries  
+					a) create  b) alter  c) drop
+			2. DML(Data Manipulation Language) Queries
+					a) insert   b)  delete   c) update
+			3) DRL (Data Retrieval Language) Queries
+					a) select
+------------------------------------------------------
+1. DDL(Data Definition Language )  Queries  
+------------------------------------------------------
+=>DDL Queries are used Designing the tables(Physical Level) such as create a table, alter a table and drop a table.
+=>We have 3 types of statements in DDL. They are
+		a) create
+		b) alter
+		c) drop
+---------------
+a) create:
+---------------
+=>This query is used for creating a table 
+=>Syntax(Oracle) :- 
+--------------------------
+SQL>create table <table-name>( colname1 data type, colname-2...col name-n data type-n);
+----------------------------
+Examples(Oracle):
+----------------------------
+SQL> create table student(stno number(2), name varchar2(10), marks number(5,2));
+--------------
+b) alter:
+--------------
+=>This query is used for altering the table. In otherwords, This query cal alter the tabale column sizes and adding new column names.
+Syntax1(Oracle) :   alter table  <table-name> modify( existing col name datatype....)
+Syntax2(Oracle) :   alter table  <table-name> add( new col name datatype....)
+-----------------------
+Examples(Oracle):
+-----------------------
+SQL> alter table student modify (stno number(3), marks number(6,2));
+SQL> alter table student add (colname varchar2(10));
+---------------
+c) drop:
+---------------
+=>This query is used for droping / deleting the table permanently.
+=>Syntax(Oracle):-    drop table <table-name>
+=>Example:		SQL> drop table temp;
+-----------------------------------------------------------------------------------------------------------------
+2. DML(Data Manipulation Language) Queries:
+--------------------------------------------------------
+=>DML Queries are used for performing operations on records / data of the table.
+=>In RDBMS Softwares , we have 3 types of DML statements. They are
+		a) insert
+		b) delete
+		c) update
+=>Once we use a DML query then we must use commit() for making permanent changes in a table.
+=>To undo the operations results we use rollback() 
+=>here commit() and rollback() present in connection object.
+----------------
+a) insert:
+----------------
+=>This query is used for inserting a record in a table
+=>Syntax(Oracle):-    
+	insert into <table-name> values(val1 for col1, val2 for col2...val-n for col-n)
+=>Examples: insert a record in employee table
+SQL> insert into employee values(102,'Golsing',1.3,'Jr.SE','HCL');
+---------------
+b) delete:
+---------------
+=>This query is used for deleting either all records or specified records from the given table.
+=>Syntax1(Oracle):-   delete from <table-name>;
+		(OR)
+=>Syntax2(Oracle):-   delete from <table-name> where   cond list;
+------------------------
+Examples(Oracle): 
+------------------------
+SQL> delete from employee;
+SQL> delete from employee where eno=101;
+-----------------
+c) update:
+----------------
+=>This query is used for updating either all records or specified record based on some sondition.
+=>Syntax1(Oracle):    
+update  <table name>set colname1=value1, colname2=value2....colname-n=value-n;
+=>Syntax2(Oracle):    
+update <tablename>set colname1=value1,colname2=value2...colname-n=value-n where cond list;
+-------------
+Example: 
+-------------
+SQL> update employee set sal=4.4, dsg='SE' ;
+SQL> update employee set sal=4.4, dsg='SE'  where ename='balu';
+------------------------------------------------------------------------------------------------------------------
+3) DRL (Data Retrieval Language) Queries
+--------------------------------------------------
+=>DRL (Data Retrieval Language) Queries are used for retriving / reading the records from the table either all the reacords or specified records based on consdition.
+=>we use 'select' query as DRL query.
+=>Syntax1(Oracle):    select col1, col2...col-n from table name;
+=>Syntax2(Oracle):    select col1, col2...col-n from table name where cond list;
+=>Syntax3(Oracle):    select *  from table name;
+=>Syntax4(Oracle):    select *  from table name where cond list;
+=>Once the select query executed by Python program, the records are present in an object of cursor. Now we have extract the records from cursor object by using 3 pre-predefined functions. They are
+		a) fetchone()
+		b) fetchmany()
+		c) fetchall()
+a) fetchone(): 
+	=>This is used obntaining one record at a time from cursor object in the form tuple.
+	=>Syntax:       record=cursorobj.fetchone()
+b) fetchmany():
+	=>Syntax:       record=cursorobj.fetchmany(no.of records)
+	=>This function obtains specified  number of records from cursor object (specfied Number records<total number of records)
+	=>if number of records are more than total number of records then we get all the records of cursor object.
+	=>if number of records are -ve then we never get any records
+	=>if number of records are 0 then we get all the records of cursor object.
+c) fetchall():
+	=>Syntax:       record=cursorobj.fetchall()
+	=>This function gives all the records of a cursor object.
+=================================X=============================

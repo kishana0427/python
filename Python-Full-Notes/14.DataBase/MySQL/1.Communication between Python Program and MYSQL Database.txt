@@ -1,0 +1,82 @@
+   ============================================================
+		Communication between Python Program and MYSQL Database
+   ============================================================
+=>To perform various database operations  by  using Python language, First we must learn steps for communication between python program and MYSQL Data base software.
+---------------
+Steps:
+---------------
+		1) import   mysql.connector
+		2) Python Program must get the connection from MYSQL Database.
+		3) Create an object of cursor
+		4) Design the Query, place the query in cursor and execute.
+		5) Process the result which is available in cursor object.
+-------------------------------------------
+Step-1: import   mysql.connector
+-------------------------------------------
+=>If python Program want to communicate with MYSQL data base , First we must install mysql-connector module by using pip and later we must import in python program.
+		Example:     import  mysql.connector
+----------------------------------------------------------------------------------------
+Step-2:  Python Program must get the connection from MYSQL Database.
+----------------------------------------------------------------------------------------
+=>If a python program want a connection MYSQL Database, we must use a pre-defined function connect() which is present in mysql.connector module and it returns an object of <class,mysql.connector.Connection>
+
+=>Syntax:-          varname=mysql.connector.connect(host="DNS/IPAddress",
+										    user="User Name of MYSQL",	
+										    passwd="password of MYSQL")
+
+=>"varname" is an object of <class,mysql.connector.Connection>
+=>mysql.connector is called Module name
+=>connect() is predefined function in mysql.connector module
+=>Here "user name " of MYSQL DB is "root"
+=>here "passwd " of MYSQL DB is "root"
+=>Here"DNS (Domain Naming Service)"  represents Name of Machine Where Database Softwares resides". The default DNS of every machine is "localhost".
+=>Here "IP Address(Internet Protocol address)" represents Four parts Numerical Address of a machine where Database software resides. The default IPaddress of every computer is "127.0.0.1"(also know as Loop Back Address).
+
+Example:-     
+conobj=mysql.connector.connect(host="localhost",user="root",passwd="root")
+print("python program got connection from MYSQL")
+----------------------------------------
+Step-3: Create an object of cursor
+----------------------------------------
+=>The purpose of creating an object of cursor is that "To carray the query from Python Program and brings the result from data base software and hand over to python program".
+=>To create an object of cursor, we use a pre-defined function called cursor() , which is present in conobj.
+=>Syntax:-               varname=connobj.cursor()
+=>here "varname" is an object of <class, mysql.connector.Cursor>
+=>Here "connobj" is an object   <class, mysql.connector.Connection>
+----------------
+Examples:
+---------------
+				kvrcur=conobj.cursor()
+				print("Cursor object created ..")
+---------------------------------------------------------------------------------------------------------------
+Step-4: Design the Query, place the query in cursor and execute.
+--------------------------------------------------------------------------------------------------------------
+=>A Query is request / Question to the database from python Program. 
+=>To execute any type of  Query, we use a pre-defined Function called execute(), which is present in <class, mysql.connector.Cursor>
+=>Syntax:-             curobj.execute("Query")
+--------------------------------------------------------------------
+Step-5: Process the result which is available in cursor object
+--------------------------------------------------------------------
+=>This process makes us to understand, retrieve the data from cursor object and display it on the console.
+--------------
+Example:  
+--------------
+Handling exception messages dealing with results.
+-------------------------------
+Step-6: Close the connection:
+-------------------------------
+=>To close the connection manually, we write finally block.
+-----------------
+Example:
+-----------------
+try:
+	-----------------
+	-----------------
+except .......:
+	---------------
+finally:
+	print("\nFinally Block")
+	if(conobj!=None):
+		conobj.close()
+		print("Database Connection Closed")
+==========================X====================================
