@@ -1,0 +1,67 @@
+		==========================================
+				dict  data type	
+		==========================================
+=>"dict' is one of the pre-defined class and  treated as dict data type.
+=>The purpose of dict data type is that "To store the data in the form (Key,Value)"
+=>In (Key,Value), the values of Key are unique and values of Value may or may not unique.
+=>The elements of dict must organized in the form of curly braces {} and in which  we represent (Key,value) as Key:Value.
+=>Syntax:      dictobj={key1:val1,key2:val2......key-n=val-n}
+=>Here key1,key-2...key-n are Values of Key and they are Unique and they are immutable and val1,val2....val-n are values of Value and they may or may not be Unique and they are mutable.
+=>An object of dict is mutable.
+=>On the object of dict, we can't apply indexing and slicing operations.
+-------------------------------------------------------------------------------------------------
+=>We have two types of dicts. They are
+	a) empty dict
+	b) non-empty dict
+------------------------------
+a) empty dict:
+------------------------------
+=>An empty dict is one , which does not contain any elements.
+=>Syntax for creating empty dict:-
+			dictobj={}      (or)    dictobj=dict()
+=>Syntax for adding (key,value) to empty dict:
+			dictobj[Key1]=Val1
+			dictobj[Key2]=Val2
+			-----------------------------
+			dictobj[Key-n]=Val-n
+-------------------
+Examples:
+-------------------
+>>> d1={}
+>>> print(d1,type(d1))--------->{} <class 'dict'>
+>>> len(d1)---------->0
+>>> d1["Name"]="Rossum"
+>>> d1["Prof"]="Author"
+>>> d1['place']="NL"
+>>> print(d1,type(d1))--->{'Name': 'Rossum', 'Prof': 'Author','place': 'NL'} <class 'dict'>
+>>> d1["place"]="Nether Lands"
+>>> print(d1,type(d1))--->{'Name': 'Rossum', 'Prof': 'Author','place': 'Nether Lands'} <class 'dict'>
+-------------------------------------------------------------------------------------
+>>> d3=dict()
+>>> print(d3,type(d3))----------->{} <class 'dict'>
+>>> d3[10]=1.2
+>>> d3[20]=2.3
+>>> d3[30]=4.5
+>>> d3[40]=1.2
+>>> print(d3,type(d3))---->{10: 1.2, 20: 2.3, 30: 4.5, 40: 1.2} <class 'dict'>
+>>> d3[10]=7.8
+>>> print(d3,type(d3))--->{10: 7.8, 20: 2.3, 30: 4.5, 40: 1.2} <class 'dict'>
+>>> d3[0]------->KeyError: 0
+>>> d3[10]--------->7.8
+-------------------------------------------------------------------------------------------------------
+b) non-empty dict:
+---------------------------------
+=>An non-empty dict is one , which  contains elements.
+=>Syntax:      dictobj={key1:val1,key2:val2......key-n=val-n}
+-------------------
+Examples:
+-------------------
+>>> d2={10:"Apple",20:"Mango"}
+>>> print(d2,type(d2), id(d2))----->{10: 'Apple', 20: 'Mango'} <class 'dict'> 1883192377472
+>>> d2[30]="Kiwi"
+>>> d2[40]="sberry"
+>>> print(d2,type(d2), id(d2))----->{10: 'Apple', 20: 'Mango',30: 'Kiwi', 40: 'sberry'} <class 'dict'>								1883192377472
+>>> d2[10]="Guava"
+>>> print(d2,type(d2), id(d2))----->{10: 'Guava', 20: 'Mango',30: 'Kiwi', 40: 'sberry'} 
+							<class 'dict'> 1883192377472
+===============================X==============================

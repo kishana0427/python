@@ -1,0 +1,44 @@
+		======================================
+			Inner List (or) nested list
+		======================================
+=>The process of defining one or more number of lists in another list is known as Inner / Nested List.
+=>Syntax:-   
+    listobj=[val1,val2.....[v1,v2...v-n],[x1,x2...xn], val-n]
+=>[v1,v2..v-n] is called one Inner list
+=>[x1,x2...xn] is called another inner list
+=>Val1,val2----val-n are called elements of Outer List.
+=>On the inner list, we can perform Both Indexing and slicing operations
+=>On the inner list we can also apply pre-defined functions of list.
+----------------------------------------------------------------
+=>My Requirement:
+ ---------------------------------------------------------------
+ I want to store Student Number, name and 3 subjects Internal and External marks and college name
+=>3 subjects internal marks to be taken as one Inner list
+=>3 subjects external marks to be taken as another Inner list
+=>number,name and college name to taken as Outer List elements.
+----------------------
+Examples:
+----------------------
+>>> lst=[10,"Abhi", [18,19,17] ,[50,80,70], "OUCET" ]
+>>> print(lst[0])----------10
+>>> print(lst[1])----------Abhi
+>>> print(lst[2])--------[18, 19, 17]
+>>> print(lst[-2])----------[50, 80, 70]
+>>> print(lst[-2][1])--------80
+>>> print(lst[-2][-1])--------70
+>>> print(lst[-2][:])-------[50, 80, 70]
+>>> print(lst[2][::-1])--------[17, 19, 18]
+>>> lst[2].append(16)
+>>> lst[-2].append(68)
+>>> print(lst)-------->[10, 'Abhi', [18, 19, 17, 16], [50, 80,70, 68], 'OUCET']
+>>> lst[2].sort()
+>>> print(lst)------->[10, 'Abhi', [16, 17, 18, 19], [50, 80,70, 68], 'OUCET']
+>>> lst[3].sort(reverse=True)
+>>> print(lst)---------->[10, 'Abhi', [16, 17, 18, 19], [80, 70,68, 50], 'OUCET']
+-------------------------------------------------------------------------------------------
+>>> print(lst)---->[10, 'Abhi', [16, 17, 18, 19], [80, 70, 68,50], 'OUCET']
+>>> lst.pop(2)----------->[16, 17, 18, 19]
+>>> print(lst)---------->[10, 'Abhi', [80, 70, 68, 50], 'OUCET']
+>>> del(lst[-2])
+>>> print(lst)----------->[10, 'Abhi', 'OUCET']
+=============================X==================================

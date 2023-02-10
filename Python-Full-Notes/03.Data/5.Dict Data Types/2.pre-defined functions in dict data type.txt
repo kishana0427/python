@@ -1,0 +1,219 @@
+	=================================================
+		pre-defined functions in dict data type
+	=================================================
+=>On the object of dict, we can perform various operations by using the following Functions:
+------------
+1)clear():
+------------
+=>This function clears / removes all the elements of  dict object
+=>Syntax:  dictobj.clear()
+-----------------
+Examples:
+-----------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> print(d1)--------->{10: 'Guava', 20: 'Mango', 30: 'Kiwi',40: 'sberry'}
+>>> len(d1)-------->4
+>>> d1.clear()
+>>> print(d1)------->{}
+>>> len(d1)--------->0
+----------------------------------------------------------------------------------------------------------------
+2) pop():
+----------------
+=>Syntax:-  dictobj.pop(key)
+=>This is used for removing (key,value) from dict object bassed on key, which we passing.
+=>If the key does exists in dict object then we get KeyError.
+----------------------
+Examples:
+----------------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> print(d1)------>{10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> d1.pop(30)-------->'Kiwi'
+>>> print(d1)--------->{10: 'Guava', 20: 'Mango', 40: 'sberry'}
+>>> d1.pop(10)-------->'Guava'
+>>> print(d1)-------->{20: 'Mango', 40: 'sberry'}
+>>> d1.pop(300)---------->KeyError: 300
+-----------------------------------------------------------------------------------------------------------------
+3)popitem():
+----------------------
+Syntax:   dictopbj.popitem()
+=>This function removes last (key,value) of dict object when it is non-empty othertwise we get  KeyError: 'popitem(): dictionary is empty'
+--------------------
+Examples:
+--------------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> print(d1)------------->{10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> d1.popitem()------>(40, 'sberry')
+>>> print(d1)------>{10: 'Guava', 20: 'Mango', 30: 'Kiwi'}
+>>> d1.popitem()------>(30, 'Kiwi')
+>>> print(d1)------>{10: 'Guava', 20: 'Mango'}
+>>> d1.popitem()------>(20, 'Mango')
+>>> print(d1)------>{10: 'Guava'}
+>>> d1.popitem()------>(10, 'Guava')
+>>> print(d1)------>{}
+>>> d1.popitem()----->KeyError: 'popitem(): dictionary is empty'
+-----------------------------------------------------------------------------------------------------------------
+4)copy()
+--------------
+=>Syntax:-   dictobj2=dictobj1.copy()
+=>This function copy the content of one dict object into another dict object.(shallow copy)
+----------------------
+Examnples:
+----------------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> d2=d1.copy()  # shallow copy
+>>> print(d1,id(d1))------>{10: 'Guava', 20: 'Mango', 30:'Kiwi', 40: 'sberry'} 1883192327936
+>>> print(d2,id(d2))------>{10: 'Guava', 20: 'Mango', 30:'Kiwi', 40: 'sberry'} 1883192427776
+>>> d3=d1   #deep copy
+>>> print(d3,id(d3))----->{10: 'Guava', 20: 'Mango', 30: 'Kiwi',40: 'sberry'} 1883192327936
+-----------------------------------------------------------------------------------------------------------------
+5) get():
+---------------
+=>Syntax:-     Value=dictobj.get(key)
+=>This function is used for obtaining value of Value by Passing Value of Key.
+=>If the Value of Key does not exist then Value of Value is "None"
+--------------------
+Examples:
+--------------------
+>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> d1.get(20)------->'Mango'
+>>> d1.get(30)------->'Kiwi'
+>>> d1.get(10)------>'Guava'
+>>> d1.get(100)
+>>> v1=d1.get(20)
+>>> print(v1)--------->Mango
+>>> v2=d1.get(30)
+>>> print(v2)---------->Kiwi
+>>> v2=d1.get(300)
+>>> print(v2)----------->None
+>>> print(d1.get(10))------->Guava
+>>> print(d1.get(100))-------->None
+----------------------------------------------------------------------------------------------------------------
+f) values():
+-----------------
+=>Syntax:-     values=dictobj.values()
+=>This obtains all the values of dict object
+------------------------
+Examples:
+-----------------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> d1.values()------->dict_values(['Guava', 'Mango', 'Kiwi','sberry'])
+>>> vals=d1.values()
+>>> print(vals)----------->dict_values(['Guava', 'Mango','Kiwi', 'sberry'])
+>>> print(d1.values())---->dict_values(['Guava', 'Mango','Kiwi', 'sberry'])
+>>> values=d1.values()
+>>> for val in values:
+...     print(val)
+				...
+				Guava
+				Mango
+				Kiwi
+				sberry
+>>> for val in d1.values():
+...     print(val)
+				...
+				Guava
+				Mango
+				Kiwi
+				sberry
+------------------------------------------------------------------------------------------------------------
+g) keys():
+-----------------
+=>Syntax:-     keys=dictobj.keys()
+=>This obtains all the keys  of dict object
+------------------
+Examples:
+------------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> d1.keys()---------->dict_keys([10, 20, 30, 40])
+>>> ks=d1.keys()
+>>> print(ks)---------->dict_keys([10, 20, 30, 40])
+>>> print(d1.keys())--------->dict_keys([10, 20, 30, 40])
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> for ky in d1.keys():
+...     print(ky)
+				...
+				10
+				20
+				30
+				40
+>>> for x in d1:
+...     print(x)
+				...
+				10
+				20
+				30
+				40
+-------------------------------------------------------------------------------------------------------------
+h) items():
+-----------------
+=>Syntax:-      keysvalues=dictobj.items()
+=>This obtains all (key,value) from dict object.
+-------------------
+Examples:
+-------------------
+>>> d1={10: 'Guava', 20: 'Mango', 30: 'Kiwi', 40: 'sberry'}
+>>> kvs=d1.items()
+>>> print(kvs)--->dict_items([(10, 'Guava'), (20, 'Mango'), (30,'Kiwi'), (40, 'sberry')])
+>>> print(d1.items())--->dict_items([(10, 'Guava'), (20,'Mango'), (30, 'Kiwi'), (40, 'sberry')])
+>>> d1.items()--->dict_items([(10, 'Guava'), (20, 'Mango'), (30,'Kiwi'), (40, 'sberry')])
+>>> for kvs in d1.items():
+...     print(kvs)
+			...
+			(10, 'Guava')
+			(20, 'Mango')
+			(30, 'Kiwi')
+			(40, 'sberry')
+>>> for k,v in d1.items():
+...     print(k,"--->",v)
+			...
+			10 ---> Guava
+			20 ---> Mango
+			30 ---> Kiwi
+			40 ---> sberry
+
+-----------------------------------
+Note:
+------------------------------------
+>>> l1=[10,20,30,40]
+>>> l2=["Ram","Ros","Gos","Abhi"]
+>>> l3=[12.34,23.45,12.45,11.23]
+>>> z=zip(l1,l2,l3)
+>>> print(z, type(z))----> <zip object at 0x000001B677080800> 						<class 'zip'>
+>>> for rno,name,marks in z:
+...     print(rno,"-->",name,"--->",marks)
+...
+			10 --> Ram ---> 12.34
+			20 --> Ros ---> 23.45
+			30 --> Gos ---> 12.45
+			40 --> Abhi ---> 11.23
+--------------------------------------------------------------------------------------------------------------
+i) update()
+------------------
+=>Syntax:-     dictobj1.update(dictobj2)
+=>This function update the (key,value) of dictobj1 with (key,value) of dictobj2.
+-------------------
+Examples:
+-------------------
+>>> d1={10:1.2,20:2.3}
+>>> d2={30:4.5,40:5.6}
+>>> d1.update(d2)
+>>> print(d1)---------->{10: 1.2, 20: 2.3, 30: 4.5, 40: 5.6}
+>>> for acno,bal in d1.items():
+...     print(acno,"---->",bal)
+					...
+					10 ----> 1.2
+					20 ----> 2.3
+					30 ----> 4.5
+					40 ----> 5.6
+>>> d1={10:1.2,20:2.3}
+>>> d2={20:4.5,40:5.6,50:2.3}
+>>> d1.update(d2)
+>>> print(d1)---------->{10: 1.2, 20: 4.5, 40: 5.6, 50: 2.3}
+>>> for acno,bal in d1.items():
+...     print(acno,"---->",bal)
+...
+				10 ----> 1.2
+				20 ----> 4.5
+				40 ----> 5.6
+				50 ----> 2.3
+===========================X===================================

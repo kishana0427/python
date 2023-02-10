@@ -1,0 +1,69 @@
+		==============================================
+			 No. of approaches to develop Python Program
+					    for Problem Solving
+		==============================================
+=>In Python Programming, we have two approches to Python program for solving any problem. They are 
+		a) Interactive Mode
+		b) Batch Mode
+--------------------------------
+a) Interactive Mode
+--------------------------------
+=>This mode of development, The programmer will issue one statement at a time and obtains result for that statement.
+=>This is most useful for testing one statement at a time. 
+=>This Mode of development is not recommened for Real Time application solving.
+=>Example:- Python Command prompt  (By default available when we install python)
+------------------
+Examples:
+------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("sum of {} and {}={}".format(a,b,c))
+	sum of 10 and 20=30
+---------------------------------------------------------------------------------------------------------------
+b) Batch Mode:
+--------------------------
+=>In This mode of development, as programmer, we develop / write group of statements for solving any problem and save the group of satetments in one file name with an extension .py (FileName.py--->source code)
+------------------
+Examples:-
+------------------
+#This Program computes sum of two numbers
+#sumop.py
+a=10
+b=20
+c=a+b
+print("===================")
+print("Result")
+print("===================")
+print("val of a={}".format(a))
+print("val of b={}".format(b))
+print("Sum={}".format(c))
+print("===================")
+----------------------------------------------------------------------------------------------------------------
+=>The Mode approach can be used by using the following
+		a)Python IDLE Shell (By default available when we install python)
+		b)Edit Plus 
+		c)Pycharm
+		d)Jupiter Note Book
+		e)Spider...etc
+------------------------------------------------------------------------------------------
+=>To Execute the Python Program expilicitly, we use a tool called "python" or "py" and it is presert in C:\Users\amj35\AppData\Local\Programs\Python\Python310
+------------------------------------------------------------------------------------------
+=>Syntax for executing python program with "python" tool
+------------------------------------------------------------------------------------------
+python   filename.py
+	(or)
+py   filename.py
+-----------------------
+Examples:
+-----------------------
+D:\Python\Class Notes\4.Batch Mode Prog>python mul.py
+Enter First Value:5
+Enter Second Value:5
+mul(5.0,5.0)=25.0
+			(OR)
+D:\Python\Class Notes\4.Batch Mode Prog>py mul.py
+Enter First Value:5
+Enter Second Value:5
+mul(5.0,5.0)=25.0
+==========================X====================================

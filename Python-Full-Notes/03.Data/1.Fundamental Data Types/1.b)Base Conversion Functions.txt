@@ -1,0 +1,111 @@
+		===============================================
+				Base Conversion Functions
+		===============================================
+=>The purpose of Base Conversion Functions is that "To Convert one Base Value to another base value". In otherwords, Base Conversion Functions are used for converting one number system value into another number system value.
+=>In Python Programming, we have 3  Base Conversion Functions. They are:-
+		a) bin()
+		b) oct()
+		c) hex()
+---------------------------------------------------------------------------------------------------------------------------
+a) bin():
+---------------
+=>This Function is used for converting Decimal /Octal / hexa decimal values into Binary value.
+=>Syntax:-
+		varname=bin(Decimal  / Octal / Hexa decimal Value) 
+---------------
+Example1:
+---------------
+>>> a=15
+>>> b=bin(a)
+>>> print(b,type(b))--------->0b1111 <class 'str'>
+>>> a=26
+>>> b=bin(a)
+>>> print(b,type(b))--------->0b11010 <class 'str'>
+---------------------------------------
+Example-2
+--------------------------------------
+>>> a=0o12
+>>> b=bin(a)
+>>> print(b,type(b))---------->0b1010 <class 'str'>
+>>> a=0o123
+>>> b=bin(a)
+>>> print(b,type(b))--------->0b1010011 <class 'str'>
+-------------------
+Example-3
+-------------------
+>>> a=0xA
+>>> b=bin(a)
+>>> print(b, type(b))----------->0b1010 <class 'str'>
+>>> a=0xAC
+>>> b=bin(a)
+>>> print(b, type(b))--------->0b10101100 <class 'str'>
+------------------------------------------------------------------------------------------------------------------------------
+b) oct():
+--------------------
+=>This Function is used for converting Decimal /Binary / hexa decimal values into Octal value.
+=>Syntax:-
+		varname=oct(Decimal  / Binary / Hexa decimal Value) 
+-----------------
+Example1:
+------------------
+>>> a=12
+>>> b=oct(a)
+>>> print(b, type(b))--------->0o14 <class 'str'>
+>>> a=83
+>>> b=oct(a)
+>>> print(b, type(b))----------->0o123 <class 'str'>
+------------------
+Example-2:
+------------------
+>>> a=0b1110
+>>> b=oct(a)
+>>> print(b , type(b))------->0o16 <class 'str'>
+>>> a=0b1011
+>>> b=oct(a)
+>>> print(b , type(b))-------->0o13 <class 'str'>
+--------------------
+Example-3:
+--------------------
+>>> a=0xC
+>>> b=oct(a)
+>>> print(b , type(b))---------->0o14 <class 'str'>
+>>> a=0xBEE
+>>> b=oct(a)
+>>> print(b , type(b))----------->0o5756 <class 'str'>
+-------------------------------------------------------------------------------------------------------------------------
+c) hex()
+----------------
+=>This Function is used for converting Decimal /Binary / Octal values into Hex decimal  value.
+=>Syntax:-
+		varname=hex(Decimal  / Binary / Octal Value) 
+-----------------
+Example-1:
+-----------------
+>>> a=172
+>>> b=hex(a)
+>>> print(b , type(b))---------->0xac <class 'str'>
+>>> a=3054
+>>> b=hex(a)
+>>> print(b , type(b))---------->0xbee <class 'str'>
+>>> a=64206
+>>> b=hex(a)
+>>> print(b , type(b))---------->0xface <class 'str'>
+-----------------
+Example-2
+-----------------
+>>> a=0b10101100
+>>> b=hex(a)
+>>> print(b , type(b))----------->0xac <class 'str'>
+>>> a=0b1111
+>>> b=hex(a)
+>>> print(b , type(b))--------->0xf <class 'str'>
+-----------------------
+Example-3
+----------------------
+>>> a=0o5756
+>>> b=hex(a)
+>>> print(b , type(b))-------->0xbee <class 'str'>
+>>> a=0o14
+>>> b=hex(a)
+>>> print(b , type(b))-------------0xc <class 'str'>
+============================X=============================

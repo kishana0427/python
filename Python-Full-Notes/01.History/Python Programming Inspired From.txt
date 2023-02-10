@@ -1,0 +1,8 @@
+------------------------------------------------------------
+Python Programming Inspired From:
+------------------------------------------------------------
+	1) Functional Programming  from  C
+	2) Object Oriented Programming from CPP
+	3) Scripting Programming from PERL
+	4) Modular Programming from MODULO3
+----------------------------------------------------------------

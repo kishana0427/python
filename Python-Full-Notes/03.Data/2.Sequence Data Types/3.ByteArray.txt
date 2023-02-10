@@ -1,0 +1,53 @@
+		===================================
+					3) ByteArray
+		===================================
+=>'bytearray' is one of the pre-defined class and treated as sequence data type.
+=>The purpose of bytearray data type is that "To store sequence of Possitive Numerical Integer values ranges (0,256)---allows us to store 0 to 256-1".
+=>To store data in the object of bytearray data type, we don't have symbolic notation but we can convert one type value into bytearray type value by using bytearray().
+=>on the object of bytearray , we can perform Both indexing and slicing Operations.
+=>An object of bytearray belongs to mutable bcoz 'bytearray' object does manipulations / updations.
+
+Note:- The Functionality of ByteArray is excatly similar to Bytes but an object of bytes belongs to immutable and bytearray belongs to mutable
+-------------------
+Examples:
+-------------------
+>>> l=[10,20,30,0,12,256]
+>>> print(l,type(l))----------->[10, 20, 30, 0, 12, 256] <class 'list'>
+>>> ba=bytearray(l)---->ValueError: byte must be in range (0, 256)
+>>> l=[10,-20,30,0,12,255]
+>>> print(l,type(l))----->[10, -20, 30, 0, 12, 255] <class 'list'>
+>>> ba=bytearray(l)------>ValueError: byte must be in range (0, 256)
+>>> l=[10,20,30,0,12,255]
+>>> ba=bytearray(l)
+>>> print(ba, type(ba))--->bytearray(b'\n\x14\x1e\x00\x0c\xff') <class 'bytearray'>
+>>> print(id(ba))---->2067004291824
+>>> for kvr in ba:
+...     print(kvr)
+			...
+			10
+			20
+			30
+			0
+			12
+			255
+>>> ba[1]=200   #updation part
+>>> for kvr in ba:
+...     print(kvr)
+				...
+				10
+				200
+				30
+				0
+				12
+				255
+>>> print(id(ba))---------->2067004291824
+>>> print(ba[0])--------->10
+>>> print(ba[4])---------->12
+>>> for hyd in ba[1:5]:
+...     print(hyd)
+				...
+				200
+				30
+				0
+				12
+================================X==============================

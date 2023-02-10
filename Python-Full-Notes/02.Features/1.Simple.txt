@@ -1,0 +1,20 @@
+		=====================================
+				1) Simple
+		=====================================
+=>Python is one of the simple Programming language bcoz of 3 Tech factors. They are
+a) Python Provides Rich set Of APIs. So that Python programmer can re-use pre-defined Functions for dealing with Industry Requriments without writing the Source by the Programmer
+----------------------------------------------------------------
+	Def. of API(Application Programming Interface):
+----------------------------------------------------------------
+	=>An API is a collection of Modules. 
+	=>A Module is a collection of Functions, Variables and Classes
+	Examples:-   random, math,cmath,calendar, numpy.....etc
+-----------------------------------------------------------------------------------------------------------------
+b) Python programming provides in-built facility called "Garbage Collector" and whose purpose is collecting un-used memory space and improves performnace of Python based applications.
+--------------------------------
+Def. of Garbage Collector:
+--------------------------------
+Garbage Coolector is one of in-bulit program in python Software, which is running behind of our regular program whose purpose is collecting un-used memory space and improves performnace of Python based applications.
+------------------------------------------------------------------------------------------------------------------
+c) Programming Provides User-Freindly Syntaxes. So that Python Programmer can develop error-free program in limited span of time.
+==============================X=================================

@@ -1,0 +1,45 @@
+	======================================================
+					 frozenset
+	======================================================
+=>'frozenset'  is a pre-defined class and treated as set data type
+=>The purpose of frozenset data type is that "To Store Multiple Values either of Same type or different type or both the types with Unique  Values".
+=>To represent the elements of frozenset, we don't have any symbolic Notation but we can convert any other type elements into frozenset by using frozenset().
+=>Syntax:-    
+	frozensetobj=frozenset(collection types / sequence type)
+=>We can create an empty frozenset by using frozenset()
+=>Syntax:-     
+	frozensetobj=frozenset()  # empty  frozen set
+=>A object of frozenset does not maintain insertion order bcoz PVM can display the elements of frozenset in any of its possibility among multiple Possibilites.
+=>An object of frozenSet never allows us perform Indexing and slicing Operations bcoz frozenset object does not maintain insertion order.
+=>An object of frozenset belongs to immutable in the case of item assignment and add().
+------------
+Note:-
+------------
+=>The functionality  of frozenset is similar to set but the set object belongs to mutable (in the case add() ) and immutable (in the case of item assigment) where an object frozenset belongs to immutable.
+----------------------
+Examples:
+----------------------
+>>> s1={10,20,30,40,10,20}
+>>> print(s1,type(s1))----------->{40, 10, 20, 30} <class 'set'>
+>>> fs=frozenset(s1)
+>>> print(fs,type(fs))--------->frozenset({40, 10, 20, 30}) <class 'frozenset'>
+>>> print(fs[0])-------->TypeError: 'frozenset' object is not subscriptable
+>>> fs[0]=200-------->TypeError: 'frozenset' object does not support item assignment
+>>> fs.add(100)----------->AttributeError: 'frozenset' object has no attribute 'add'
+>>> fs=frozenset()
+>>> print(fs,type(fs))----->frozenset() <class 'frozenset'>
+>>> len(fs)----------->0
+>>> lst=[10,"Rossum","Python",23.45]
+>>> fs=frozenset(lst)
+>>> print(fs)------->frozenset({'Rossum', 10, 23.45, 'Python'})
+--------------------------------------------------------------------------------------------------------------------Pre-defined Functions in Frozenset:
+-------------------------------------------------------------
+1) isdisjoint()
+2) issubset()
+3) issuperset()
+4) copy()
+5) union()
+6) intersection()
+7) difference()
+8) Symmetric_difference()
+=============================X==================================

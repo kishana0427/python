@@ -1,0 +1,78 @@
+		==============================================
+					3) bool()
+		==============================================
+=>bool() is used for converting Possible type of One value into bool type value.
+=>Syntax:-   
+		varname=bool(int / float / complex / str)
+=>ALL NON-ZERO VALUES ARE TRUE
+=>ALL ZERO VALUES ARE FALSE.
+--------------------------------------------------------------
+Examples1----int type into bool type--->Possible
+--------------------------------------------------------------
+>>> a=100
+>>> print(a, type(a))---------->100 <class 'int'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+>>> b=bool(-127)
+>>> print(b, type(b))---------->True <class 'bool'>
+>>> b=bool(0)
+>>> print(b, type(b))--------->False <class 'bool'>
+>>> b=bool(+0)
+>>> print(b, type(b))---------->False <class 'bool'>
+>>> b=bool(-0)
+>>> print(b, type(b))---------->False <class 'bool'>
+>>> print(bool(0b1010))---------->True
+>>> print(bool(0b000))---------->False
+-----------------------------------------------------------------
+Examples-2   float  type into Bool type--->Possible
+-----------------------------------------------------------------
+>>> a=2.3
+>>> print(a, type(a))------->2.3 <class 'float'>
+>>> b=bool(a)
+>>> print(b,type(b))------>True <class 'bool'>
+>>> print(bool(0.000000000000000000001))---->True
+>>> print(bool(0.00000000000000000000))------->False
+>>> print(bool(0e100))---------->False
+------------------------------------------------------------------
+Examples-3   complex type into Bool type ----->Possible
+------------------------------------------------------------------
+>>> a=2+3j
+>>> print(a, type(a))---------->(2+3j) <class 'complex'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+>>> a=0+0j
+>>> print(a, type(a))---------->0j <class 'complex'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->False <class 'bool'>
+---------------------------------------------------------------
+Examples-4  string type into bool type---->Possible
+---------------------------------------------------------------
+>>> a="Rossum"
+>>> print(a, type(a))---------->Rossum <class 'str'>
+>>> len(a)---------->6
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+>>> a="True"
+>>> print(a, type(a))---------->True <class 'str'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+>>> a="False"
+>>> print(a, type(a))---------->False <class 'str'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+---------------------------------------------------------------
+>>> a=""
+>>> print(a, type(a))--------> <class 'str'>
+>>> b=bool(a)
+>>> print(b, type(b))--------->False <class 'bool'>
+>>> len(a)------------------>0
+-------------------------------------------------------------
+>>> a=" "
+>>> print(a, type(a))----------> <class 'str'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+>>> a="0"
+>>> print(a, type(a))---------->0 <class 'str'>
+>>> b=bool(a)
+>>> print(b, type(b))---------->True <class 'bool'>
+==============================X================================

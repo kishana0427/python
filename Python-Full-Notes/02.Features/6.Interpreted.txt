@@ -1,0 +1,8 @@
+		==================================
+				6) Interpreted 
+		==================================
+=>When we execute any Python program(Ex:Sum.py), Two Internal Operations Takes Place. They are:
+	a) The Python Compiler Reads The source Code and Converted into Intermediate Code Called "Byte Code" Line by Line. (Compilation Phase)
+	b) The PVM reads the "Byte Code" and Converted Into Machine Understandable Code ( Binary Code ), which is Understandable By OS and Processor and Gives result. (Line By Line)
+=>Since The Python Compiler and PVM reads Line by Line and hence Python program is one of the Interpreted Programming  Language.
+============================X==================================

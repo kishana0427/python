@@ -1,0 +1,37 @@
+		==============================================
+					Data Types in Python
+		==============================================
+=>The purpose of Data Types is that "To allocate memory space for storing the input values"
+=>In  Python Programming, we have 14 Data Types. They are
+		----------------------------------------
+		I ) Fundamental data Types
+		----------------------------------------
+		    	 1) int
+			 2) float
+			 3) bool
+			 4) complex
+		---------------------------------------------
+		II) Sequential(Sequence) Data Types
+		---------------------------------------------
+			1) str
+			2) Bytes
+			3) ByteArray
+			4) range
+		------------------------------------------------------------
+		III) List data Types ( Collections Data Types)
+		------------------------------------------------------------
+			1) list
+			2) tuple
+		-------------------------------------------------------
+		IV) Set Data Types (  Collections Data Types)
+		-------------------------------------------------------
+			1) set
+			2) frozenset
+		--------------------------------------------------------
+		V) Dict Data Type (  Collections Data Types)				--------------------------------------------------------	
+			1) dict
+		------------------------------------
+		VI) None data type
+		-----------------------------------
+			1) none
+============================X===================================

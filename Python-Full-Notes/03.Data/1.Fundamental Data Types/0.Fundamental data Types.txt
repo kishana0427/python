@@ -1,0 +1,11 @@
+	=================================
+		I ) Fundamental data Types
+	=================================
+=>The purpose of Fundamental data Types is that "To Store Single value".
+=>In Python Programming, we have 4 data types.  They are
+		1) int
+		2) float
+		3) bool
+		4) complex
+----------------------------------------------------------------
+

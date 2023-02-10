@@ -1,0 +1,70 @@
+	===================================================
+				2) float()
+	===================================================
+=>float() is used for converting Possible type of One value into float type value.
+=>Syntax:-   
+		varname=float(int / bool / complex / str)
+----------------------------------------------------------
+Examples-1:  int type ----> float type--Possible
+----------------------------------------------------------
+>>> a=100
+>>> print(a, type(a))---------->100 <class 'int'>
+>>> b=float(a)
+>>> print(b,type(b))---------->100.0 <class 'float'>
+-----------------------------------------------------------
+Examples-2:  bool type ----> float type-->Possible
+-----------------------------------------------------------
+>>> a=True
+>>> print(a, type(a))---------->True <class 'bool'>
+>>> b=float(a)
+>>> print(b,type(b))---------->1.0 <class 'float'>
+>>> b=float(False)
+>>> print(b,type(b))---------->0.0 <class 'float'>
+----------------------------------------------------------------------
+Examples-3:  complex type ----> float type-->Not Possible
+----------------------------------------------------------------------
+>>> a=2+3j
+>>> print(a, type(a))---------->(2+3j) <class 'complex'>
+>>> b=float(a)------>TypeError: float() argument must be a string or a real number, not 'complex'
+--------------------------------------------------
+	complex value with attributes
+--------------------------------------------------
+>>> b=float(a.real)
+>>> print(b, type(b))-------->2.0 <class 'float'>
+>>> b=float(a.imag)
+>>> print(b, type(b))-------->3.0 <class 'float'>
+----------------------------------------------------------
+Examples-4:  (Str Type--Float)
+----------------------------------------------------------
+Case-1
+------------
+>>> a="100"  # int String into float---->Possible
+>>> print(a, type(a))-------->100 <class 'str'>
+>>> b=float(a)
+>>> print(b,type(b))------->100.0 <class 'float'>
+--------------------
+Case-2
+--------------------
+>>> a="100.24" # float string into float-->possible
+>>> print(a, type(a))---------->100.24 <class 'str'>
+>>> b=float(a)
+>>> print(b,type(b))--------->100.24 <class 'float'>
+-----------------
+Case-3
+-----------------
+>>> a="True" # Bool String into float--->Not possible
+>>> print(a, type(a))---------->True <class 'str'>
+>>> b=float(a)----->ValueError: could not convert string to float: 'True'
+------------
+Case-4:
+------------
+>>> a="2+3j" # complex string into float--->Not Possible
+>>> print(a, type(a))---------->2+3j <class 'str'>
+>>> b=float(a)---------->ValueError: could not convert string to float: '2+3j'
+------------
+Case-4:
+------------
+>>> a="python.java"   # pure String--float--not possible
+>>> print(a, type(a))---------->python.java <class 'str'>
+>>> b=float(a)-------->ValueError: could not convert string to float: 'python.java'
+==============================X================================

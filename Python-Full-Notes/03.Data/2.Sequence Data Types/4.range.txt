@@ -1,0 +1,243 @@
+		=======================================
+					4)range
+		=======================================
+=>'range' is a pre-defined class and treated as sequence data type.
+=>The purpose of range data type is that "To store range /sequence of values with equal Interval "
+=>On the object of range, we can perform Both indexing and Slicing operations
+=>An object of range is immutable bcoz we can't change of the value of range object
+----------------------------------------------------------------
+=>range data type contains the following syntaxes:
+----------------------------------------------------------------
+=>Syntax-1:
+-------------------
+			varname=range(value)
+=>This syntax create an object of range by starting with 0 to value-1
+--------------------
+Examples:
+--------------------
+>>> r=range(11)
+>>> print(r, type(r))--------->range(0, 11) <class 'range'>
+>>> for v in r:
+...     print(v)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+>>> for v in range(5):
+...     print(v)
+...
+0
+1
+2
+3
+4
+-------------------
+=>Syntax-2:
+-------------------
+			varname=range(begin,end)
+=>This syntax create an object of range by starting with begin to end-1
+
+=>With Syntax1 and Syntax2 allows us to create the objects of range in forward direction with default equal interval value 1.
+
+---------------
+Examples:
+-----------------
+>>> r=range(10,16)
+>>> print(r, type(r))-------->range(10, 16) <class 'range'>
+>>> for v in r:
+...     print(v)
+...
+10
+11
+12
+13
+14
+15
+>>> for v in range(100,111):
+...     print(v)
+...
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+-------------------
+=>Syntax-3:
+-------------------
+			varname=range(begin,end,step)
+
+=>This syntax create an object of range by starting with begin to end-1 by maintaining equal Interval value "step" (Example:-  10,12,14,16,18,20)
+--------------------
+Examples:
+--------------------
+>>> r=range(10,21,2)
+>>> print(r,type(r))-------->range(10, 21, 2) <class 'range'>
+>>> for v in r:
+...     print(v)
+...
+10
+12
+14
+16
+18
+20
+----------------------------------------------------------------
+Misc.  Examples:
+---------------------------
+Q1: Generate 0   1    2   3    4     5   6    7     8     9   10
+
+>>> for v in range(0,11):
+...     print(v)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+----------------------------------------------------------------
+Q2: Generate 10   15  20 25   30  35  40   45  50
+
+>>> for v in range(10,51,5):
+...     print(v)
+...
+10
+15
+20
+25
+30
+35
+40
+45
+50
+----------------------------------------------------------------
+Q3: Generate 100   120   140   160   180    200
+
+>>> for x in range(100,201,20):
+...     print(x)
+...
+100
+120
+140
+160
+180
+200
+----------------------------------------------------------------
+Q4: Generate 10   9    8   7    6    5    4    3   2   1
+
+>>> for x in range(10,0,-1):
+...     print(x)
+...
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+----------------------------------------------------------------
+Q5: Generate 100   80  60  40   20  0
+
+>>> for x in range(100,-1,-20):
+...     print(x)
+...
+100
+80
+60
+40
+20
+0
+----------------------------------------------------------------
+Q6: Generate -1  -2  -3  -4  -5  -6 -7 -8  -9  -10
+
+>>> for x in range(-1,-11, -1):
+...     print(x)
+...
+-1
+-2
+-3
+-4
+-5
+-6
+-7
+-8
+-9
+-10
+----------------------------------------------------------------
+Q7: Generate -5  -4   -3   -2  -1  0   1    2   3  4   5
+
+>>> for x in range(-5,6,1):
+...     print(x)
+...
+-5
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+5
+----------------------------------------------------------------
+Some More Examples:-
+----------------------------------------------------------------
+>>> for x in range(100,1,-10):
+...     print(x)
+...
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+>>> for x in range(10,-10,-2):
+...     print(x)
+...
+10
+8
+6
+4
+2
+0
+-2
+-4
+-6
+-8
+>>> r=range(10,21)
+>>> print(r[3])------------->13
+>>> print(range(1000,1050,2)[2])------>1004
+>>> for v in range(10,21)[1:4]:
+...     print(v)
+...
+11
+12
+13
+=================================X============================

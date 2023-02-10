@@ -1,0 +1,29 @@
+		=========================================
+					 set
+		=========================================
+=>'set'  is a pre-defined class and treated as set data type
+=>The purpose of set data type is that "To Store Multiple Values either of Same type or different type or both the types with Unique  Values".
+=>The elements of set must be organized within curly braces { } and elements must be separated by comma.
+=>Syntax:-    
+setobj={ set of elements separated by comma}	# non-empty set
+=>We can create an empty set and we can convert one type elements into set type by using set()
+=>Syntax:-      setobj=set()  # empty   set
+=>A object of set does not maintain insertion order bcoz PVM can display the elements of set in any of its possibility among multiple Possibilites.
+=>An object of Set never allows us perform Indexing and slicing Operations bcoz set object does not maintain insertion order.
+=>An object of set belongs to Both Mutable (in the case of add() ) and immutable in the case of item assignment("set object does not support item assignment").
+-------------------
+Examples:-
+-------------------
+>>> s1={10,20,40,12,34,-45}
+>>> print(s1,type(s1))------->{34, -45, 20, 40, 10, 12} <class 'set'>
+>>> s2={10,"Rossum",34.56,True,10}
+>>> print(s2,type(s2))------->{True, 10, 34.56, 'Rossum'} <class 'set'>
+>>> print(s2[0])---------->TypeError: 'set' object is not subscriptable
+>>> print(s2[1:4])-------->TypeError: 'set' object is not subscriptable
+>>> print(s2,type(s2))------->{True, 10, 34.56, 'Rossum'} <class 'set'>
+>>> s2[1]=100--------->TypeError: 'set' object does not support item assignment--immutable
+>>> print(s2,type(s2))------->{True, 10, 34.56, 'Rossum'} <class 'set'>
+>>> print(s2,type(s2),id(s2))------->{True, 10, 34.56, 'Rossum'} <class 'set'> 2290692812224
+>>> s2.add("KVR")   #mutable
+>>> print(s2,type(s2),id(s2))------>{True, 34.56, 10, 'Rossum','KVR'} <class 'set'> 290692812224
+=============================X==================================

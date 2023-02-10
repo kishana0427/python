@@ -1,0 +1,51 @@
+		==================================
+				Types of Copy Mechanisms
+		==================================
+=>In Python Programming, we have two types of Copy Mechanisms. They are
+		1) Deep Copy
+		2) Shallow Copy
+-------------------------
+1) Deep Copy:
+------------------------
+=> In Deep Copy
+a) Initial Content of objects are same
+b) Address of objects are same 
+c) Changes / Updation are reflected to each other (or) Changes / Updation dependent
+=>To Implement Deep Copy Process, we use assignment Operator ( = )
+=>Syntax:-       obj2=obj1   # Deep Copy
+-------------------
+Examples:
+-------------------
+>>> l1=[10,"RS"]
+>>> print(l1,id(l1))------->[10, 'RS'] 2476943752768
+>>> l2=l1 # Deep Copy
+>>> print(l2,id(l2))------->[10, 'RS'] 2476943752768
+>>> l1.append("Python")
+>>> print(l1,id(l1))------->[10, 'RS', 'Python'] 2476943752768
+>>> print(l2,id(l2))------->[10, 'RS', 'Python'] 2476943752768
+>>> l2.insert(2,"Django")
+>>> print(l1,id(l1))------->[10, 'RS', 'Django', 'Python'] 2476943752768
+>>> print(l2,id(l2))------->[10, 'RS', 'Django', 'Python'] 2476943752768
+-----------------------------------------------------------------------------------------------------------------
+2) Shallow Copy:
+------------------------
+=> In Shallow Copy
+a) Initial Content of objects are same
+b) Address of objects are diifferent
+c) Changes / Updation are not reflected to each other (or) Changes / Updation are Independent
+=>To Implement Shallow Copy Process, we use copy()
+=>Syntax:-       obj2=obj1.copy()   # Shallow  copy 
+-------------------
+Examples:
+-------------------
+>>> l1=[10,"RS"]
+>>> print(l1,id(l1))------->[10, 'RS'] 2476943748608
+>>> l2=l1.copy()
+>>> print(l2,id(l2))------->[10, 'RS'] 2476943737920
+>>> l1.append("Python")
+>>> print(l1,id(l1))------->[10, 'RS', 'Python'] 2476943748608
+>>> print(l2,id(l2))------->[10, 'RS'] 2476943737920
+>>> l2.append("DJango")
+>>> print(l1,id(l1))------->[10, 'RS', 'Python'] 2476943748608
+>>> print(l2,id(l2))------->[10, 'RS', 'DJango'] 2476943737920
+=========================X======================================

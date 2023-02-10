@@ -1,0 +1,13 @@
+	==========================================
+				7) High Level
+	==========================================
+=>We have types of Languages.
+	a) Low Level Programming Languages 
+	b) High Level Programming Languages
+=>In Python Programming Environment, even though we  store the data in lower level values But the result is always showing in the higher level values and hence python is one of the High Level Programming Language.
+---------------
+Examples:-
+---------------
+>>>a=0b1010
+>>>print(a)---------->10
+============================X==================================

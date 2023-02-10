@@ -1,0 +1,26 @@
+=======================
+	History of Python
+=======================
+=>Python Programming Lang conceived in the year 1980
+=>Python Programming Lang Implementation began in the year 1989
+=>Python Programming Lang  officially released in the year 1991
+=>Python Programming Lang developed by GUIDO VAN ROSSUM
+=>Python Programming Lang developed in Country Nether lands at CWI 
+=>ABC Programming is the predecesor of Python Programming Lang
+-------------------------------------------------------------------------------------------------------------------Versions of Python
+----------------------------
+=>We have two types of Python Versions. They are
+
+	1) Python 2.x , here  x  represents 1  2  3 4 5 6   7
+
+	2) Python 3.x ,here x represents 0 1 2 3 4 5 6 7 8 9 10 11
+
+=>Python 3.x does not contain backward compatability. 
+=>Now Industry is using Python 3.x 
+=>In otherwords Python3.x contains totally different features compared to Python 2.x
+=>Python Programming lang is maintained by a non-commercial organization called python Software Foundation (PSF) and whose official web site is www.python.org
+----------------------------------------------------------------
+DownLoading process of Python
+----------------------------------------------------------------
+www. python.org
+===========================X===================================

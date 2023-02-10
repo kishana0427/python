@@ -1,0 +1,242 @@
+		==========================================
+			       String Handling in python (Part-2)
+		==========================================
+=>On String data, we have performed alerady Indexing and slicing 
+=>Along with these operations, we can peform some other operation by using pre-defined functions which are present in str class.
+-----------------------
+1) capitalize():
+-----------------------
+=>This converts the first letter the sentense/ Paragraps as capital.
+=>Syntax:-     varname=strobj.capitalize()
+------------------
+Examples:
+------------------
+>>> s="python programming. pytohn is an Fun Programming"
+>>> s1=s.capitalize()
+>>> print(s1)---Python programming. pytohn is an fun programming
+>>> s.capitalize()---'Python programming. pytohn is an fun programming'
+>>> print(s)---python programming. pytohn is an Fun Programming
+-----------------------------------------------------------------------------------------------------------------
+2) title():
+---------------
+=>This function is used for converting First letter of every word of given string data.
+=>Syntax:-    varname=strobj.title()
+----------------------
+Examples:
+----------------------
+>>> s="python programming. python is an Fun Programming"
+>>> s1=s.title()
+>>> print(s1)--------Python Programming. Python Is An Fun Programming
+>>> print(s)---python programming. python is an Fun Programming
+--------------------------------------------------------------------------------------------------------------
+3) find():
+--------------------
+=>This function is used finding the index of First Occurence of specified word / letter.
+=>If the specified word is not present then we get ValueError 
+-------------------
+Syntax:-    Indexvalue=strobj.index(sub string)
+-------------------
+Example:
+-------------------
+>>> s="Python is an oop lang"
+>>> s.index('oop')--------13
+>>> s.index('o')-----4
+>>> s.index('lang')--------17
+>>> s.index('ang')-----18
+>>> s.index('kvr')--------ValueError: substring not found
+------------------------------------------------------------------------------------------------------------
+4) isalnum():
+------------------------
+=>This returns True provided str data is a combination of str or digits or both
+=>This returns False provided str data is a combination of str or digits with special symbols .
+Syntax:-     varname=strobj.isalnum()
+--------------------
+Examples:
+-------------------
+>>> s="a1234b"
+>>> b=s.isalnum()
+>>> print(b)---------True
+>>> s="Rossum"
+>>> b=s.isalnum()
+>>> print(b)----------True
+>>> s="12345"
+>>> b=s.isalnum()
+>>> print(b)------------True
+>>> s="a1234b#@"
+>>> b=s.isalnum()
+>>> print(b)---------False
+>>> s="Rossum!"
+>>> b=s.isalnum()
+>>> print(b)---------False
+-----------------------------------------------------------------------------------
+5) isalpha()
+-------------------
+=>This function returns True provided str data must contain purely alphabets.
+   otherwise we get False
+=>Syntax:-     varname=strobj.isalpha()
+-----------------------
+Examples:
+-----------------------
+>>> s="Rossum"
+>>> b=s.isalpha()
+>>> print(b)---------True
+>>> s="Rossum123"
+>>> b=s.isalpha()
+>>> print(b)------------False
+>>> s="1234"
+>>> b=s.isalpha()
+>>> print(b)-----------False
+>>> s=" Rossum "
+>>> b=s.isalpha()
+>>> print(b)----------False
+------------------------------------------------------------------------------
+6) isdigit():
+------------------
+=>This function returns True provided str data must contain purely digits. Otherwise we get False
+=>Syntax:-     varname=strobj.isdigit()
+--------------------
+Examples:
+--------------------
+>>> s="1223"
+>>> b=s.isdigit()
+>>> print(b)------------True
+>>> s="a1223b"
+>>> b=s.isdigit()
+>>> print(b)-------------False
+>>> s="1_2_2_3"
+>>> b=s.isdigit()
+>>> print(b)-------------False
+>>> s="python"
+>>> b=s.isdigit()
+>>> print(b)--------------False
+------------------------------------------------------------------------------------------------------
+7) isspace():
+----------------------
+=>This Function returns True provided str object must contains purely spaces otherwise we get False.
+---------------------
+Syntax:-     varname=strobj.isspace()
+---------------------
+Examples:
+--------------------
+>>> s=" Rossum "
+>>> b=s.isspace()
+>>> print(b)-----------False
+>>> s="      "
+>>> b=s.isspace()
+>>> print(b)-------------True
+>>> s="1234"
+>>> b=s.isspace()
+>>> print(b)--------------False
+------------------------------------------------------------------------------------------
+8) islower() -->Returns True provided str object data is purely lower case data							otherwise it returns False
+9) isupper() -->Returns True provided str object data is purely upper case data						otherwise it returns False
+-----------------
+Examples:
+-----------------
+>>> s="PYTHON"
+>>> b=s.islower()
+>>> print(b)--------False
+>>> s="Python"
+>>> b=s.islower()
+>>> print(b)-----------False
+>>> s="python"
+>>> b=s.islower()
+>>> print(b)------True
+>>> s="PYTHON"
+>>> b=s.isupper()
+>>> print(b)---------True
+>>> s="PYThon"
+>>> b=s.isupper()
+>>> print(b)----------False
+>>> s="1234"
+>>> b=s.isupper()
+>>> print(b)------------False
+>>> s="1234"
+>>> b=s.islower()
+>>> print(b)-----------False
+---------------------------------------------------------------------------------------------
+10) lower()-> This Function converts Upper Case data into lower case
+11) upper()->This Function converts lower Case data into upper case
+-----------------------------------------------
+Syntax:      strobj1=strobj1.lower()
+   		strobj1=strobj1.upper()	
+-------------------
+Examples:
+-------------------
+>>> s="PYTHON PROGRAMMING"
+>>> lc=s.lower()
+>>> print(lc)---------python programming
+>>> uc=lc.upper()
+>>> print(uc)----PYTHON PROGRAMMING
+>>> s1="PyThOn PROGlang"
+>>> uc=s1.upper()
+>>> lc=s1.lower()
+>>> print(uc)-----------PYTHON PROGLANG
+>>> print(lc)-----------python proglang
+--------------------------------------------------------------------------------------
+12) join():
+------------------------------------------------------------------
+=>This is used for concatenating different str values of any iterable objects / Collection types.
+Examples:
+------------------
+>>> l=["Python", " is ", " an ", " oop" " lang"]
+>>> print(l,type(l))---['Python', ' is ', ' an ', ' oop lang'] <class 'list'>
+>>> k=""
+>>> k1=k.join(l)
+>>> print(k1)-----Python is  an  oop lang
+>>> print(k)
+>>> l=["Python", " is ", " an ", 123, " lang"]
+>>> print(l,type(l))---------['Python', ' is ', ' an ', 123, ' lang'] <class 'list'>
+>>> k=""
+>>> k1=k.join(l)---TypeError: sequence item 3: expected str instance, int found
+>>> l=["Python", " is ", " an ", "123", " lang"]
+>>> k=""
+>>> k1=k.join(l)
+>>> print(k1)--------Python is  an 123 lang
+----------------------------------------------------------------------------------------------------------------
+13) split()
+-----------------
+=>This function is used for splitting the given str data into different Tokens based on delimeter. The default delimeter space.
+=>We can also specify the programmer-defined delemiter.
+Syntax:    listobj=strobj.split( str delimeter)
+--------------------
+Examples:
+--------------------
+>>> s="Python is an oop lang"
+>>> print(s)-------Python is an oop lang
+>>> l=s.split()  # default delimeter is space
+>>> print(l, type(l))----['Python', 'is', 'an', 'oop', 'lang'] <class 'list'>
+
+>>> s="11-12-2021"
+>>> print(s)---------->11-12-2021
+>>> lst=s.split("-")
+>>> print(lst)---------['11', '12', '2021']
+>>> s="Mango#apple#kiwi/waterMillon"
+>>> lst=s.split("#")
+>>> print(lst)---['Mango', 'apple', 'kiwi/waterMillon']
+>>> lst=s.split("/")
+>>> print(lst)----['Mango#apple#kiwi', 'waterMillon']
+----------------------------------------------------------------------------------
+Note:
+-----------
+>>> x=65
+>>> c=chr(x)
+>>> print(c)-----------A
+>>> x=97
+>>> c=chr(x)
+>>> print(c)---------a
+>>> x="A"
+>>> v=ord(x)
+>>> print(v)-----------65
+>>> x="a"
+>>> v=ord(x)
+>>> print(v)----------97
+>>> x="d"
+>>> v=ord(x)
+>>> print(v)------------100
+>>> x="AB"
+>>> print(x)--------AB
+>>> v=ord(x)---TypeError: ord() expected a character, but string of length 2 found
+>>> x="a-A"
+>>> v=ord(x)-------TypeError: ord() expected a character, but string of length 3 found
+=====================================X========================

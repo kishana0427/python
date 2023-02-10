@@ -1,0 +1,20 @@
+	===============================================
+		Data Representation in Python Programming
+	===============================================
+=>Data is nothing but The values required for Inputs.
+=>Data is also called "Literals".
+=>Basically we have 4 types of Literals. They are
+	a) Integer Literals.
+	b) Float Literals.
+	c) String Literals.
+	d) Boolean Literals.
+--------------------------------------------------------------------------------------------------------------------------------Importance of Variables / Identifers:
+----------------------------------------------------------------
+=>To store the Literals / Data in memory, memory space is allocated by using Data Types and data stored in memory space. To process the data, which is stored memory space, as a programmer we must give distinct names to crated memory space and they makes us to identify the value and They are called "Identifiers".
+=>The Identifier values can be varied during execution of the program and The Identifiers are also called "Variables".
+=>Hence all types of Input are store in main memory in the form variables. In python Programming all type variables are called "Objects".
+-----------------------
+Def. of Variable:
+-----------------------
+=>A Variable is an Identifer, whose Value is Changing during execution of the Program.
+=========================X=========================================

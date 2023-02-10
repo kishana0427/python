@@ -1,0 +1,249 @@
+		======================================
+			Pre-defined Functions in List
+		======================================
+=>In the object of list, we have the following pre-defined Functions.
+--------------------
+a) append():
+--------------------
+=>Syntax:-       listobj.append(value)
+=>This is function is used adding the element at the end of existing elements of list
+------------------
+Examples:
+------------------
+>>> lst=[10,"RS"]
+>>> print(lst,len(lst))---------->[10, 'RS']       2
+>>> lst.append("Hyd")
+>>> print(lst,len(lst))------------>[10, 'RS', 'Hyd']      3
+>>> lst.append(22.22)
+>>> print(lst,len(lst))--------->[10, 'RS', 'Hyd', 22.22]      4
+----------------------------------------------------------------b)insert():
+----------------
+=>Syntax:-   listobj.insert(index,value)
+=>This function is used for inserting a value at a specified Existing Valid Index  and it can be +Ve or -Ve
+-----------------
+Examples:
+-----------------
+>>> lst=[10, 'RS', 'Hyd', 22.22]
+>>> print(lst)--------->[10, 'RS', 'Hyd', 22.22]
+>>> lst.insert(2,"Python")
+>>> print(lst)--------->[10, 'RS', 'Python', 'Hyd', 22.22]
+>>> lst.insert(-2,3.10)
+>>> print(lst)--------->[10, 'RS', 'Python', 3.1, 'Hyd', 22.22]
+----------------------------------------------------------------c)copy():
+---------------
+=>This function is used for copying the content one list object into another list object.
+=>This function implements Shallow Copy
+=>Syntax:-    listobj2=listobj1.copy()
+----------------------------------
+Examples---shallow copy
+-----------------------------------
+>>> l1=[10,"RS"]
+>>> print(l1,id(l1))----------[10, 'RS'] 2476943748608
+>>> l2=l1.copy()   # Shallow Copy
+>>> print(l2,id(l2))----------[10, 'RS'] 2476943737920
+>>> l1.append("Python")
+>>> print(l1,id(l1))--------[10, 'RS', 'Python'] 2476943748608
+>>> print(l2,id(l2))-----------[10, 'RS'] 2476943737920
+>>> l2.append("DJango")
+>>> print(l1,id(l1))-------[10, 'RS', 'Python'] 2476943748608
+>>> print(l2,id(l2))-----[10, 'RS', 'DJango'] 2476943737920
+--------------------------------------------------------
+Examples--Deep Copy
+--------------------------------------------------------
+>>> l1=[10,"RS"]
+>>> print(l1,id(l1))------------->[10, 'RS'] 2476943752768
+>>> l2=l1 # Deep Copy
+>>> print(l2,id(l2))--------------->[10, 'RS'] 2476943752768
+>>> l1.append("Python")
+>>> print(l1,id(l1))--------->[10, 'RS', 'Python'] 2476943752768
+>>> print(l2,id(l2))--------->[10, 'RS', 'Python'] 2476943752768
+>>> l2.insert(2,"Django")
+>>> print(l1,id(l1))---------->[10, 'RS', 'Django', 'Python'] 							2476943752768
+>>> print(l2,id(l2))--------->[10, 'RS', 'Django', 'Python'] 							2476943752768
+----------------------------------------------------------------d) remove()--->This function based on content
+--------------------------------------------------
+=>This Function is used for removing First Occurenrce of an element of List object.
+=>If the element is not found in list object then we get ValueError: list.remove(x): x not in list
+=>Syntax:-     listobj.remove(element)
+-----------------
+Examples:
+-----------------
+>>> l1=[10,20,30,40,20,10,45]
+>>> print(l1)------------>[10, 20, 30, 40, 20, 10, 45]
+>>> l1.remove(10)
+>>> print(l1)-------->[20, 30, 40, 20, 10, 45]
+>>> l1.remove(10)
+>>> print(l1)---------->[20, 30, 40, 20, 45]
+>>> l1.remove(100)---->ValueError: list.remove(x): x not in list
+----------------------------------------------------------------e) pop(index)---This function based on Index
+-------------------------------------------------
+=>This function is used for remving the element of list object based on Valid Existing Index.
+=>If the index does not exists then we get IndexError 
+=>Syntax:-    listobj.pop(Index)
+-------------------
+Examples:
+------------------
+>>> l1=[10,20,30,40,20,10,45]
+>>> print(l1)--------->[10, 20, 30, 40, 20, 10, 45]
+>>> l1.pop(-1)--------->45
+>>> l1=[10,20,30,40,20,10,45]
+>>> print(l1)--------->[10, 20, 30, 40, 20, 10, 45]
+>>> l1.pop(-2)--------->10
+>>> print(l1)--------->[10, 20, 30, 40, 20, 45]
+>>> l1.pop(3)--------->40
+>>> print(l1)--------->[10, 20, 30, 20, 45]
+>>> l1.pop(10)------->IndexError: pop index out of range
+----------------------------------------------------------------f) pop():
+------------
+=>This function is used for removing last element of list object.
+=>Syntax:    listobj.pop()
+-------------------
+Examples:
+-------------------
+>>> l1=[10,"RS","Python",23.45,True,2+3j]
+>>> print(l1)--------->[10, 'RS', 'Python', 23.45, True, (2+3j)]
+>>> l1.pop()--------->(2+3j)
+>>> print(l1)--------->[10, 'RS', 'Python', 23.45, True]
+>>> l1.pop()--------->True
+>>> print(l1)--------->[10, 'RS', 'Python', 23.45]
+>>> l1.pop()--------->23.45
+>>> print(l1)--------->[10, 'RS', 'Python']
+>>> l1.insert(2,"Java")
+>>> print(l1)--------->[10, 'RS', 'Java', 'Python']
+>>> l1.pop()--------->'Python'
+>>> print(l1)--------->[10, 'RS', 'Java']
+>>> l1.append("Django")
+>>> print(l1)--------->[10, 'RS', 'Java', 'Django']
+>>> l1.pop()--------->'Django'
+>>> print(len(l1)-1)------------>2
+>>> print(l1)---------------->[10, 'RS', 'Java']
+----------------------------------------------------------------
+Special case:
+---------------
+>>> list().pop()--------->IndexError: pop from empty list
+----------------------------------------------------------------g)clear():
+--------------
+=>This function is used for removing / clearing all the elements of list object.
+=>Syntax:-    listobject.clear()
+Examnples:
+---------------------
+>>> l1=[10,"RS","Python",23.45,True,2+3j]
+>>> print(l1)--------->[10, 'RS', 'Python', 23.45, True, (2+3j)]
+>>> len(l1)--------->6
+>>> l1.clear()
+>>> print(l1)--------->[]
+>>> len(l1)--------->0
+----------------------------------------------------------------NOTE:-  del() is used for deleting the element based on Index , range of values based on Slicing and it can also delete object.
+-------------------
+Examples:
+-------------------
+>>> l1=[10,"RS","Python",23.45,True,2+3j]
+>>> print(l1)--------->[10, 'RS', 'Python', 23.45, True, (2+3j)]
+>>> del(l1[1])
+>>> print(l1)--------->[10, 'Python', 23.45, True, (2+3j)]
+>>> del (l1[1:4])
+>>> print(l1)--------->[10, (2+3j)]
+>>> del(l1)
+>>> print(l1)----------->NameError: name 'l1' is not defined. 
+----------------------------------------------------------------h) index():
+-----------------------
+=>Syntax:-		listobj.index(element)
+=>This function is used for finding index of First Occurence of Specified Element .
+=>If the element is not Found in list object then we get ValueError.
+----------------------
+Examples:
+----------------------
+>>> l1=[10,20,30,40,10,20,40,55]
+>>> print(l1)--------->[10, 20, 30, 40, 10, 20, 40, 55]
+>>> l1.index(10)--------->0
+>>> l1.index(55)--------->7
+>>> l1.index(555)-------->ValueError: 555 is not in list
+----------------------------------------------------------------i)count():
+--------------
+=>This function is used for finding number of occurences of specifed element.
+=>Syntax:-       listobj.count(element)
+-----------------
+Examples:
+------------------
+>>> l1=[10,20,30,40,10,20,40,55]
+>>> l1.count(10)----------->2
+>>> l1.count(20)---------->2
+>>> l1.count(40)---------->2
+>>> l1.count(41)---------->0
+>>> l1.count(55)---------->1
+------------------------------------
+>>> l1=["ram","trump","ram","ram","biden"]
+>>> l1.count("trump")--------->1
+>>> l1.count("ram")--------->3
+>>> l1.count("Ram")--------->0
+>>> l1.count("Ram".lower())--------->3
+----------------------------------------------------------------j) reverse()
+----------------------------------------------------------------=>This function  is used for obtaining reverse order of orginal elements of List object [ Front to back--Original Order and Back to Front is called Reverse Order]
+=>Syntax:-   	listobj.reverse()
+			print(listobject)
+-----------------
+Examples:
+-----------------
+>>> l1=["ram","trump","ram","ram","biden"]
+>>> l1.reverse()
+>>> print(l1)--------->['biden', 'ram', 'ram', 'trump', 'ram']
+>>> l1=[10,20,30,40,10,20,40,55]
+>>> l1.reverse()
+>>> print(l1)--------->[55, 40, 20, 10, 40, 30, 20, 10]
+>>> l1=[10,20,30,40,10,20,40,55]
+>>> print(l1[::-1])--------->[55, 40, 20, 10, 40, 30, 20, 10]
+----------------------------------------------------------------k) sort():
+----------------
+=>This Function used for sorting Homogeneous elements of list both in ASC order and DESC order depends on value of reverse.
+=>Syntax:-
+		listobj.sort(reverse=False/True)
+=>Here default value of reverse is False and Gives elements in AScending Order
+=>If Reverse is True then Given the elements in decending Order
+--------------------
+Examples:
+--------------------
+>>> l1=[10,2,-12,34,5,-3,22,12,45,3,-4]
+>>> print(l1)------->[10, 2, -12, 34, 5, -3, 22, 12, 45, 3, -4]
+>>> l1.sort()
+>>> print(l1)-------->[-12, -4, -3, 2, 3, 5, 10, 12, 22, 34, 45]
+>>> l1.reverse()
+>>> print(l1)------->[45, 34, 22, 12, 10, 5, 3, 2, -3, -4, -12]
+>>> l1=[10,2,-12,34,5,-3,22,12,45,3,-4]
+>>> print(l1)------->[10, 2, -12, 34, 5, -3, 22, 12, 45, 3, -4]
+>>> l1.sort(reverse=True)
+>>> print(l1)------->[45, 34, 22, 12, 10, 5, 3, 2, -3, -4, -12]
+>>> l1=[10,2,-12,34,5,-3,22,12,45,3,-4]
+>>> print(l1)------->[10, 2, -12, 34, 5, -3, 22, 12, 45, 3, -4]
+>>> l1.sort(reverse=False)
+>>> print(l1)------->[-12, -4, -3, 2, 3, 5, 10, 12, 22, 34, 45]
+>>> l1=[10,2,-12,34,5,-3,22,12,45,3,-4]
+>>> print(l1)------->[10, 2, -12, 34, 5, -3, 22, 12, 45, 3, -4]
+>>> l1.sort()
+>>> print(l1)------->[-12, -4, -3, 2, 3, 5, 10, 12, 22, 34, 45]
+---------------------------------------------------------------->>> l1=[10,"RS",2.3,True]
+>>> l1.sort()------>TypeError: '<' not supported between 					     instances of 'str' and 'int'
+----------------------------------------------------------------
+l) extend():
+ ------------------
+ =>This function is used for adding the content of one list object to another list object .
+ =>Syntax:-    listobj1.extend(listobj2)
+----------------------
+Examples:
+------------------
+>>> l1=[10,"Abhi"]
+>>> l2=["Python","Java","Django"]
+>>> l1.extend(l2)
+>>> print(l1)---------->[10, 'Abhi', 'Python', 'Java', 'Django']
+-------------------
+Examples:
+-------------------
+>>> l2=["Python","Java","Django"]
+>>> l3=["Oracle","MySql"]
+>>> l1.extend(l2,l3)----->TypeError: list.extend() takes exactly 						one argument (2 given)
+>>> l1=[10,"Abhi"]
+>>> l2=["Python","Java","Django"]
+>>> l3=["Oracle","MySql"]
+>>> l1=l1+l2+l3   # used + operator for additional Functionality 					of extend()
+>>> print(l1)--->[10, 'Abhi', 'Python', 'Java', 'Django', 					'Oracle', 'MySql']
+==========================X=================================
+

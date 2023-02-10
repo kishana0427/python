@@ -1,0 +1,103 @@
+		============================================
+				list 
+		=============================================
+Index:
+----------
+=>Purpose of list
+=>Syntax for creating list objects
+=>Types of Lists
+=>Operations on Lists
+=>Pre-defined Functions in List
+=>Inner List / nested list
+=>Operations on Inner List / nested list
+=>Pre-defined Functions in Inner List
+------------------------------------------------------------------------------------------------------------------
+Properties of List
+--------------------------------
+=>'list' is one of the pre-defined class and treated as list data type.
+=>The purpose of list data type is that "To Store Multiple Values either of Same type or different type or both the types with Unique and Duplicate Values".
+=>To organize the elements of list data type, we must use square brackets [ ]. In otherwords, the elements of list must be enlcosed within square brackets [ ] and separated by comma.
+=>Syntax:-     
+listobj=[ list of values separated by comma]  # non-empty list
+-----------------
+Examples:
+-----------------
+>>> lst1=[10,20,-30,40,10]
+>>> print(lst1, type(lst1))--------->[10, 20, -30, 40, 10] <class 'list'>
+>>> lst2=[10,"KVR","OUCET",94.25,"Hyd",True]
+>>> print(lst2, type(lst2))--------->[10, 'KVR', 'OUCET', 94.25,'Hyd', True] <class 'list'>
+----------------------------------------------------------------------------------------------------------
+=>We can create an empty list with following syntax:
+		listobj= [ ]        #empty list
+		     (or)
+		 listobj=list()     # empty list
+-----------------
+Examples:
+-----------------
+>>> lst3=[]
+>>> print(lst3,type(lst3), len(lst3))------->[] <class 'list'> 0
+>>> lst4=list()
+>>> print(lst4,type(lst4), len(lst4))------>[] <class 'list'> 0
+----------------------------------------------------------------------------------------
+=>An object of list maintains Insertion Order (In whichever order, we insert the data in list object, in the same order, data will be displayed)
+=>On the object of list, we can perform Both Indexing and Slicing Operations.
+-----------------
+Examples:
+-----------------
+>>> lst2=[10,"KVR","OUCET",94.25,"Hyd",True]
+>>> print(lst2[1])---------->KVR
+>>> print(lst2[-5])---------->KVR
+>>> print(lst2[0:4])----------->[10, 'KVR', 'OUCET', 94.25]
+>>> print(lst2[0:4])--------->[10, 'KVR', 'OUCET', 94.25]
+>>> print(lst2[2:])-------->['OUCET', 94.25, 'Hyd', True]
+>>> print(lst2[:5])-------->[10, 'KVR', 'OUCET', 94.25, 'Hyd']
+>>> print(lst2[:])----->[10, 'KVR', 'OUCET', 94.25, 'Hyd', True]
+>>> print(lst2[::])---->[10, 'KVR', 'OUCET', 94.25, 'Hyd', True]
+>>> print(lst2[::-1])-->[True, 'Hyd', 94.25, 'OUCET', 'KVR', 10]
+>>> print(lst2[::-2])---------->[True, 94.25, 'KVR']
+-----------------------------------------------------------------------------------------
+=>An object of list belongs to mutable
+----------------
+Examples:
+----------------
+>>> lst=[]
+>>> print(lst, id(lst))--------->[] 2605411172160
+>>> lst.append(10)
+>>> print(lst, id(lst))------------>[10] 2605411172160
+>>> lst.append("RS")
+>>> lst.append("PYTHON")
+>>> print(lst, id(lst))------------>[10, 'RS', 'PYTHON'] 									2605411172160
+-----------------------------------------------------------------------------------------
+=>We can convert any type value into list type by using list()
+-----------------
+Examples:
+-----------------
+>> lst=[10,20,30,40,50]
+>>> print(lst,type(lst))---->[10, 20, 30, 40, 50] <class 'list'>
+>>> b=bytes(lst)
+>>> print(b,type(b))--------->b'\n\x14\x1e(2' <class 'bytes'>
+>>> for v in b:
+...     print(v)
+...
+10
+20
+30
+40
+50
+>>> l1=list(b)  # converts byte data type into list type.
+>>> print(l1,type(l1))------>[10, 20, 30, 40, 50] <class 'list'>
+-------------------------------------------------------
+Special Case:
+--------------------------------------------------------
+>>> a=100
+>>> l=list(a)----------->TypeError: 'int' object is not iterable
+>>> l=list(a,)-------->TypeError: 'int' object is not iterable
+>>> l=[a]  # valid---converting Fundamental values List type
+>>> print(l,type(l))-------->[100] <class 'list'>
+>>> l1=list([a])------>converting Fundamental values List type
+>>> print(l1,type(l1))-------->[100] <class 'list'>
+>>> b=2.3
+>>> l3=list(b)-------->TypeError: 'float' object is not iterable
+>>> l3=list([b])--->converting Fundamental values List type
+>>> print(l3,type(l3))-------->[2.3] <class 'list'>
+========================X====================================

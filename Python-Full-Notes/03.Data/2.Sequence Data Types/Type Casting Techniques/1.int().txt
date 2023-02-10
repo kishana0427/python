@@ -1,0 +1,71 @@
+	===================================================
+				1) int()
+	===================================================
+=>int() is used for converting Possible type of One value into int type value.
+=>Syntax:-   
+		varname=int(float / bool / complex / str)
+-------------------------------------------------------------
+Examples:--(float value into  int value==>Possible)
+-------------------------------------------------------------
+>>> a=10.23
+>>> print(a,type(a))------------>10.23 <class 'float'>
+>>> b=int(a)
+>>> print(b, type(b))---------->10 <class 'int'>
+>>> b=int(100.2345)-
+>>> print(b, type(b))---------->100 <class 'int'>
+-----------------------------------------------------------------------------------
+Examples:--(bool value into  int value===>Possible)
+-----------------------------------------------------------------------------------
+>>> a=True
+>>> print(a,type(a))------------>True <class 'bool'>
+>>> b=int(a)
+>>> print(b, type(b))---------->1 <class 'int'>
+>>> b=int(False)
+>>> print(b, type(b))------------>0 <class 'int'>
+-----------------------------------------------------------------------------------
+Examples:--(complex value into  int value===>Not Possible )
+-----------------------------------------------------------------------------------
+>>> a=2+3.5j
+>>> print(a,type(a))----------->(2+3.5j) <class 'complex'>
+>>> b=int(a)---Invalid----->TypeError
+---------------------------------------------
+	complex value with attributes
+---------------------------------------------
+>>> b=int(a.real)
+>>> print(b,type(b))------------>2 <class 'int'>
+>>> b=int(a.imag)
+>>> print(b,type(b))----------->3 <class 'int'>
+----------------------------------------------------------------
+Examples:--(Strs value into  int value)
+----------------------------------------------------------------
+Case-1
+------------
+>>> a="100"  # int string into int --->Possible
+>>> print(a, type(a))--------->100 <class 'str'>
+>>> b=int(a)
+>>> print(b,type(b))--------->100 <class 'int'>
+-------------
+Case-2
+-------------
+>>> a="100.25"  # float string into int -->Not Possible
+>>> print(a, type(a))---------->100.25 <class 'str'>
+>>> b=int(a)---->ValueError: invalid literal for int() with base 10: '100.25'
+---------------
+Case-3 :
+---------------
+>>> a="True"  # bool string into int-->Not Possible
+>>> print(a, type(a))------------>True <class 'str'>
+>>> b=int(a)----->ValueError: invalid literal for int() with base 10: 'True'
+------------------
+Case-4 :
+------------------
+>> a="2+3j"  # complex string into int-->Not Possible
+>>> print(a, type(a))-------->2+3j <class 'str'>
+>>> b=int(a)--->ValueError: invalid literal for int() with base 10: '2+3j'
+-------------
+Case-5 :
+-------------
+>>> a="Rossum"  # Pure String into int-->Not Possible
+>>> print(a, type(a))---------->Rossum <class 'str'>
+>>> b=int(a)------->ValueError: invalid literal for int() with base 10: 'Rossum'
+=============================X=================================

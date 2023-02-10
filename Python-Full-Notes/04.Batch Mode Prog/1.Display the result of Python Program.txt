@@ -1,0 +1,101 @@
+	===============================================
+			Display the result of Python Program
+	===============================================
+=>To display the result of python program, we use a pre-defined function called print().
+--------------------------------------------
+=>Syntax1:-  Displays only Value
+-------------------------------------------
+		print(val1,val2....val-n)      (or)  print(val1)
+			   (or)
+		print(var1,var2,...var-n)    (or)   print(var1)
+------------------
+Examples:
+------------------
+>>> a=10
+>>> b=20
+>>> c=30
+>>> print(a,b,c)------------>10 20 30
+>>> print(a)------->10
+>>> print(b)-------->20
+>>> print(c)--------->30
+---------------------------------------------
+Syntax2:-  Displays only Messages
+--------------------------------------------
+		print(message)
+=>When we display any message(String data), it must be enclosed within single and double Quotes (or) Tripple single or double Quotes.
+--------------
+Examples:-
+--------------
+>>> s1="python"
+>>> s2="prog"
+>>> s3="lang"
+>>> print(s1,s2,s3)---------->python prog lang
+>>> print("python",'prog',"""lang""")--------->python prog lang
+>>> print(s1+s2+s3)--------->pythonproglang
+>>> print(s1+" "+s2+" "+s3)------>python prog lang
+-------------------------------------------------------------------------------------
+Syntax3:-  Displays  Messages cum values  OR Values cum messages
+-------------------------------------------------------------------------------------
+		print(Message cum value)
+			(or)
+		print(Message cum value with format() )
+--------------------------------------------------
+Examples:	#print(Message cum value)
+-------------------------------------------------
+>>> a=100
+>>> print("val of a=",a)------------->val of a= 100
+>>> print(a,"is the val of a")---------->100 is the val of a
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("sum=",c)------------>sum= 30
+>>> print(c,"is the sum")-------->30 is the sum
+>>> print("sum of ",a," and ",b,"=",c)--->sum of 10 and  20 = 30
+>>> print("sum(",a,",",b,")=",c)---------->sum( 10 , 20 )= 30
+----------------------------------------------------------------
+Examples:	#print(Message cum value with format())
+----------------------------------------------------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print("sum of {} and {}={}".format(a,b,c))---->sum of 10 and 20=30
+>>> print("sum({},{})={}".format(a,b,c))---------->sum(10,20)=30
+>>> a=10
+>>> b=20
+>>> c=30
+>>> d=a+b+c
+>>> print("sum of {},{} and {}={}".format(a,b,c,d))---->sum of 10,20 and 30=60
+>>> print("sum={}".format(d))-------->sum=60
+>>> print("{} is the sum".format(d))------>60 is the sum
+-------------------------------------------------------------------------------------------------------
+Syntax-4:- Displays  Messages cum values  OR Values cum messages
+				with format specifiers.
+------------------------------------------------------------------------------------------------------
+Examples:
+---------------------
+>>> a=10
+>>> b=20
+>>> c=30
+>>> d=a+b+c
+>>> print("val of a=",a)--------->val of a= 10
+>>> print("Val of a={}".format(a))------->Val of a=10
+>>> print("Val of a=%d" %a)----------->Val of a=10
+>>> print("%d is the val of a" %a)------>10 is the val of a
+>>> print("%f is the val of a" %a)---->10.000000 is the val of a
+>>> print("%0.2f is the val of a" %a)----->10.00 is the val of a
+>>> print("sum of %d , %d and %d=%f" %(a,b,c,d))--->sum of 10 , 20 and 30=60.000000
+>>> print("sum of %f , %f and %f=%f" %(a,b,c,d))
+	sum of 10.000000 ,20.000000 and 30.000000=60.000000
+>>> print("sum of %0.2f , %0.2f and %0.2f=%0.3f" %(a,b,c,d))
+	sum of 10.00 ,20.00 and 30.00=60.000
+>>> print("sum(%d,%d,%d)=%d" %(a,b,c,d))------->sum(10,20,30)=60
+--------------------------------------------------------------------------------------------------------------
+>>> stno=10
+>>> name="Rossum"
+>>> qly="B.Tech(CSE)"
+>>> print("My Number is %d and name is %s and My Qualification is %s" %(stno,name,qly))
+------------
+Output:
+------------
+My Number is 10 and name is Rossum and My Qualification is B.Tech(CSE)
+===========================X=================================

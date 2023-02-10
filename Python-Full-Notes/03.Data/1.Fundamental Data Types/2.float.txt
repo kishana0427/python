@@ -1,0 +1,27 @@
+		============================================
+				 2) float
+		============================================
+=>'float' is one of pre-defined class and treated as Fundamental data type.
+=>The purpose of float data type to is that to store Floating Point Values / Real Contant Values .
+Example:-  3.14  , 5.15...etc
+In 3.14 , here 3 i called Integer part and .14 is called decmial Part.
+=>float data type never supports Number System values to store.
+=>This data type can also be used for storing Scientific Notation(Mantisa e exponent)
+=>Scientific Notation(Mantisa e exponent) can be converted into Normal Float Value  as    mantisa x 10 ^ exponent
+-----------------------
+Examples:
+-----------------------
+>>> a=10.2
+>>> print(a,type(a))---------------->10.2 <class 'float'>
+>>> a=0.99
+>>> print(a,type(a))--------------->0.99 <class 'float'>
+>>> a=0b1111.0b1010------->SyntaxError: invalid decimal literal
+>>> a=0b1111.12-------->SyntaxError: invalid decimal literal
+-------------------
+Examples:
+-------------------
+>>> a=123e-4
+>>> print(a,type(a))------------->0.0123 <class 'float'>
+>>> a=10e-2
+>>> print(a,type(a))------------->0.1 <class 'float'>
+================================X==============================

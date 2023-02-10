@@ -1,0 +1,54 @@
+		============================================
+					4) complex
+		============================================
+=>'complex' is one of pre-defined Data type and treated as Fundamental data type.
+=>The purpose of complex data type is that to store Complex data.
+=>The general format of Complex Numbers is shown Below
+		a+bj   and    a-bj    
+		here 'a' is called Real Part
+		and 'b' is called Imaginary Part
+		and 'j' represents     sqrt(-1)
+=>here both Real and Imaginary parts are belongs to both int and float
+=>Here by default Real and Imaginary Parts are internally treated as float type.
+=>To extarct / retrieve the Real part of Complex object, we use a pre-defined Attribute / Variable / property called "real"
+=>To extarct / retrieve the Imaginary part of Complex object, we use a pre-defined Attribute / Variable / property called "imag"
+=>Syntax:-   
+	complexobj.real----->gives real part of complex object
+	complexobj.imag----->gives imaginary part of complex object		
+-------------------
+Examples:
+-------------------
+>>> a=2+3j
+>>> print(a, type(a))--------------->(2+3j) <class 'complex'>
+>>> b=2-10j
+>>> print(b, type(b))------------>(2-10j) <class 'complex'>
+>>> c=2.3+3.4j
+>>> print(c, type(c))------------->(2.3+3.4j) <class 'complex'>
+>>> d=2+3.7j
+>>> print(d, type(d))----------->(2+3.7j) <class 'complex'>
+-------------------
+Examples:
+-------------------
+>>> a=10j
+>>> print(a, type(a))------------>10j <class 'complex'>
+>>> a=-10j
+>>> print(a, type(a))------------->(-0-10j) <class 'complex'>
+>>> a=0+0j
+>>> print(a, type(a))-------->0j <class 'complex'>
+>>> a=0-0j
+>>> print(a, type(a))------------>0j <class 'complex'>
+>>> a=-0j
+>>> print(a, type(a))------------>(-0-0j) <class 'complex'>
+------------------
+Examples:
+------------------
+>>> a=2+3j
+>>> print(a, type(a))--------->(2+3j) <class 'complex'>
+>>> print(a.real)----------->2.0
+>>> print(a.imag)---------->3.0
+>>> a=-10-2.3j
+>>> print(a.real)------------> -10.0
+>>> print(a.imag)-----------> -2.3
+>>> print((10+2j).real)---------->10.0
+>>> print((10+2j).imag)-------->2.0
+==============================X=================================

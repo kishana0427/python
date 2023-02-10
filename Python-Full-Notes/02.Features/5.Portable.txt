@@ -1,0 +1,8 @@
+		=======================================
+					5) Portable 
+		=======================================
+=>The Portable Applications / Projects are those which are running on all OSes and Processor without considering their Vendors.
+
+=>Example:-	 C,Cpp...etc are comes under Non-Portable
+=>Example:-      Python Java------- are comes under Portable
+============================X==================================

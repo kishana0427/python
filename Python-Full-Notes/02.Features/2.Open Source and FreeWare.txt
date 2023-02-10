@@ -1,0 +1,19 @@
+		==============================================
+				2) Open Source and FreeWare
+		==============================================
+-----------------
+FreeWare:
+----------------
+=>Since Python software is Freely Downlodable from www.python.org then hence python software is FreeWare.
+-----------------------
+Open Source:
+------------------------
+=>Open Source Software is nothing Coustomizing the The original Software by Many Product / Project Based Companies for In-House Tools development.
+=>The standard Python Developed by Rossum and maintained By PSF is "CPYTHON". Later days, many compnaies came forward and customized "CPYTHON" and relesed to industry on different Names and They are called "Distribution of Python"
+	a)JYTHON (OR) JPYTHON----->To run  Java Based Application
+	b) Iron Python ---------------->To run C#.Net Based Applications
+	c) Micro Python---------------->To develop Micro Controllers Applications
+	d) Anaconda Python---------->To develop and run Hadoop / Big data	Application 
+	e) Stackless Python----------->Concurrency Applications.	
+	f) PYPY-------------------------->JIT Compiler .....etc
+============================X==================================

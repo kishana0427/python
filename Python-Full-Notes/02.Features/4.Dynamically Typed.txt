@@ -1,0 +1,23 @@
+		===============================================
+					Dynamically Typed 
+		===============================================
+=>In this context, we have two types of Programming languages. They are
+		a) Static Typed Programming Lang
+		b) Dynamic Typed Programming Lang
+=>In  Static Typed Programming Lang, It is mandatory to specify the the Data type for the value we are storing.
+Examples:-    java.C,CPP,.Net...etc
+			  int a;
+			  a=10-----valid
+			  b=20----Invalid
+=>In Dynamic Typed Programming Lang, It is optional to specify the data type of the value which are storing and whose data type specified by Python Environment automtically depends on type of value we are storing.
+Examples:   PYTHON
+--------------------------------------
+Python Statements
+--------------------------------------
+>>> a=10
+>>> print(a, type(a))------------->10 <class 'int'>
+>>> a=12.34
+>>> print(a, type(a))----------->12.34 <class 'float'>
+>>> a=True
+>>> print(a, type(a))----------->True <class 'bool'>
+============================X==================================

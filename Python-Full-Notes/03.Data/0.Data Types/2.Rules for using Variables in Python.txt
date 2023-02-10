@@ -1,0 +1,41 @@
+	================================================
+		Rules for using Variables in Python
+	================================================
+1) The Variable name is a comibination of Alphabets , Digits and Special Symbol( _ )
+2) The First letter of the Variable Must starts with Either with an Alphabet (or) Underscore ( _ )
+	Examples:-
+			12abc-----Invalid
+			_abc-------valid
+			$abc------Invalid
+			#abc-----valid--but it is a comment
+			___=10
+
+3) Within Variable Name, Special Symbols are not allowed except Under Score
+	Examples:-	
+			tot  sal=2.3---invalid
+			tot-sal=3.5--invalid
+			tot_sal=3.4--valid
+			tot_sal_=4.5---valid
+			tot4sal=4.5----valid
+					
+
+4) No key words to be used as Variable Names bcoz all key words are the reserved words and they have some special meaning the compilers and PVM
+	Examples:		
+			while=20---invalid
+			else=40---invalid
+			_while=20--valid
+			_else=34.5--valid
+			  int=23---valid
+
+5) All the variables in python are CASE SENSITIVE
+	Examples:
+			>>> AGE=14
+			>>> age=15
+			>>> Age=16
+			>>> aGE=17
+			>>> print(AGE,age,Age,aGE)---->14 15 16 17
+6)It is always recommended to take short User-Freindly Varaible Names
+	Examples:
+			tot_sal_emp=3.4    ---valid
+			tot_marks=34.56--valid
+==========================X====================================

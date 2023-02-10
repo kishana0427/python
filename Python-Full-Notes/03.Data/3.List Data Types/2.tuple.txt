@@ -1,0 +1,96 @@
+		================================================
+				2) tuple
+		================================================
+=>'tuple' is one of the pre-defined class and treated as list data type.
+=>The purpose of tuple data type is that "To Store Multiple Values either of Same type or different type or both the types with Unique and Duplicate Values".
+=>To organize the elements of tuple data type, we must use braces () . In otherwords, the elements of tuple must be enlcosed within braces ( ) and separated by comma.
+=>Syntax:-     
+tupleobj=(list of values separated by comma)   # non-empty tuple
+-----------------
+Examples:
+-----------------
+>>> t=(10,20,30,40)
+>>> print(t,type(t))----------->(10, 20, 30, 40) <class 'tuple'>
+>>> t1=(10,"anbhav",23.45,True)
+>>> print(t1,type(t1))---------->(10, 'anbhav', 23.45, True) 							  <class 'tuple'>
+>>> len(t)------->4
+>>> len(t1)------>4
+-------------------------------------------------------------------------------------------------------------------=>We can create an empty tuple with following syntax:
+		 tplobj= ()         #empty tuple
+		     (or)
+		 tplobj=tuple()     # empty tuple
+--------------------
+Examples:
+--------------------
+>>> t2=()   # empty tuple
+>>> t3=tuple()   # empty tuple
+>>> print(t2, type(t2))------------->() <class 'tuple'>
+>>> print(t3, type(t3))-------->() <class 'tuple'>
+>>> len(t2)-------->0
+>>> len(t3)------>0
+-------------------------------------------------------------------------------------------------------------------=>An object of tuple maintains Insertion Order (In whichever order, we insert the data in list object, in the same order, data will be displayed)
+=>On the object of tuple, we can perform Both Indexing and Slicing Operations.
+-----------------
+Examples:
+------------------
+>>> t1=(10,"anbhav",23.45,True)
+>>> print(t1)----------->(10, 'anbhav', 23.45, True)
+>>> print(t1[3])--------->True
+>>> print(t1[1:4])----------->('anbhav', 23.45, True)
+--------------------------------------------------------------------------------------------------------------------
+=>An object of tuple belongs to immutable.
+>>> t1=(10,"anbhav",23.45,True)
+>>> t1[0]=100------->TypeError: 'tuple' object does not support item assignment
+--------------------------------------------------------------------------------------------------------------------
+=>We can convert one type of value in to tuple type of value by using tuple()
+----------------
+Examples:
+----------------
+>>> t1=(10,20,30,40)
+>>> print(t1,type(t1))--------->(10, 20, 30, 40) <class 'tuple'>
+>>> t1[0]=100--------->TypeError: 'tuple' object does not support item assignment
+>>> l2=list(t1)
+>>> print(l2)--------->[10, 20, 30, 40]
+>>> l2[0]=100  # updating
+>>> print(l2)---------->[100, 20, 30, 40]
+>>> t1=tuple(l2) # converting list type value into tuple type.
+>>> print(t1)---------->(100, 20, 30, 40)
+>>> t1[0]=200--------TypeError: 'tuple' object does not support item assignment
+------------------------------------------------------------------------------------------------------------
+Note:-
+------------
+=>The Functionality of tuple is exactly similar to list but an object list belongs to mutable and an object tuple is immutable.
+----------------------------------------------------------------
+Functions present  in Tuple:
+----------------------------------------------------------------
+1) count()
+2) index()
+----------------------------------------------
+Functions not present  in Tuple:
+----------------------------------------------
+append()   insert()    copy()   remove()  pop(index)  pop()  
+clear()   sort()     reverse()      extend()
+-------------------------------------------------------------
+Inner tuple  / inner list in tuple
+------------------------------------------------------------
+>>> t1=(10,"kvr",("python","Django"),("Java","Adv Java"),"NIT")
+>>> print(t1)---------------->(10, 'kvr', ('python', 'Django'), ('Java', 'Adv Java'), 'NIT')
+>>> print(t1[2])------->('python', 'Django')
+>>> print(t1[-2])---------->('Java', 'Adv Java')
+>>> t1=(10,"kvr",("python","Django"),["Java","Adv Java"])
+>>> print(t1)----->(10, 'kvr', ('python', 'Django'), ['Java','Adv Java'])
+>>> print(t1[-1])---------->['Java', 'Adv Java']
+>>> print(type(t1[-1]))-------------> <class 'list'>
+>>> print(t1[-1].pop(-1) )---------->Adv Java
+>>> print(t1)----->(10, 'kvr', ('python', 'Django'), ['Java'])
+>>> print(type(t1[-2]))--------------> <class 'tuple'>
+>>> print(t1[-2].pop(-1) )-------->AttributeError: 'tuple' object has no attribute 'pop'
+>>> print(t1[-2].index("Django"))-------->1
+----------------------------------------------------------------------------------------------------------------
+Special Case:
+---------------------
+>>> s=10,"KVR","HYD",34.44,True,123
+>>> print(s,type(s))------------>(10, 'KVR', 'HYD', 34.44, True, 123) <class 'tuple'>
+>>> s=(10,"KVR"),["HYD",34.44],(True,123)
+>>> print(s)------>((10, 'KVR'), ['HYD', 34.44], (True, 123))
+========================X=======================================

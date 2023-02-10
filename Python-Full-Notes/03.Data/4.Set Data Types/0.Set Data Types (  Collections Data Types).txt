@@ -1,0 +1,8 @@
+		=============================================
+				IV) Set Data Types (  Collections Data Types)
+		=============================================
+=>The purpose of set data types is that "To Store Multiple Values either of Same type or different type or both the types with Unique  Values".
+=>We have two data types in set types. They are
+		a) set
+		b) frozenset
+=============================X==================================

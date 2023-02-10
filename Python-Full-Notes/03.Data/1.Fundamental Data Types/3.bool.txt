@@ -1,0 +1,29 @@
+		=============================================
+					3) bool
+		=============================================
+=>'bool' is one of the pre-defined data type and treated as fundamental data type.
+=>The purpose of bool data type is that To store True and False Values.
+=>Internally the Value of True is 1 and False is 0.
+------------------
+Examples:
+------------------
+>>> a=True
+>>> b=False
+>>> print(a, type(a))--------->True <class 'bool'>
+>>> print(b, type(b))----------->False <class 'bool'>
+-----------------------------------
+Special Examples:
+-----------------------------------
+>>> a=True
+>>> b=False
+>>> print(a, type(a))--------->True <class 'bool'>
+>>> print(b, type(b))--------->False <class 'bool'>
+>>> print(True+True)------->2
+>>> print(True+False+2)--------->3
+>>> print(True>False)------->True
+>>> print(True*0b1010)--------->10
+>>> print(False*0b1010+0xBEE)--------->3054
+>>> print(True+4*2*False==True)--------->True
+>>> print(True/True)-------1.0
+>>> print(True/False)------->ZeroDivisionError: division by zero
+============================X===================================

@@ -1,0 +1,63 @@
+		=====================================
+					4) complex()
+		=====================================
+=>complex() is used for converting Possible type of One value into complex type value.
+=>Syntax:-   
+		varname=complex(int / float / bool / str)
+-------------------------------------------------------------
+Examples---int type into complex type--->Possible
+-------------------------------------------------------------
+>>> a=10
+>>> print(a,type(a))---------->10 <class 'int'>
+>>> b=complex(a)
+>>> print(b, type(b))---------->(10+0j) <class 'complex'>
+---------------------------------------------------------------
+Examples:  float type into complex type --->Possible
+---------------------------------------------------------------
+>>> a=12.3
+>>> print(a,type(a))---------->12.3 <class 'float'>
+>>> b=complex(a)
+>>> print(b, type(b))---------->(12.3+0j) <class 'complex'>
+------------------------------------------------------------------
+Examples: -- bool type into complex type --->Possible
+------------------------------------------------------------------
+>>> a=True
+>>> print(a,type(a))---------->True <class 'bool'>
+>>> b=complex(a)
+>>> print(b, type(b))---------->(1+0j) <class 'complex'>
+---------------------------------------------------------------------
+Examples:
+---------------
+Case-1:
+---------------
+>>> a="12"   # int string into complex -->possible
+>>> print(a,type(a))---------->12 <class 'str'>
+>>> b=complex(a)
+>>> print(b, type(b))---------->(12+0j) <class 'complex'>
+---------------
+Case-2:
+---------------
+>>> a="12.34"  float string into complex-->Possible
+>>> print(a,type(a))---------->12.34 <class 'str'>
+>>> b=complex(a)
+>>> print(b, type(b))---------->(12.34+0j) <class 'complex'>
+---------------
+Case-3:
+---------------
+>>> a="True" #  bool string into complex-->Not Possible
+>>> print(a,type(a))---------->True <class 'str'>
+>>> b=complex(a)------->ValueError: complex() arg is a malformed string
+---------------
+Case-4:
+---------------
+>>> a="2+3.4j"  # complex string into complex-->Possible
+>>> print(a,type(a))---------->2+3.4j <class 'str'>
+>>> b=complex(a)
+>>> print(b, type(b))---------->(2+3.4j) <class 'complex'>
+---------------
+Case-5:
+---------------
+>>> a="Rossum"  # pure string into complex-->Not Possible
+>>> print(a,type(a))---------->Rossum <class 'str'>
+>>> b=complex(a)------>ValueError: complex() arg is a malformed string
+==============================X================================

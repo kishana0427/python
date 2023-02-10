@@ -1,0 +1,7 @@
+	============================================
+			9) Extensible         10) Embedded
+	============================================
+=>Non-Python Programming languages can call the code of Python language and hence Python Programming is one of the "Extensible Programming Lang"
+
+=>Python Programs can also call non-python Programming Code ( C-Code) in the case of Internal execution and Python is one of the "Emmbedded Programming lang".
+============================X==================================	

@@ -1,0 +1,102 @@
+	===============================
+			1) int:-
+	===============================
+=>'int' is one of the pre-defined class and treated as Fundamental data type.
+=>The purpose of 'int' data type is to store Integer data (or) whole numbers (or) Intergral values [Numbers without decimal values.
+----------------
+Examples:
+---------------
+Python Instructions:                Outputs
+-------------------------------------------------------------------
+>>> a=123
+>>> print(a)------------------------------->123
+>>> print(type(a))----------------------> <class 'int'>
+>>> a=899
+>>> print(a,type(a))---------------> 899 <class 'int'>
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(a,b,c)--------------------> 10 20 30
+-------------------------------------------------------------------------------------------------
+=>With 'int' data type we can store ALL TYPES OF NUMBER SYSTEM VALUES".
+=>In general, we have 4 types of Number Systems. They are
+		a) Deciaml Number System
+		b) Binary Number System
+		c) Octal Number System
+		d) Hexa Decimal Number System
+--------------------------------------------
+a) Deciaml Number System
+--------------------------------------------
+=>It is one of the deafult Number System
+=>Digits In Decimal Numbers are :-     0 1  2 3  4 5 6 7 8 9-----> total  digits 10
+=>The Base of Decimal Number System is   10
+----------------------------------------------------------------
+b) Binary Number System
+----------------------------------------------------------------
+=>The Digits in Binary Number System are:- 0 , 1 --->total digits--->(2)
+=>The Base of Binary Number System is  2.
+=>In Python Programming, to store Binary data, The binary data must be preceded with either 0b (OR) 0B and Syntax is given below.
+		Varname=0b Binary value
+				(or)
+		Varname=0B Binary value
+=>All types Number Systems values are internally converted into Deciaml Number System value and it is treated as <class, 'int'> type.
+---------------------
+Examples:-
+---------------------
+>>> a=0b1000
+>>> print(a, type(a))---------------------->8 <class 'int'>
+>>> b=0B1111
+>>> print(b, type(b))-------------------->15 <class 'int'>
+>>> a=0B1010
+>>> print(a,type(a))--------------------->10 <class 'int'>
+>>> a=0B101012------------>SyntaxError: invalid digit '2' in binary literal
+----------------------------------------------------------------
+c) Octal Number System
+----------------------------------------------------------------
+=>The Digits in Octal Number System are:-  0,1,2,3,4,5,6,7----> total digits---->(8)
+=>The Base of Octal Number System is  8
+=>In Python Programming, to store Octal data, The Octal data must be preceded with either 0o (OR) 0O and Syntax is given below.
+		Varname=0o Octal value
+				(or)
+		Varname=0O Octal value
+
+-------------------
+Examples:
+-------------------
+>>> a=0o14
+>>> print(a,type(a))-----------------12 <class 'int'>
+>>> a=0O23
+>>> print(a,type(a))---------------19 <class 'int'>
+>>> a=0O123
+>>> print(a,type(a))----------------83 <class 'int'>
+>>> x=0O2478---->SyntaxError: invalid digit '8' in octal literal
+>>> a=0o1010
+>>> print(a,type(a))---------------->520 <class 'int'>
+----------------------------------------------------------------
+d) Hexa  Decimal Number System
+----------------------------------------------------------------
+=>The Digits in Hexa  Decimal  Number System are:- 0,1,2,3,4,5,6,7,8,9,A(10),B(11),C(12),D(13),E(14),F(15) ---> Total digits--16				
+=>The Base of Hexa  Decimal  Number System is  16
+=>In Python Programming, to store Hexa  Decimal  data, The Hexa  Decimal  data must be preceded with either 0x (OR) 0X and Syntax is given below.
+		Varname=0x Hexa  Decimal  value
+				(or)
+		Varname=0X Hexa  Decimal  value
+------------------------
+Examples:
+------------------------
+>>> a=0xAC
+>>> print(a,type(a))--------->172 <class 'int'>
+>>> a=0XAc
+>>> print(a,type(a))-------->172 <class 'int'>
+>>> a=0Xac
+>>> print(a,type(a))------->172 <class 'int'>
+>>> a=0x10A
+>>> print(a,type(a))--------->266 <class 'int'>
+>>> a=0xBEE
+>>> print(a,type(a))--------->3054 <class 'int'>
+>>> a=0xBEER----------->SyntaxError: invalid hexadecimal literal
+>>> x=0xACE
+>>> print(x,type(x))--------->2766 <class 'int'>
+>>> x=0xFace
+>>> print(x,type(x))------------>64206 <class 'int'>
+===========================X====================================

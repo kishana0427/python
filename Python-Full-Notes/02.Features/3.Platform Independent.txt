@@ -1,0 +1,13 @@
+		========================================
+				3) Platform Independent 
+		========================================
+=>A lang / tech is said to be Platform Indepenent  iff whose applications runs on Every OS
+=>The property of Platform Independent  in Python is that "ALL VALUES IN PYTHON ARE STORED IN THE FORM OF OBJECTS"
+=>In Python all objects contains un-limited amount of data and hence python object are independent to all OSes
+-------------------
+Examples:
+-------------------
+C,CPP-----Platform dependent 
+Java-------Platform Independent  (data types contains same memory space with limited memory space and object contains many values with Limited)
+Python---Platform Independent bcoz whose object content is un-limited amount of data
+========================X=================================

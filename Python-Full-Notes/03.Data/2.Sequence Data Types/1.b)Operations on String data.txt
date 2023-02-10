@@ -1,0 +1,145 @@
+		=======================================
+			Operations on String data
+		=======================================
+=>In the String Data, we can Perform two types of Operations. They are
+		a) Indexing
+		b) Slicing
+----------------------------------------------------------------------------------------------------
+a) Indexing:
+-----------------------             
+=>The Process of obtaining a single value from existing strobj  by passing valid existing Index is called Indexing.
+--------------
+Syntax:-
+-------------
+		strobj [ Index ]
+=>here strobj is an object of <class, 'str'>
+=>here  index can be either +ve  or  -ve
+=>If index is valid existing index then we get value .
+=>If index is Invalid then we IndexError
+------------------
+Examples:
+------------------
+>>> s="PYTHON"
+>>> print(s[0])------------------>P
+>>> print(s[-6])----------------->P
+>>> print(s[5])----------------->N
+>>> print(s[-1])---------------->N
+>>> print(s[-10])-------->IndexError: string index out of range
+-------------------------------------------------------------------------------------------------------
+b) Slicing:
+-----------------
+=>The process of obtaining range of characters from given str object is called Slicing.
+-------------
+Syntax1:-       strobj [ BeginIndex : EndIndex ]
+-------------
+=>This Syntax gives range of chars from Begin index to End index-1 provided BeginIndex<EndIndex otherwise we never get any output.
+----------------
+Examples:
+----------------
+>>> s="PYTHON"
+>>> print(s)----------->PYTHON
+>>> s[0:4]----------->'PYTH'
+>>> s[4:0]---------->''
+>>> s[3:6]---------->'HON'
+>>> s[-5:-3]--------->'YT'
+>>> s[-6:-1]--------->'PYTHO'
+>>> s[0:5]---------->'PYTHO'
+----------------------------------------------------------
+Syntax2:-   strobj [   BeginIndex :  ] 
+------------------------------------------------------------
+=>In this Syntax we don't have end index.
+=>If we did't specify end index then PVM takes end index value as len(strobj)-1. Hence beginIndex<len(strobj)-1
+------------------
+Examples:
+------------------
+>>> s="PYTHON"
+>>> len(s)----------->6
+>>> s[2:]------------>'THON'
+>>> s[0:]------------>'PYTHON'
+>>> s[-6:]----------->'PYTHON'
+>>> s[-3:]----------->'HON'
+-----------------------------------------------------------
+Syntax3:-   strobj [   :EndIndex] 
+------------------------------------------------------------
+=>In this Syntax we don't have Begin index.
+=>If we did't specify Begin index then PVM takes Begin index value as lIntial Index . Hence begin(Intial)Index<EndIndex-1
+------------------
+Examples:
+------------------
+>>> s="PYTHON"
+>>> print(s)-------------->PYTHON
+>>> s[:4]-------------->'PYTH'
+>>> s[:6]------------>'PYTHON'
+>>> s[:-3]---------->'PYT'
+>>> s[:-5]---------->'P'
+------------------------------------------------------------
+Syntax4:-   strobj [   :   ] 
+------------------------------------------------------------
+=>In this Syntax does not contain Both Begin Index and End Index.
+=>In This Syntax PVM Takes Begin Index as lIntial Index and EndIndex as   len(strobj)-1.
+--------------
+Example:
+-------------
+>>> s="PYTHON"
+>>> print(s)-------------PYTHON
+>>> s[:]----------------'PYTHON'
+>>> s1="Python is an Functional and Oop Lang"
+>>> print(s1)--------Python is an Functional and Oop Lang
+>>> print(s1[:])-----------Python is an Functional and Oop Lang
+-------------------------------------------------------------------------------------------------
+Syntax-5:
+----------------
+			strobj [ BeginIndex : EndIndex : Step]
+----------------
+Rule-1:- Here all BeginIndex, EndIndex and Step Values can be +ve and -ve
+
+Rule-2:- If the Value of Step is +VE then PVM Gives Range of Characters from BeginIndex to EndIndex-1 in forward Direction provided BeginIndex<EndIndex  otherwise we never get any output.
+
+Rule-3:- If the Value of Step is -VE then PVM Gives Range of Characters from BeginIndex to EndIndex+1 in backward Direction provided BeginIndex>EndIndex  otherwise we never get any output.
+
+Rule-4:- In Forward Direction, If the EndIndex Value is 0 then we never get any output
+
+Rule-5:- In Backward Direction, If the EndIndex Value is -1 then we never get any output
+----------------------------------------------------------------
+>>> s="PYTHON"
+>>> s[0:6:2]-------> 'PTO'
+>>> s[2:6:3]-------> 'TN'
+>>> s[0:5:1]-------> 'PYTHO'
+>>> s[0:5]-------> 'PYTHO'
+>>> s[::3]-------> 'PH'
+>>> s[::]-------> 'PYTHON'
+----------------------------------------------------------------
+>>> s="PYTHON"
+>>> print(s)------->PYTHON
+>>> s[-6:-1:2]------->'PTO'
+>>> s[::2]------->'PTO'
+>>> s[::3]------->'PH'
+>>> s[-6::2]------->'PTO'
+>>> s[-6:-3:2]------->'PT'
+----------------------------------------------------------------
+>>> s="PYTHON"
+>>> print(s)------->PYTHON
+>>> s[0:5:-1]------->''
+>>> s[5:0:-1]------->'NOHTY'
+>>> s[0:3:-1]------->''
+>>> s[3:0:-1]------->'HTY'
+>>> s[-6:-3:-1]------->''
+>>> s[-3:-6:-1]------->'HTY'
+>>> s[-1:-6:-3]------->'NT'
+>>> s[::-2]------->'NHY'
+>>> s[0::-2]------->'P'
+>>> s[0::2]------->'PTO'
+>>> s[0::-2]------->'P'
+>>> s[::-1]------->'NOHTYP'
+>>> s1="LIRIL"
+>>> s1[::]==s1[::-1]------->True
+>>> s="KVR"
+>>> s[::]==s[::-1]------->False
+>>> s1="MALAYALAM"
+>>> s1[::]==s1[::-1]------->True
+>>> s1="MADAM"
+>>> s1[::]==s1[::-1]------->True
+>>> s1="MADam"
+>>> s1[::]==s1[::-1]------->False
+>>> s1[::].lower()==s1[::-1].lower()------->True
+==============================X================================

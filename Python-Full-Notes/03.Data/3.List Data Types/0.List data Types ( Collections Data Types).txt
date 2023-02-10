@@ -1,0 +1,8 @@
+	=====================================================
+			III) List data Types ( Collections Data Types)
+	=====================================================
+=>The purpose of list data types is that "To Store Multiple Values either of Same type or different type or both the types with Unique and Duplicate Values".
+=>We have  two types of List data types . They are
+			1) list  (mutable)
+			2) tuple (immutable)
+=========================X======================================

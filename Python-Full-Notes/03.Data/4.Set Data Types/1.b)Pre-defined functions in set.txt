@@ -1,0 +1,254 @@
+		==============================================
+				Pre-defined functions in set
+		==============================================
+=>set object contains the following functions and they are used for performing various operations.
+--------------
+1) add():
+--------------
+=>Syntax:-    setobj.add(element)
+=>This function is used for adding an element to set object. 
+--------------------
+Examples:
+--------------------
+>>> s2={10,"Rossum",34.56,True,10}
+>>> s2.add(12.34)
+>>> print(s2)------->{True, 34.56, 10, 12.34, 'Rossum'}
+>>> s2.add("Python")
+>>> print(s2)---->{True, 34.56, 'Python', 10, 12.34, 'Rossum'}
+-----------------------------------------------------------------------------------------------------------------
+2)clear():
+-----------------
+=>Syntax:-     setobj.clear()
+=>This function is used for removing all the elements of set object
+-------------------
+Examples:
+-------------------
+>>> s2={10,"Rossum",34.56,True,10}
+>>> print(s2,id(s2))-->{True, 10, 34.56, 'Rossum'} 2290692811776
+>>> len(s2)------->4
+>>> s2.clear()
+>>> print(s2,id(s2))------->set() 2290692811776
+>>> len(s2)------->0
+---------------------------------------------------------------------------------------------------------
+3) copy():
+----------------------
+=>This function is used for copying the content of one setobject to another set object ( shallow copy)
+=>Syntax:- setobj2=setobj1.copy()
+--------------------------
+Examples:
+--------------------------
+>>> s2={10,"Rossum",34.56,True,10}
+>>> s3=s2.copy()
+>>> print(s2,id(s2))-->{True, 10, 34.56, 'Rossum'} 2290692811552
+>>> print(s3,id(s3))-->{True, 10, 34.56, 'Rossum'} 2290692810432
+>>> s2.add("python")
+>>> s3.add("java")
+>>> print(s2,id(s2))------>{True, 34.56, 10, 'Rossum', 'python'} 2290692811552
+>>> print(s3,id(s3))------->{True, 34.56, 10, 'Rossum', 'java'} 2290692810432
+>>> s2={10,"Rossum",34.56,True,10}
+>>> print(s2,id(s2))-->{True, 10, 34.56, 'Rossum'} 2290692812672
+>>> s3=s2[::]------>TypeError: 'set' object is not subscriptable
+------------------------------------------------------------------------------------------------------------
+4) dicard()
+-------------------
+=>Syntax:   setobj.discard(element)
+=>This function is used for removing the specified element.
+-------------------
+5) remove():
+-------------------
+=>Syntax:   setobj.remove(element)
+=>This function is used for removing the specified element.
+=>If the element does not exists remove() gives KeyError
+------------------------------------------------------------
+Examples: (discard() & remove())
+------------------------------------------------------------
+>>> s2={10,"Rossum",34.56,True,10}
+>>> print(s2,id(s2))------->{True, 10, 34.56, 'Rossum'} 2290692811552
+>>> s2.discard(34.56)
+>>> print(s2,id(s2))------->{True, 10, 'Rossum'} 2290692811552
+>>> s2.discard(34.56)
+>>> print(s2,id(s2))------->{True, 10, 'Rossum'} 2290692811552
+>>> s2.remove(34.56)------->KeyError: 34.56
+>>> s2.remove(10)
+>>>print(s2,id(s2))------->{True,  'Rossum'} 2290692811552
+>>> s2.remove(10)--------->KeyError: 10
+----------------------------------------------------------------------------------------------------
+6)  pop()
+-----------------
+=>This function is used for removing an arbitrary element from setobject
+=>Syntax:---  setobj.pop()
+----------------------
+=>Examples:
+----------------------
+>>> s2={10,"Rossum",34.56,True,10,34,56.78,False,2+3j}
+>>> s2.pop()------->False
+>>> print(s2,id(s2))------>{True, 34.56, 34, 10, (2+3j),'Rossum', 56.78} 2290692811776
+>>> s2.pop()------->True
+>>> print(s2,id(s2))------->{34.56, 34, 10, (2+3j), 'Rossum',56.78} 2290692811776
+>>> s2.pop()------->34.56
+>>> print(s2,id(s2))------->{34, 10, (2+3j), 'Rossum', 56.78} 2290692811776
+>>> s2.pop()------->34
+>>> print(s2,id(s2))------->{10, (2+3j), 'Rossum', 56.78} 2290692811776
+>>> s2.pop()------->10
+>>> print(s2,id(s2))------>{(2+3j), 'Rossum', 56.78} 2290692811776
+>>> s2.pop()------->(2+3j)
+>>> print(s2,id(s2))------->{'Rossum', 56.78} 2290692811776
+>>> s2.pop()------->'Rossum'
+>>> print(s2,id(s2))------->{56.78} 2290692811776
+>>> s2.pop()------->56.78
+>>> print(s2,id(s2))--------->set()     2290692811776
+>>> s2.pop()----------->KeyError: 'pop from an empty set'
+------------------------------------------------------------------------------------------------------
+7) isdisjoint():
+---------------------
+=>This function return True provided set objects are disjoint(no common elements) otherwise it returns False
+=>Syntax:-    setobj1.isdisjoint(setobj2)
+---------------------
+Examples:
+---------------------
+>>> s1={10,20,30,40}
+>>> s2={40,15,25,35}
+>>> s3={8,16,24,5}
+>>> s1.isdisjoint(s2)------->False
+>>> s1.isdisjoint(s3)------->True
+>>> s2.isdisjoint(s3)------->True
+>>> s2.isdisjoint(s2)------->False
+>>> s2.isdisjoint(set())------->True
+>>> set().isdisjoint(set())------->True
+---------------------------------------------------------------------------------------
+8) issubset()
+------------------
+=>Syntax:-     setobj1.issubset(setobj2)
+=>This function returns True provided all the elements of setobj1 present in setobj2. othetwise it returns False
+-------------------
+Examples:
+-----------------
+>>> s1={10,20,30,40}
+>>> s2={10,20,25,35}
+>>> s3={10,20}
+>>> s2.issubset(s1)------->False
+>>> s3.issubset(s1)------->True
+>>> s1.issubset(s2)------->False
+>>> s1.issubset(s3)------->False
+>>> set().issubset(s3)------->True
+>>> s1.issubset(s1)------->True
+-------------------------------------------------------------------------------------------
+9) issuperset()
+-------------------
+=>Syntax:-     setobj1.issuperset(setobj2)
+=>This function returns True provided all the elements of setobj2 present in setobj1. othetwise it returns False
+-------------------
+Examples:
+-------------------
+>>> s1={10,20,30,40}
+>>> s2={10,20,25,35}
+>>> s3={10,20}
+>>> s1.issuperset(s2)------->False
+>>> s1.issuperset(s3)------->True
+>>> s1.issuperset(s1)------->True
+>>> set().issuperset(set())------->True
+----------------------------------------------------------------------------------------------------
+10) union():
+---------------------
+=>Syntax:    setobj3=setob1.union(setobj2)
+=>This functions obtains all the elements of setobj1 and setobj2 uniquely and place the result elements in setobj3
+-----------------
+Examples:
+-----------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> print(cp,type(cp))---->{'arvind', 'amulya', 'abhi','aswini'} <class 'set'>
+>>> print(tp,type(tp))---->{'anubhav', 'abhi', 'biswajit'} <class 'set'>
+>>> allcptp=cp.union(tp)
+>>> print(allcptp)--->{'arvind', 'amulya', 'anubhav','biswajit', 'aswini', 'abhi'}
+>>> allcptp=tp.union(cp)
+>>> print(allcptp)---->{'anubhav', 'arvind', 'amulya', 'biswajit', 'aswini', 'abhi'}
+------------------------
+Special Case:
+------------------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> allcptp=cp | tp   # here  |   is called Bitwise OR                                                            
+>>> print(alltpcp)--->{'arvind', 'amulya', 'anubhav','biswajit', 'aswini', 'abhi'}
+----------------------------------------------------------------------------------------------------------
+11) intersection() :
+-----------------------------
+=>Syntax:    setobj3=setob1.intersection(setobj2)
+=>This functions obtains all the common elements from setobj1 and setobj2  and place the result elements in setobj3
+---------------
+Examples:
+---------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> bothcptp=cp.intersection(tp)
+>>> print(bothcptp)--------------->{'abhi'}
+------------------------
+Special Case:
+------------------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> bothcptp=cp&tp #  here   '&' is called bitwise AND
+>>> print(bothcptp)---------->{'abhi'}
+-----------------------------------------------------------------------------------------------------------
+12) difference()
+--------------------------
+=>Syntax:    setobj3=setobj1.difference(setobj2)
+=>This function removes common elements from both setobj1 and setobj2 and takes remaining elements from setobj1 and place them in setobj3.
+		(OR)
+=>Syntax:    setobj3=setobj2.difference(setobj1)
+=>This function removes common elements from both setobj1 and setobj2 and takes remaining elements from setobj2 and place them in setobj3.
+-------------
+Examples:
+-------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> onlycp=cp.difference(tp)
+>>> print(onlycp)------------->{'arvind', 'amulya', 'aswini'}
+>>> onlytp=tp.difference(cp)
+>>> print(onlytp)----------------->{'anubhav', 'biswajit'}
+--------------------------------------------------------------------------------
+Special Case:
+----------------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> onlycp=cp-tp
+>>> print(onlycp)------------->{'arvind', 'amulya', 'aswini'}
+>>> onlytp=tp-cp
+>>> print(onlytp)----------------->{'anubhav', 'biswajit'}
+------------------------------------------------------------------------------------------------------
+13) Symmetric_difference()
+---------------------------------------------
+=>Syntax:    setobj3=setobj1.Symmetric_difference(setobj2)
+=>This Function removes common elements from both setobj1 and setob2 and collect remaining elements from setobj1 and setobj2 and place them setobj3.
+-----------------
+Examples:
+-----------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> excptp=cp.symmetric_difference(tp)
+>>> print(excptp)---->{'arvind', 'amulya', 'anubhav','biswajit', 'aswini'}
+>>> excptp=tp.symmetric_difference(cp)
+>>> print(excptp)---->{'arvind', 'amulya', 'anubhav','biswajit', 'aswini'}
+--------------------------
+Special Case:
+---------------------------
+>>> cp={"abhi","aswini","arvind","amulya"}
+>>> tp={"anubhav","biswajit","abhi"}
+>>> excptp=cp^tp   # here  ^ is called  Bitwise  XOR
+>>> print(excptp)--->{'arvind', 'amulya', 'anubhav', 'biswajit','aswini'}
+>>> excptp=tp^cp    # here  ^ is called  Bitwise  XOR
+>>> print(excptp)---->{'arvind', 'amulya', 'anubhav','biswajit','aswini'}
+-------------------------------------------------------------------------------------------------------------
+14) update():
+-----------------------
+=>Syntax:-     setobj1.update(setobj2)
+=>This function adds all the valeus setobj2 to setobj1 . 
+----------------
+Examples:
+-------------------
+>>> s1={10,"Abhi"}
+>>> s2={"Java","Python"}
+>>> s1.update(s2)
+>>> print(s1)------------->{'Abhi', 10, 'Java', 'Python'}
+>>> print(s2)-------------->{'Python', 'Java'}
+===================================X===========================

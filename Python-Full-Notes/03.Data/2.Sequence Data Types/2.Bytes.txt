@@ -1,0 +1,42 @@
+		=============================================
+				2) Bytes
+		=============================================
+=>'bytes' is one of the pre-defined class and treated as sequence data type.
+=>The purpose of bytes data type is that "To store sequence of Possitive Numerical Integer values ranges (0,256)---> It allows us to store 0 to 256-1 "
+=>To store data in the object of bytes data type, we don't have symbolic notation but we can convert one type value into bytes type value by using bytes().
+=>on the object of bytes , we can perform Both indexing and slicing Operations.
+=>An object of bytes belongs to immutable bcoz 'bytes' object does not support item assignment.
+-------------------------------------------------------------------------------------------------------------------Examples:
+--------------------
+>>> l1=[10,23,0,34,256]
+>>> print(l1, type(l1))-------------->[10, 23, 0, 34, 256] <class 'list'>
+>>> b=bytes(l1)------------>ValueError: bytes must be in range(0, 256)
+>>> l1=[-10,23,0,34,255]
+>>> b=bytes(l1)----------->ValueError: bytes must be in range(0,256)
+>>> l1=[10,23,0,34.5,255]
+>>> print(l1, type(l1))---------->[10, 23, 0, 34.5, 255] <class'list'>
+>>> b=bytes(l1)------------->TypeError: 'float' object cannot be interpreted as an integer
+>>> l1=[10,23,0,34,255]
+>>> print(l1, type(l1))----------->[10, 23, 0, 34, 255] <class 'list'>
+>>> b=bytes(l1)
+>>> print(b, type(b))-----> b'\n\x17\x00"\xff' <class 'bytes'>
+>>> for v in b:
+...     print(v)
+				...
+				10
+				23
+				0
+				34
+				255
+>>> print(b[0])--------------> 10
+>>> print(b[1])-----------> 23
+>>> print(b[1:4])-----------> b'\x17\x00"'
+>>> for v in b[1:4]:
+...     print(v)
+				...
+				23
+				0
+				34
+>>> print(id(b))-------------->3172199160960
+>>> b[0]=100---------->TypeError: 'bytes' object does not support item assignment
+============================x==================================
