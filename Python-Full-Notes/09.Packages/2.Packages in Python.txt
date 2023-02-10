@@ -1,0 +1,59 @@
+	===============================================
+			Packages in Python
+	===============================================
+=>We know that FUNCTIONS concept is used for Performing Certain operation and provides Code Re-usability within the program but not able to provide Code Re-usability across the programs.
+=>We know that MODULES concept is used for re-using the code across the programs provided the modules must present in same Folder but not able to get Code Re-usability across Folders / Drives / Environments / Networks..etc
+=>The PACKAGES concept is used for getting the Code Re-usability across Folders / Drives / Environments / Networks..etc through modules where modules contains Variables, Functions and Classes
+------------------------------------------------------------------------------------------------------
+Def. of Packages:
+---------------------------
+=>A Package is a collection of Modules.
+----------------------------------
+=>Creating a package:
+----------------------------------
+Step-1: Create a folder 
+Step-2: Define / place an empty python file on the name of  __init__.py in folder to make the		    folder name as Package Name.
+Step-3: Define / place a module (s) in the package(Folder Name)
+-----------------------------------------------------------------------------------------------
+	Number of approaches to re-use the modules of Packages
+-----------------------------------------------------------------------------------------------
+=>We have two approaches re-use the modules of Packages. They are 
+		1) By using sys.path.append()
+		2) By using PYTHONPATH Environmental Variable.
+---------------------------------------------------------------------------------------------------------
+1) By using sys.path.append():
+--------------------------------------------------------------
+Syntax:-
+-------------
+                 sys.path.append("Absolute path of Package Name")
+------------------
+Examples:
+------------------
+#kvr1.py
+import sys
+sys.path.append("E:\\KVR-FULLSTACK-DS\\PACKAGES\\bank")
+from icici import simpleint
+simpleint()
+			(OR)
+#kvr1.py
+import sys
+sys.path.append("E:\KVR-FULLSTACK-DS/PACKAGES/bank")
+from icici import simpleint
+simpleint()
+---------------------------------------------------------------------------------------------------
+2) By using PYTHONPATH Environmental Variable.
+-------------------------------------------------------------------------------
+=>PYTHONPATH is one of the keyword for OS and hence it is called Environmental Variable.
+=>To set PYTHONPATH, do the follwing steps
+
+a) Goto start button
+b) choose Settings
+c) Choose System
+d) Search for "environmental Variables"
+e) choose "new"
+f) Type PYTHONPATH for Variable Name
+g) Place Absolute path of package as Variable Value
+h) Choose OK and OK
+----------------------------------
+Later Execute the program freshly.
+================================X==============================

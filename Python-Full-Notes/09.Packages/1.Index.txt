@@ -1,0 +1,13 @@
+		===================================
+				Packages in Python
+		===================================
+----------
+Index:
+----------
+=>Purpose of Package
+=>Def. of Package
+=>Creation of Package
+=>Techniques for Re-Using the Package
+			a) sys.path.append()
+			b) PYTHONPATH
+---------------------------------------------------------------------------------------------------------
