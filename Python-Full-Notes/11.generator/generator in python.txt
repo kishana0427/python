@@ -1,0 +1,15 @@
+			=================================
+				generator in python
+			=================================
+=>generator is one of the function
+=>The generator function always contains yield keyword
+=>If the function contains return statement then it is called Normal Function
+=>If the function contains yield keyword then it is called generator
+=>Syntax:
+		def   function_name(start,stop,step):
+		        ----------------------------------------
+			----------------------------------------
+			yield value
+			----------------
+=>The 'yield' key word is used for giving the value back to function call and continue the function execution until condition becomes false.
+========================X===================================

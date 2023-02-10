@@ -1,0 +1,16 @@
+	====================================================
+				raise keyword
+	====================================================
+=>raise keyword is used for hitting / raising / generating the exception when certain condition is satisfied.
+=>PVM uses raise keyword for hitting Pre-defined exceptions automatically. where as programmer makes the PVM  to use raise keyword  to hit programmer-defined exceptions when certain condition is satisfied.
+
+=>Syntax:-    
+			if(test cond):
+				raise exception-class-name
+=>Syntax:
+		def   function-name(list of formal params if any):
+			if(test cond):
+				raise exception-class-name
+			-----------------------------------------------
+			-----------------------------------------------
+===============================X================================

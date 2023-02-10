@@ -1,0 +1,97 @@
+		========================================
+			Reading the data from the files
+		========================================
+=>To read the data from the file, we have 4 pre-defined functions which are present in the object filepointer. They are
+			1) read()
+			2) read(no.of chars)
+			3) readline()
+			4) readlines()
+------------------------------------------------------------------------------------------------
+1) read():
+---------------
+=>This function reads the entire data of the file in the form of str.
+=>Syntax:-          varname=filepointer.read()
+
+Examples:
+--------------------
+#FileReadEx1.py------>read()
+fname=input("Enter File Name to read its content:")
+try:
+	with open(fname,"r") as fp:
+		filedata=fp.read()
+		print("------------------------------")
+		print("file Data")
+		print("------------------------------")
+		print(filedata)
+		print("------------------------------")
+except FileNotFoundError:
+	print("\n{} does not exists:".format(fname))
+-----------------------------
+2) read(no.of chars):
+-----------------------------
+=>This function is used for reading number of characters from the given file.
+=>Syntax:-     varname=filepointer.read(no. of chars)
+----------------
+Examples:
+----------------
+#FileReadEx3.py---read(no.of chars)
+# tell()----->Gives Index of File Pointer in the file data area.
+# seek(index)--->This function will re-set the file pointer  to the file data area
+try:
+	with open("addr1.info","r") as rp:
+		print("--------------------------------------")
+		print("Line:6-->Initial Pos of rp=",rp.tell())
+		print("--------------------------------------")
+		filedata=rp.read(5)
+		print("File Data:",filedata)
+		print("Line-10-->Now  Pos of rp=",rp.tell())
+		filedata=rp.read(8)
+		print("File Data:",filedata)
+		print("Line-13->Now  Pos of rp=",rp.tell())
+		filedata=rp.read()
+		print("File Data:",filedata)
+		print("Line-16->Now  Pos of rp=",rp.tell())
+		print("-------------------------------------------------")
+		rp.seek(0)
+		print("Line:20-->Initial Pos of rp=",rp.tell())
+		print("--------------------------------------")
+		filedata=rp.read(13)
+		print("File Data:",filedata)
+		print("Line-24->Now  Pos of rp=",rp.tell())
+		print("-------------------------------------------------")
+------------------------
+3) readline():
+------------------------
+=>This function reads one line at a time from the given file in the form of str.
+=>Syntax:-   vrname=filepointer.readline()
+---------------------
+Examples:
+---------------------
+#FileReadEx4.py---readline()
+try:
+	with  open("addr1.info","r") as fp:
+		line=fp.readline()
+		while line:
+			print(line,end="")
+			line=fp.readline()
+except FileNotFoundError:
+	print("File  does not exists:")
+=============================================
+4) readlines():
+--------------------------
+=>This function reads entire content of the file in the form of list.
+=>Syntax:-   listobj=filepointer.readlines()
+-------------------
+Examples:
+-------------------
+#FileReadEx5.py---readlines()
+try:
+	with  open("addr1.info","r") as fp:
+		filedatalines = fp.readlines()
+		for fileline in filedatalines:
+			print(fileline,end="")
+		else:
+			print("\n No. of lines=",len(filedatalines))
+except FileNotFoundError:
+	print("File  does not exists:")
+===============================X============================

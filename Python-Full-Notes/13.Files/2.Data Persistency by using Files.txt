@@ -1,0 +1,14 @@
+		=========================================
+				Data Persistency by using Files
+		=========================================			
+=>Def. of File:
+---------------------
+=>A file is a collection of Records.
+=>A Record is a collection of interrelated values 
+=>File names are always resides in Secondary Memory
+=>A File Name is considered as Named Location in Secondary memory.
+---------------------------------------------------------------------------------------------------------
+Def. of Stream:
+-------------------------------------------
+=>The flow of data between Main Memory and File of Secondary memory is called Stream.
+-------------------------------------------

@@ -1,0 +1,55 @@
+		===============================================
+					Various Form of except blocks
+		===============================================
+------------------------------------------------
+Form-1:   Handling single exception
+------------------------------------------------
+		try:
+			try block of
+			statements
+		except  <exception-class-name>:
+		    except block of statements
+		    (User-friendlt error messages)
+---------------------------------------------------------------
+Form-2:--- Mutiple exception handling except block
+---------------------------------------------------------------
+		  try:
+	               try block of 
+		       statements
+		   except   exception-class-name-1,exception-class-name-2,..... :
+		        user friendly error message
+			for all exceptions
+=>This facility says Handling multiple specific exceptions by single except block and reducing the code
+--------------------------------------------------------------------------------------------
+Form-3:   Handling single exception with alias name
+------------
+		try:
+			--------------------
+			--------------------
+		except  exception-class-name as alias name:
+		    --------------------------------
+		    --------------------------------
+=>here alias name is an object of exception-class-name and it stores default technical error message which is caused due to exception occurence.
+-------------------------------------------------------------------------------------------------------------------
+Form-4:   default except block
+--------------
+		try:
+			--------------------
+			--------------------
+		except  :
+		    --------------------------------
+		    --------------------------------
+=>default except block must always written at last for handling un-known exceptions.
+----------------------------------------------------------------------------------------------------------------
+Form-5:   default except block with Base / Super Class Name
+--------------
+		try:
+		--------------------
+		--------------------
+		except  Exception :
+			    --------------------------------
+			    --------------------------------
+=>default except block with   BaseExeption (or) Exception must always written at last for handling all types of un-known exceptions.
+------------------------------------------------------------------------------------------------------------------
+=>Industry always recommended to write First all types specific exceptions with except blocks and at last we write default except block (otherwise we get error)
+================================X==============================

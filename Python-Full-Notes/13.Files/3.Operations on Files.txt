@@ -1,0 +1,27 @@
+		=====================================
+			Operations on Files
+		=====================================
+=>On Files, we can perform two types of Operations. They are
+			1) write Operation
+			2) read operation
+1) Write Operation:
+-----------------------------
+=>The purpose of write operation is that "To transfer the object data of main memory into file of Secondary memory".
+----------------
+=>Steps:
+----------------
+		1) Choose the file name
+		2) Open the file in Write Mode
+		3) Perform cycle of write operations. 
+----------------------------------------------------------------------------------------------
+2) Read Operations
+------------------------------
+=>The purpose of read operation is that "To transfer the record(s) from the file of secondary memory into object of main memory".
+----------------
+=>Steps
+----------------
+	1) Choose the file name
+	2) Open the file name in read mode 
+	3) Perform cycle of Read Operations until end-of-file
+================================X==============================
+

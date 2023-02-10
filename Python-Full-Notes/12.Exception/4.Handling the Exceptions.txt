@@ -1,0 +1,76 @@
+		========================================
+				Handling the Exceptions
+		========================================
+=>Handling the Exceptions is nothing but converting Technical Error Messages into user-friendly error messages.
+=>To handle the exceptions in python, we have 5 keywords. They are
+		1) try
+		2) except
+		3) else
+		4) finally
+		5) raise
+------------------------------------------------------------------------------------
+Syntax for handling the exceptions in python
+------------------------------------------------------------------------------------
+	try:
+	     Block of statements 
+	     Generating Exceptions
+	except  <exception-class-name-1>:
+	      Block of statements
+	      Generating user-friendly Error Messages.
+	except  <exception-class-name-2>:
+	      Block of statements
+	      Generating user-friendly Error Messages.
+	--------------------------------------------------------
+	except  <exception-class-name-n>:
+	      Block of statements
+	      Generating user-friendly Error Messages.
+	else:
+	      Block	of statements recommended
+	      to generate results of the program
+	finally:
+		Block of statements 
+		executes compulsorily
+-------------------------------------------------------------------------------------------------------------------
+Explanation:
+------------------------
+1) try:
+-----------
+=> It is the block, in which we write block statements generates excetptions. In otherwords what are all the statements generating exceptions then those statements must written inside of try block and hence try block is called exception monitering block.
+=>When an exception occurs in try block, PVM comes out of try block and executes appropriate except block and gives User-friendly Error meassge.
+=>After executing appropriate except block , PVM never come back to try block for executing rest of the statements.
+=>Every try block must be immediately followed by except block otherwise we get SyntaxError.
+=>Every try block must contain atleast one except block and recommended to write multiple except block for generating multiple user-friendly error messages.
+----------------------------------------------------------------------------------------------------------------
+2) except block:
+------------------------
+=>It is the block, in which we write block statements generates user-friendly error messges. In Otherwords, except block supresses the technical error messages and generates user-friendly error messages and hence except block is called exception processing block.
+=>Note:-  Handling Exception=try block + except block
+=>except block will execute when there is an exception in try block.
+=>Even though we write multiple except blocks, at any point time, PVM executes only one except block depends on type of exception occurs in try block.
+=>The place of writing except block is after writing try block.
+----------------------------------------------------------------------------------------------------------------
+3) else block:
+------------------------
+=> It is the block, in which we write block of statements displays results of the program.
+=> else block will execute when there is no exception occurs in try block.
+=> else block to be written after except block.
+=>writing else block is optional.
+-----------------------------------------------------------------------------------------------------------------
+4) finally:
+---------------------
+=>It is the block, in which we write block of statements will relinquish (close / release / give-up) the resources (files, data bases),which are obtained in try block.
+=>finally block will execute compulsorily (if we write finally block)
+=>writing finally block is optional
+=>finally block to be written after else block.
+==========================X====================================
+
+Case-1:-   if  an exception occurs then  PVM executes
+			a) A part of try block
+			b) An Appropriate except block
+			c) A  finally block (if we write )
+			
+Case-2:-   if   exception  does not occurs then  PVM executes
+			a) Compelte  try block
+			b) else block
+			c) A  finally block (if we write )
+=============================X=================================

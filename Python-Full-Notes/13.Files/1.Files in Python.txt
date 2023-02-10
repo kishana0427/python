@@ -1,0 +1,16 @@
+		==================================	
+				Files in Python
+		==================================	
+=>The purpose of File is that "To achieve the Data Persistency"
+
+=>In the context of files, we have two types of applications. They are
+			a) Non-Persistant Applications.
+			b) Persistant Applications.
+
+=>In Non-Persistant Application development, we read the inputs from Key board, stored in main Memory , Process the inputs and Result are displayed in Monitor.
+=>Whatever the data stored in main memory , it is temporary. 
+=>In Persistant Application development, we read the inputs from Key board, stored in main Memory , Process the inputs and Result are stored permanently (Persistantecy).
+=>In Industry, we can store the data permanently in two ways. They are
+		a) By using Files
+		b) By using Database softwares.
+===============================================================

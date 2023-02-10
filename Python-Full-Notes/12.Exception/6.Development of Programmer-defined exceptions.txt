@@ -1,0 +1,37 @@
+	=========================================================
+		Development of Programmer-defined exceptions
+	============================================================
+=>These exceptions developed by Python Programmers and available in Python Project and They are used always for dealing with Common problems.
+=>Some of the common Problems are 
+	a) Attempting to enter invalid PIN in ATM Applications.
+	b) Attempting to enter Invalid User and Password.
+	c) Attempting to withdraw more amount than existing bal in ACcount....etc
+
+=>In general If end-user enters valid input then we get Valid Output.
+=>If end-user enters  invalid input then it is considered as exception and it must create an object w.r.t appropriate exception class name and it is developed by Python Programmer. 
+-------------------------------------------------------------------------------------
+=>Steps for developing Programmer-defined exceptions:
+-------------------------------------------------------------------------------------
+1) Choose the Programmer-defined class Name 
+
+2) The Programmer-defined class name must inherit the exception handling features from BaseException or Exception for abnormal termination and hence programmer-defined class name is called programmer defined exception sub class
+
+3) Save the programmer-defined exception class on some file name with an extension . py. 
+-------------------------------------------------------------------------------------------------------------------
+Example: develop programmer defined exception class for invalid pin
+--------------------------------------------------------------------------------------
+#pin.py--------------------------------(3)
+		(1)        (2)
+class PinError(BaseException):pass
+		(OR)
+		(1)        (2)
+class PinError(Exception):pass
+-------------------------------------------------------------------------------------------------------------------
+Example: develop programmer defined exception class name for invalid user name and password.
+-------------------------------------------------------------------------------------------------------------------
+# login.py--------(3)
+	     (1)                      (2)
+class LoginError(BaseException):pass
+	(OR)
+class LoginError(Exception):pass
+===============================X================================

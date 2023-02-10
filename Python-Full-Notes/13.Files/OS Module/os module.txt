@@ -1,0 +1,118 @@
+		==============================================
+				os module
+		==============================================
+=>The purpose of 'os' module is that "To interact with Operating System"
+=>Some of the interactions with OS are 
+		a) get current working folder
+		b) create a folder
+		c) create  folders
+		d) remove a folder
+		e) remove folders
+		f) rename a folder
+		h) list the files and folders...etc
+-------------------------------------------------------------------------------------------------
+a) get current working folder( getcwd() ):
+------------------------------------------------------------
+=>To get current working folder, we a pre-defined function called getcwd()
+=>Syntax:-  varname=os.getcwd()
+----------------------------
+Examples:
+----------------------------
+#getcqdex.py
+import os
+s=os.getcwd()
+print("Current Working Folder={}".format(s))
+---------------------------------------------------------------------------			
+b) create a folder  (  mkdir() ):
+------------------------------------------------------
+=>To create a folder , we use a pre-defined function called  mkdir()
+=>Syntax:-     os.mkdir("Folder Name")
+=>This function can create one folder at a time but not able to create Folder Hierarchy .
+=>If the folder name already exists then we get FileExistsError
+-------------------
+Examples:
+-------------------
+#mkdirex.py
+import os
+try:
+	os.mkdir("KVR")
+	print("Folder created successfully--verify")
+except FileExistsError:
+	print("Folder already exists:")
+----------------------------------------------------------------------------
+c) create  folders  (  makedirs() ):
+------------------------------------
+=>To create Folder (or) folders Hierarchy, we use a pre-defined function called makedirs()
+=>Syntax:- os.makedirs("Folder (or) folders Hierarchy")
+=>Folders Hierarchy repersents Root Folder, sub folders, sub-sub folders etc.
+=>If the folders  Hierarchy  already exists then we get FileExistsError.
+--------------------------
+#makedirsex.py
+--------------------------
+import os
+try:
+	os.makedirs("C:\India\Hyd\Ameerpet\Python")
+	print("Folders Hierarchy created..")
+except FileExistsError:
+	print("Folders Hierarchy alerady exists:")
+except FileNotFoundError:
+	print("Drive Name is Invalid:")
+-------------------------------------------------------------------------
+d) remove a folder ( rmdir() )
+--------------------------------------------------
+=>To remove a folder  , we use a pre-defined function rmdir()
+=>Syntax:-    os.rmdir("folder name:")
+=>This Function can remove one folder at a time but not able remove Folders Hierarchy.
+=>If the folder does not exist then we get FileNotFoundError
+=>If the folder contains any file(s) then That folder can't removed and we get OSError 
+------------------------------------
+Examples:
+-----------------------------------
+#rmdirex.py
+import os
+try:
+	os.rmdir("D:\KVR-HYD")
+	print("Folder Removed--cerify")
+except FileNotFoundError:
+	print("Folder does not exists:")
+except OSError:
+	print("Folder Must be empty:")
+--------------------------------------------------------------------------------
+e) remove folders:
+--------------------------------------------------------------------------------
+=>To remove Folder (or) folders Hierarchy, we use a pre-defined function called removedirs()
+=>Syntax:-   os.removedirs("Folder (or) folders Hierarchy")
+=>This Function can remove one folder  (or) Folders Hierarchy.
+=>If the folder does not exist then we get FileNotFoundError
+=>If the folder contains any file(s) then That folder can't removed and we get OSError 
+--------------------------------------------------------------------------------------------
+f) rename a folder ( rename() )
+------------------------------------------------
+=>To re-name a folder , we use rename()
+=>Syntax:-   os.rename("old folder name", "new folder name")
+=>If the old folder name does not exists then we get FileNotFoundError.
+---------------------
+Examples:
+--------------------
+#renameex.py
+import os
+try:
+	os.rename("C:\AMPT","C:\KVR")
+	print("Folder Re-named--verify")
+except FileNotFoundError:
+	print("File name does not exists for Renaming")
+------------------------------------------------------------------------------------------------------
+h) list the files and folders (listdirs() )
+---------------------------------------------------------
+=>To List the  files and folders , we use listdirs()
+=>Syntax :       os.listdirs("Folder Name")
+-------------------------------------------
+#listfilefolders.py
+-------------------------------------------
+import os
+try:
+	names=os.listdir("E:\KVR-PYTHON-11AM\FILES")
+	for name in names:
+		print("\t{}".format(name))
+except FileNotFoundError:
+	print("Folder does not exist to list files:")

@@ -1,0 +1,37 @@
+		=============================================
+				Introduction to Exception Handling
+		=============================================
+=>The main purpose of Exception Handling is that " To develop Robust (Strong ) Applications".
+=>In real time to develop any project, we must choose a language and by using that language, we can develop the program, compile and execute the programs. During this process we get 3 types of errors. they are
+			1) Compile Time Errors
+			2) Logic Errors
+			3) Runtime Errors.
+-----------------------------------
+1) Compile Time Errors:
+-----------------------------------
+=>These errors occurs during Compilation Process
+		(Source code converted into intermediate code)
+=>These errors are occuring due to Syntaxes are not followed.
+=>These errors are solved by Programmers at Development Time.
+------------------
+Examples:
+------------------
+>>> a=10
+>>> b=20
+>>> c=a+ -------->SyntaxError: invalid syntax
+----------------------------------------------------------------------------------------------------------------
+2) Logical Error:
+----------------------------
+=>These errors are  during Runtime / execution time
+=>These errors are occuring due to wrong representation of logic.
+=>These errors always gives wrong results
+=>These errors are solved by Programmers at Development Time.
+---------------------------------------------------------------------------------------------------------------
+3) Runtime Errors:
+-----------------------------
+=>These errors are  during Runtime / execution time
+=>These errors are occuring due to Invalid / wrong Input Entered By Application 
+     users / end users.
+=>These errors are solved by Programmers at Development Time regarding the 
+    errors or mistakes made by end user with forecasting knowledge of Programmer.
+============================X==================================

@@ -1,0 +1,29 @@
+		==========================================
+				Types of Exceptions in Python
+		==========================================
+=>In Python Programming, we have two types of exceptions. They are
+		a) Pre-defined / Built-in Exceptions
+		b) Programmer / User / Custom Defined Exceptions.
+------------------------------------------------------
+a) Pre-defined / Built-in Exceptions:
+------------------------------------------------------
+=>These exceptions developed by Python developers and available in Python Software and They are used always for dealing with Universal problems.
+=>Some of the Universal problems are
+		a) Division by zero   ( ZeroDivisionError)
+		b) Invalid Literals / Number formats (ValueError)
+		c) Invalid arguments  (TypeError)
+		d) Invalid Module Names (ModuleNotFoundError)...etc
+=>In general for every problem / invalid input, there exist a pre-defiend exception class.
+-------------------------------------------------------------------------------------------------------------------
+b) Programmer / User / Custom Defined Exceptions.
+-----------------------------------------------------------------------------
+=>These exceptions developed by Python Programmers and available in Python Project and They are used always for dealing with Common problems.
+=>Some of the common Problems are 
+	a) Attempting to enter invalid PIN in ATM Applications.
+	b) Attempting to enter Invalid User and Password.
+	c) Attempting to withdraw more amount than existing bal in ACcount....etc
+
+=>In general If end-user enters valid input then we get Valid Output.
+=>If end-user enters invalid input then we generate exception and give User-friendly error message.
+==============================X===========================
+		

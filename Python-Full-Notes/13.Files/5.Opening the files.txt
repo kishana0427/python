@@ -1,0 +1,43 @@
+		========================================
+					Opening the files 
+		========================================
+=>In Python Programming, we have two syntaxes to open the files. They are
+		a) open()
+		b) with  open()   as
+-----------------------------------------------------------------------------------------
+a) open():
+----------------
+=>Syntax:-           Varname=open("File Name", "File Mode")
+-------------------
+Explanation:
+-------------------
+=>"Varname" is a python valid variable name and treated as pointer to the file and we can call it as file pointer (always points the file data) and the type of  varname (file pointer) is <class,"_io.TextIOWrapper">.
+=>open() is pre-defined function used for opening the file .
+=>"file name" is name of the file
+=>"File Mode" represents any one of the file opening modes. 
+=>With this approach, once we open the file with open() then it is mandatory to close the file manually by using close(). In otherwords open() does not provide auto-closable operation.
+-----------------------------------
+b) with  open()   as :
+----------------------------------
+=>Syntax:
+----------------
+    with   open("file name","file mode")  as   <file pointer> :
+              -----------------------------------------------
+	      -----------------------------------------------
+	      Block of statements-File Operations
+	      ------------------------------------------------
+	      ------------------------------------------------
+
+    ---------------------------------------------------
+    Other statements in Python program
+    -----------------------------------------------------
+------------------------
+Explanation:
+------------------------
+=>'with' and 'as' are keywords
+=>open() is pre-defined function used for opening the file .
+=>"file name" is name of the file
+=>"File Mode" represents any one of the file opening modes. 
+=> <file pointer> is a valid variable name points to file data.
+=>The advtange of this approach is that It will close the file automatically when PVM comes out of  " with..open()..as " indentation block
+============================X===================================

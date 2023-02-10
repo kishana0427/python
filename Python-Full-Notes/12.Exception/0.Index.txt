@@ -1,0 +1,26 @@
+	=============================================
+				Exception Handling
+	=============================================
+Index---4 days.
+------------------------
+=>Purpose of Exception handling
+=>Define Exception 
+=>Define Exception handling
+=>Types of Errors
+		a) Compile Time Errors
+		b) Logical Errors
+		c0 Runtime Errors
+=>Types of Exceptions
+		a) Pre-defined
+		b) Programmer-defined / Custom defined exception
+=>Keywords in handling exceptions
+		a) try   
+		b) except
+		c) else
+		d) finally
+		e) raise
+=>Syntax for  Handling The exceptions
+=>Exception handling Hierarchy Chart.
+=>Development Programmer-defined exceptions
+=>Programming Examples
+=>ATM Case Study.
