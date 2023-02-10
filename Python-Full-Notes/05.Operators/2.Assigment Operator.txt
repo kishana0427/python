@@ -1,0 +1,62 @@
+		===============================================
+				2) Assigment Operator 
+		===============================================
+=>This Operator ( = ) is used for Assigning Right Hand Side(RHS) Value to Left Hand Side (LHS)Variable.
+=>The Assigment Operator  can be used in two ways. They are
+		1) Single Line Assigment
+		2) Multi Line Assigment
+----------------------------------------
+1) Single Line Assigment:
+-----------------------------------------
+=>This Process, we assign single RHS value to LHS variable
+=>Syntax:-      varname=Value
+				(or)
+			varname1=varname2
+				(or)
+			varname= Expression
+-------------------
+Examples:
+------------------
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(a,b,c)-------->10 20 30
+>>> a=10
+>>> b=a
+>>> print(a,b)---------->10 10
+----------------------------------------------------------------
+2) Multi Line Assigment:
+----------------------------------------------------------------
+=>This Process, we assign Multiple  RHS values to LHS variables
+=>Syntax:-      
+			var1,var2...var-n=val1,val-2...val-n
+					(or)
+			var1,var2...var-n=expr1,expr2,...expr-n
+
+Here the values of val1, val2-.......val-n are assigned to var-1,var-2...var-n respectively.
+---------------------
+Examples:
+---------------------
+>>> a,b=10,20
+>>> c=a+b
+>>> print(a,b,c)---->10 20 30
+>>> stno,sname,marks=10,"KVR",11.11
+>>> print(stno,sname,marks)---->10 KVR 11.11
+------------------------------------------
+>>> a=10
+>>> b=3
+>>> ad,sb,ml,dv=a+b,a-b,a*b,a/b
+>>> print(a,b)----->10 3
+>>> print(ad,sb,ml,dv)----->13 7 30 3.3333333333333335
+------------------------------------------------------
+>>> l1=[10,"Python"]
+>>> l2=[12,"Java","Spring"]
+>>> print(l1,l2)--------->[10, 'Python'] [12, 'Java', 'Spring']
+>>> l1,l2=l2,l1
+>>> print(l1,l2)----->[12, 'Java', 'Spring'] [10, 'Python']
+>>> d1={10:"apple",20:"Mango"}
+>>> d2={11:2.3,12:4.5,34:5.6}
+>>> print(d1,d2)--------->{10: 'apple', 20: 'Mango'} {11: 2.3, 12: 4.5, 34: 5.6}
+>>> d1,d2=d2,d1
+>>> print(d1,d2)---------->{11: 2.3, 12: 4.5, 34: 5.6} {10: 'apple', 20: 'Mango'}
+==========================X=====================================

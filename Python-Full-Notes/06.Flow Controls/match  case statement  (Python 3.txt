@@ -1,0 +1,32 @@
+		==========================================
+				 match .. case statement  (Python 3.10)
+		==========================================
+=>If it one of new Feature in Python 3.10
+=>This features is also known as Multi way decision making statement.
+=>Syntax:
+		match   expression:
+			case label1: 
+				block of statements-I
+			case label2: 
+				block of statements-II
+			--------------------------------------
+			--------------------------------------
+			case label-n: 
+				block of statements-n
+			case _ :   # default case block
+				default block of statements
+		 --------------------------------------------------
+		 --------------------------------------------------
+		 Other statements in Program
+		 --------------------------------------------------
+-----------------------
+Explanation:
+-----------------------
+1) here 'match' and 'case' are the keywords
+2) here 'expression' any data type value except float.
+3) here the value of expression is comparing with case label1 . If it is True then execute Block of statements-I and also execute other statements in Program.
+     if value of expression is not matching with case label1 then it compares with case label2 and it it matches then execute Block of statements-II and also execute other statements in Program and so on.
+4) In general if the value of expression is match with any case label then PVM executes corresponding block of statements and also executes Other statements in the program.
+5)if  value of expression is not matching with any case labels then PVM executes block of statements written under default case block and also executes Other statements in the program.
+6) Writting default case label is optional.
+============================X===================================

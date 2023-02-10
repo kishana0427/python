@@ -1,0 +1,37 @@
+			=======================================
+					Inner (or) nested loops
+			=======================================
+=>The process of writing one loop in another loop is called Inner / Nested loops.
+=>The Execution process of inner loops is that "For Every Value of Outer loop, inner loop will execute for finite number of times until condition becomes False"
+
+=>Syntax1:-
+			for var1 in Iterable-object1:   # outer for loop
+			      -------------------------------
+				for var2 in Iterable-object2:  # inner for loop
+				       --------------------------
+				       --------------------------
+				----------------------------------
+
+=>Syntax2:-
+			while (Test Cond1):  # outer while loop
+			      -------------------------------
+				while(test cond2):  # inner while loop
+				       --------------------------
+				       --------------------------
+				----------------------------------
+=>Syntax3:-
+			for var1 in Iterable-object1:   # outer for loop
+			      -------------------------------
+				while(test cond2):  # inner while loop
+				       --------------------------
+				       --------------------------
+				----------------------------------
+=>Syntax4:
+			while (Test Cond1):  # outer while loop
+			      -------------------------------
+				for var1 in Iterable-object2:  # inner for loop
+				       --------------------------
+				       --------------------------
+				----------------------------------
+			
+=========================X================================

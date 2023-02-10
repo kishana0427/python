@@ -1,0 +1,17 @@
+	==========================
+				pass
+	==========================
+=>'pass' is a keyword.
+=>It is used as a placeholder.
+=>Which makes the python compiler and PVM to bypass the indentation block of corresponding indentation symbol.
+=>Whenever you start / write indentation symbol it is compulsory to write indentation block, But sometime we may not interest to write indentation block that time to avoid "IndetationError" we use / write 'pass' keyword. 
+=>In Otherwords, To avoid indentation error we use 'pass' keyword.
+=>When pass statement executed nothing happens, but we avoid getting an error.
+---------------
+Example:
+---------------
+n=int(input("Enter a Number : "))
+if (n>8):
+	pass
+else:
+	print("{} is Bigger than 10".format(n))

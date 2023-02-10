@@ -1,0 +1,31 @@
+		==========================================
+				for loop
+		==========================================
+=>Syntax1:
+=========================
+for varname  in Iterable-object:
+       ----------------------------------------
+       Block of statements
+       ----------------------------------------
+--------------------------------------------
+Other statements
+--------------------------------------------
+Syntax2-:
+==============
+for varname  in Iterable-object:
+       ----------------------------------------
+       Block of statements
+       ----------------------------------------
+else:
+       else block of statements
+--------------------------------------------
+Other statements
+--------------------------------------------
+
+=================
+Explanation:
+=================
+=>here  'for' and 'in' are the keywords
+=>The execution process of for loop is that " Each element of Iterable-object kept in varname and executes Block of statements until all elements in iterable object are completed"
+=>After for loop excution condition becomes false PVM executes else block of statements(if we write else) and later executes Other statements in Program
+=======================X========================================

@@ -1,0 +1,23 @@
+					---------------------------------
+						break statement
+					---------------------------------
+=>break is a key word
+=>The purpose of break statement is that "To terminate the execution of loop logically when certain condition is satisfied  and PVM control comes of corresponding loop and executes other statements in the prtogram".
+=>Syntax:
+-------------------
+			for var in Iterable_object:
+			       ------------------------------
+			       if (test cond):
+			              break
+				------------------------------
+				------------------------------
+------------------
+=>Syntax:
+-------------------
+			while(Test Cond-1):
+			       ------------------------------
+			       if (test cond-2):
+			              break
+				------------------------------
+				------------------------------
+============================X=================================

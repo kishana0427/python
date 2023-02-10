@@ -1,0 +1,16 @@
+#This Program demonstartes the functionality of Relational  Operators
+#rop.py
+a=int(input("Enter Value of a:"))
+b=int(input("Enter Value of b:"))
+print("*"*50)
+print("\tRelational Operations")
+print("*"*50)
+print("\t{}>{}={}".format(a,b,a>b))
+print("\t{}>{}={}".format(b,a,b>a))
+print("\t{}<{}={}".format(a,b,a<b))
+print("\t{}<{}={}".format(b,a,b<a))
+print("\t{}=={}={}".format(a,b,a==b))
+print("\t{}!={}={}".format(a,b,a!=b))
+print("\t{}>={}={}".format(a,b,a>=b))
+print("\t{}<={}={}".format(a,b,a<=b))
+print("*"*50)

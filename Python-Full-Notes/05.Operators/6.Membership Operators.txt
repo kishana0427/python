@@ -1,0 +1,46 @@
+		==========================================
+				6) Membership Operators
+		==========================================
+=>The purpose of Membership operators is that to check whether the value present in Iterable object( contains more number of values) or not.
+=>We have two types of Membership Operators. They are
+		a) in 
+		b) not in
+---------
+a) in:
+---------
+=>Syntax:-        value   in  Iterable_object
+=>If the "value" present in Iterable_object then it returns True otherwise it returns False.
+---------------
+b) not in:
+---------------
+=>Syntax:-        value   not in    Iterable_object
+=>If the "value" not present in Iterable_object then it returns True otherwise it returns False.
+-----------------
+Examples:
+-----------------
+>>> s="PYTHON"
+>>> "P" in s-------------------True
+>>> "Y" in s------------------True
+>>> "THON" in s-----------True
+>>> "thon" in s------------False
+>>> "on" in s-----------False
+>>> "ON" in s----------True
+>>> "PON" in s-------False
+>>> s="PYTHON"
+>>> "thon" not in s-----------True
+>>> "ton" not in s-----True
+>>> "on" not in s---------True
+>>> "ON" not in s------False
+-----------------------------------------------------
+>>> lst=[10,20,30,"PYTHON",True,2+3j]
+>>> "python" in lst----------->False
+>>> "PYTHON" in lst----------->True
+>>> lst[3] in lst----------->True
+>>> lst[3][0] in lst[3]----------->True
+>>> lst[3][0] in lst----------->False
+>>> lst[3][0] not in lst-------->True
+>>> lst=[10,20,30,["PYTHON"],True,2+3j]
+>>> lst[3] in lst------->True
+>>> lst[3][0] in lst-------->False
+>>> lst[3][0] in lst[3]------>True
+==========================X====================================

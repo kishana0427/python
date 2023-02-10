@@ -1,0 +1,44 @@
+		=====================================
+			a) while      (or)   while ...else
+		=====================================
+Syntax1:-
+============
+
+     -------------------------
+     while( Test Cond ):
+               statement-1
+	       statement-2
+	       -------------------
+	       -------------------
+	       statement-n
+     ------------------------------
+     ------------------------------
+     Other statements in Prog
+     -------------------------------------
+
+Syntax2:-
+============
+ -------------------------
+     while( Test Cond ):
+               statement-1
+	       statement-2
+	       -------------------
+	       -------------------
+	       statement-n
+     else:
+	     else block of statements
+
+     ------------------------------
+     ------------------------------
+     Other statements in Prog
+     -------------------------------------
+
+------------------------
+Explanation:
+------------------------
+=>Here 'while' and 'else' are the keywords
+=>Test condition result may be True or False
+=>In the while loop, if the test condition is true then PVM executes Indentation block of statements and once again PVM control goes to Test Cond. If the Test Cond is once again True then PVM executes Indentation block of statements once again. This Process will be contunued until Test Cond becomes False.
+=>Once The test cond becomes False then PVM execute else block of statememnts, which are written in else block and later also executes other statements in program.
+
+

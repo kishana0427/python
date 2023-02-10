@@ -1,0 +1,77 @@
+		=============================================
+				4) Logical  Operators
+		=============================================
+=>The purpose of Logical  Operators is that to Combine two or more Relation Expression
+			Syntax:   (Rel-Expr1) Logical Operator (Rel-Expr2)
+=>If two or more Relational Expression are connected with Logical Operators the it is called Logical Expression (or) Compund Condition and whose result can be either True or False.
+=>The following Table Gives  list of Ligical Operators:
+================================================================
+	SLNO			Symbols				Meaning
+================================================================
+	1			   and				Physical ANDing		
+	2.			   or					Physical ORing
+	3.			   not				    --------------------------
+================================================================
+1) and (Physical ANDing):
+-----------------------------------------
+=>The Functionality of "and" operator is shown in the following truth table
+-----------------------------------------------------------------------------
+	RelExpr1	RelExpr2      RelExpr1 and  RelExpr2
+-----------------------------------------------------------------------------
+	True		False			False
+	False		True			False
+	False		False			False
+	True		True			True
+-----------------------------------------------------------------------------
+Examples:
+------------------
+>>>a=10
+>>>b=20
+>>>c=10
+>>>print(a,b,c)
+>>>print((a>b)and (a>=c))------------>False
+>>>print((a<b)and(a<=c))---------->True
+>>>print((10>2)and(10==4))----------->False
+----------------------------------------------------------------------------------
+Note:-
+It is also called as product Rule.
+Example:- True(1)*False(0)---->False(0)
+Short Circuit Evaluation:- If First condition is False, then second,third .. n-condition True or False it will not go, Because evenother conditioon is True or False, Total result is False Only.
+--------------------------------------------------------------------------------------------------------------------
+2) or (Physical ORing):
+-----------------------------------------
+=>The Functionality of "or" operator is shown in the following truth table
+-----------------------------------------------------------------------------
+	RelExpr1	RelExpr2      RelExpr1 or  RelExpr2
+-----------------------------------------------------------------------------
+	True		False			True
+	False		True			True
+	False		False			False
+	True		True			True
+-----------------------------------------------------------------------------
+Examples:
+-------------------
+>>> a=10
+>>> b=20
+>>> print((a!=b) or (a==10))------------True
+>>> print((a>=b) or (a==10))-----------True
+>>> print((a>=b) or (a!=10))---------False
+---------------------------------------------------------------------------------
+3) not 
+---------
+=>The Functionality of "not" operator is oppsite result of True or False
+----------------------------------------
+	RelExpr1	not RelExpr1      
+----------------------------------------
+	True		False		
+	False		True
+----------------------------------------
+Examples:
+------------------
+>>> a=10
+>>> b=20
+>>> print(not ((a!=b) or (a==10)) )------------>False
+>>> print(not ((a==b) and (a==30)) )--------->True
+>>> 10>=4--------->True
+>>> not(10>=4)-------->False
+=========================X====================================
