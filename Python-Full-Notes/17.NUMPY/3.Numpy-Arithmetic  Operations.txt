@@ -1,0 +1,222 @@
+		=========================================
+				Numpy-Arithmetic  Operations 
+		=========================================
+=>We know that data can be stored in the object of ndarray and it will be considered as 
+    array of elements(Matrix elements)
+=>On the array of elements(Matrix elements)of ndarray, we can perform following mathematical / Arithmetic  Operation.
+		1) add()  
+		2) subtract()
+		3) multiply()
+		4) divide()
+		5) mod()
+=>All the above Functions are available as part of numpy module.
+------------
+1) add():
+------------
+=>Syntax:   matrix3=numpy.add(matrix1,matrix2)
+=>This function is used for adding two matrices. 
+=>we can also do this by using operator +
+=>Syntax:   matrix3=matrix1+matrix2
+----------------
+Examples:
+----------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+>>> mat3=mat1+mat2
+>>> mat3
+		array([[11, 22],
+		       [33, 44]])
+>>> mat3=np.add(mat1,mat2)
+>>> mat3
+		array([[11, 22],
+		       [33, 44]])
+--------------------
+2) subtract():
+-------------------
+=>Syntax:   matrix3=numpy.subtract(matrix1,matrix2)
+=>This function is used for substracting  two matrices. 
+=>we can also do this by using operator -
+=>Syntax:   matrix3=matrix1-matrix2
+----------------
+Examples:
+----------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+>>> mat4=mat1-mat2
+>>> mat4
+		array([[ 9, 18],
+		       [27, 36]])
+>>> mat4=np.subtract(mat1,mat2)
+>>> mat4
+		array([[ 9, 18],
+		       [27, 36]])
+-------------------
+3) multiply():
+-------------------
+=>Syntax:   matrix3=numpy.multiply(matrix1,matrix2)
+=>This function is used for multiplying   two matrices on the basis of elementwise. 
+=>we can also do this by using operator *
+=>Syntax:   matrix3=matrix1 * matrix2
+----------------
+Examples:
+----------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+>>> mat5=mat1*mat2
+>>> mat5
+	array([[ 10,  40],
+	       [ 90, 160]])
+>>> mat5=np.multiply(mat1,mat2)
+>>> mat5
+	array([[ 10,  40],
+	       [ 90, 160]])
+---------
+Note: 
+---------
+=>To do Pure Matrix Multiplication , we use dot() of numpy
+	Syntax:-    matrix3=numpy.dot(matrix1,matrix2)
+----------------
+Examples:
+----------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+>>> mat6=np.dot(mat1,mat2)
+>>> mat6
+		array([[ 70, 100],
+		       [150, 220]])
+----------------
+4) divide():
+----------------
+=>Syntax:   matrix3=numpy.divide(matrix1,matrix2)
+=>This function is used for dividing   two matrices on the basis of elementwise. 
+=>we can also do this by using operator /
+=>Syntax:   matrix3=matrix1 / matrix2
+--------------
+Examples:
+--------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+>>> mat7=mat1/mat2
+>>> mat7
+		array([[10., 10.],
+		       [10., 10.]])
+>>> mat7=np.divide(mat1,mat2)
+>>> mat7
+		array([[10., 10.],
+		       [10., 10.]])
+--------------
+5) mod():
+--------------
+=>Syntax:   matrix3=numpy.mod(matrix1,matrix2)
+=>This function is used for modulo division of two matrices on the basis of elementwise. 
+=>we can also do this by using operator %
+=>Syntax:   matrix3=matrix1 % matrix2
+-----------------
+Examples:
+-----------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+>>> mat8=mat1%mat2
+>>> mat8
+		array([[0, 0],
+		       [0, 0]], dtype=int32)
+>>> mat8=np.mod(mat1,mat2)
+>>> mat8
+		array([[0, 0],
+		       [0, 0]], dtype=int32)
+---------
+Note:
+---------
+=>For computing exponentiation and floor division, we can operators but we don't have Functions.
+---------------
+Examples:
+---------------
+>>> import numpy as np
+>>> A=np.array([10,20,30,40])
+>>> B=np.array([1,2,3,4])
+>>> A---------array([10, 20, 30, 40])
+>>> B--------array([1, 2, 3, 4])
+>>> mat1=A.reshape(2,2)
+>>> mat2=B.reshape(2,2)
+>>> mat1
+		array([[10, 20],
+		       [30, 40]])
+>>> mat2
+		array([[1, 2],
+		       [3, 4]])
+
+>>> mat9=mat1**mat2
+>>> mat9
+		array([[     10,     400],
+		       [  27000, 2560000]], dtype=int32)
+>>> mat9=mat1//mat2
+>>> mat9
+		array([[10, 10],
+		       [10, 10]], dtype=int32)
+=====================X=========================================

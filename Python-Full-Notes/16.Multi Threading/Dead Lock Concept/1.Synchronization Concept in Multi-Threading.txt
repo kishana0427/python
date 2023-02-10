@@ -1,0 +1,19 @@
+		=====================================================
+			Synchronization Concept in Multi-Threading
+						(OR)
+			Locking and Un-locking Concept in Multi Threading
+		=====================================================
+=> When multiple threads are operating /working on same object / resource / Method then by default we get dead lock result / race condition (wrong result) / non-thread safety result.
+=>To overcome this dead lock result , industry is recommeded to apply synchronization / locking concept.
+=>The advantage of synchronization /  locking  concept is that to provide Thread Safety Result (Consistant /accurate  result)
+=>In python we can obtain the synchronization by using locking and un-locking concept.
+----------------------------------------------------------------------------
+=>Steps for implementing Synchroization in python
+-----------------------------------------------------------------------------
+1) obtain / create  an object of Lock class of threading module
+		Example:    l=threading.Lock()
+2) To lock the current object / method  we must use acquire() 
+		Example:    l.acquire()
+3) To unlock or release the object/method , we can use release()
+		Example:	 l.release()
+===================================X============================

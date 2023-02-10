@@ -1,0 +1,92 @@
+	=====================================================
+		Number of approaches to develop Thread Based Applications
+	=====================================================
+=>In Python Programming, we have 3 approaches to develop thread based applications. They are
+
+a) Developing thread based applications by using Functional Programming.
+     (Without OOPs)
+b) Developing thread based applications by using Sub Class of Thread class of 
+     threading Module.(With OOPs--With Inheritance)
+c) Developing thread based applications by using Non-Sub Class of Thread class of 
+     threading Module.(With OOPs--without Inheritance)
+----------------------------------------------------------------------------------------
+a) Developing thread based applications by using Functional Programming.
+     (Without OOPs)
+------------------------------------------------------------------------------------------
+Steps:
+------------
+1) import "threading" module
+2) Define a function with block of statements
+3) create an object of Thread class of threading module
+	t1=threading.Thread(target=function_name, args=(list of params) )
+4) dispatch or start the therads by using start()
+
+Examples:
+---------------
+import threading,time  # ---------step-(1)
+def  squares(lst):    # step-2
+	print("-"*40)
+	print("squares() executed by=",threading.current_thread().name)
+	for val in lst:
+		print("sqrt({})={}".format(val,val**2))
+		time.sleep(1)
+	print("-"*40)
+
+#main program
+lst=[23,4,-5,12,56]
+t1=threading.Thread(target=squares, args=(lst,) ) # step-3
+t1.start()  # step-4
+============================X====================
+b) Developing thread based applications by using Sub Class of Thread class of 
+     threading Module.(With OOPs--With Inheritance)
+-------------------------------------------------------------------------------------------------
+Step-1:    import threading module
+Step-2:  Choose the Programmer-defined class
+Step-3:  The Programmer-defined class must run(self) inherit from Thread class
+Step-4:  The Programmer-defined class must override run(self) which is inherited from		     Thread class
+Step-5:  Create an object of sub class of Thread class 
+Step-6:  dispatch the sub thread so that  it can enter into run(self) of sub class of     
+             Thread Class
+
+Example:
+--------------
+#approach2.py
+from threading import Thread  # step-1
+ #      (2)       (3)
+class KVR(Thread):
+	def  run(self):  # (4)
+		print("i am from run")
+		print("Name of sub/child thread=",self.name)
+
+#main program
+#step-5
+k=KVR() # here k is an object of KVR and It is the sub class of Thread class
+k.name="Rao"
+k.start() # step-6
+------------------------------------------------------------------------------------------------------
+c) Developing thread based applications by using Non-Sub Class of Thread class of 
+     threading Module.(With OOPs-----without Inheritance)
+------------------------------------------------------------------------------------------------------
+Step-1: import threading module
+Step-2: Choose the programmer-defined class
+Step-3: Define Programmer-defined methods inside of programmer-defined class.
+Step-4: Create an object Programmer-defined class
+Step-5 create a sub thread and dispatch / start the sub threads.
+
+-------------------
+Example:
+-------------------
+#approach3.py
+import threading   #step-1
+class Hyd:     #step-2
+	def  disp(self,name):  # instance method--Step-3
+		print("Hi {}, Good Morning".format(name))
+	def show(self):
+		print("Good Evening")
+#main program
+h=Hyd() # step-4
+t1=threading.Thread(target=h.disp,args=(("Rossum",) )  )
+t1.start()  # step-5
+t2=threading.Thread(target=h.show)
+t2.start()
+============================X===================================

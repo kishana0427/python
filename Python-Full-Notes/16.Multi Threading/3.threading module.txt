@@ -1,0 +1,76 @@
+		=====================================
+			threading module
+		=====================================
+=>To develop Thread based application , we need a pre-defined module called "threading".
+=>We know that a module is a collection of Variables, Functions and Classes.
+=>"threading" module is also collection Variables , Functions and Classes
+-----------------------------------------------------------------------------------------------
+Functions in "threading" module:
+-------------------------------------------
+=>"threading" module contains 2 functions. They are
+a) current_thread():-
+--------------------------
+=>This Function is used for obtaining name of the current thread which is under execution.
+=>Syntax:    varname=threading.current_thread().name
+-------------------------------------------------------------------------------------------------
+b) active_count():-
+--------------------------
+=>This Function is used for finding number of threads which are actively running.
+=>Syntax:-   threading.active_count()
+----------------------------------------------
+Class Name in "threading" module:
+----------------------------------------------
+=>"threading" module contains 1 pre-defined class called "Thread"
+=>"Thread" class contains constructors,Data Members and Methods.
+-------------------------------
+Constructor:
+-------------------------------
+1) Thread(target, args):
+=>Syntax:-      
+     subthreadname=threading.Thread(target=FunctionName, args=(val1,val2..val-n) )
+=>Here "target" attribute takes the function name, which is executed by sub therad where it contains logic to perform an operation. "args" attribute takes values as tuple and it will send to the function as parameter(s)
+
+Examples:-    t1=threading.Therad(target=generate,args=(10,20) )
+		     t2=threading.Therad(target=generate,args=("Python", ) )
+		     t3=threading.Therad(target=generate )
+=>Here t1,t2 and t3 are called sub / child therads. 
+----------------------------------------------------------------------------------------------------
+2) start():
+---------------
+=>This function is used for starting / dispatching the sub / child threads for the target function where the logic is defined.
+=>Syntax:-    sub / child threadobj.start()
+Examples:-     t1.start()
+		      t2.start()
+		      t3.start()
+-----------------------------------------------------------------
+3) name :
+---------------
+=>It is one of the pre-defined attribute, which is used for getting name of the thread and it can also be used for setting the name to the thread
+Syntax1:-    threadobj.name---->gives name of the therad (ie. getName() )
+
+Syntax1:-    threadobj.name="User-freindly Thread name" ( i.e  setName()
+Example:
+---------------
+	t=threading.Thread(target=generate)
+		print("Name of t1=",t.name)  # Thread-1--default sub thread name
+		t.name="Vamsi" #setting the user-friendly Name to the sub-therad
+		print("Name of t1=",t.name)  # Vamsi
+-------------------------------------------------------------------------------------------
+4)join():
+---------------
+=>This function is used for joining the sub therads as single unit. so that maintherad also wait for the sub threads to join.
+=>After Joining sub threads then sub threads memory destroyed by GC (dead) and program execution completed.
+Syntax:-      subthreadobj1.join()
+		   subthreadobj2.join()
+		   --------------------------
+		   subthreadobj-n.join()
+--------------------------------------------------------------------------------------
+5) run(self):
+----------------
+=>It is one of the Instance method in Thread class and It is recommeded to Override in sub class of Thread class and whose logic executed by sub thread.
+=>Syntax:     class ClassName(Thread):
+                            def   run(self):
+			          ---------------------------
+				  Block of statements--executed by sub therad
+				  ---------------------------
+-------------------------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+		===========================================
+				 Data Organized in numpy Programming
+		===========================================
+=>In entire Numpy programming, The Data is always organized in the form of  an object  of type <class, 'numpy.ndarray'>
+=>In otherwords, An object of ndarray class always organizes the data".
+=>hence 'ndarray' is one of the pre-defined class in numpy module.
+--------------------------
+Definition of ndarray
+--------------------------
+=>An object of ndarray is a data structure and allows us to organize the data in optimized format    ( less memory space ) .
+===============================X================================

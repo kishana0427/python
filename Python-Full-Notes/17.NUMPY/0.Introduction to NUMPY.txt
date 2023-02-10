@@ -1,0 +1,12 @@
+	=========================================
+				Introduction to NUMPY 
+	=========================================
+=>NUMPY stands for NUMerical PYthon
+=>The main advatnage of NUMPY is that " It Performs Complex Mathematical Operations Easily".
+=>Before NUMPY concept, there was a concept called "Numeric Library" and it was invented by JIM HUNGUNIAN and it was able to solve small mathematical calculations only and unable to solve Complex Mathematical Operations"
+=>Later Days, On the top of Numeric Library, TRAVIS OLIPHANT developed a new module called "numpy" in the year 2005 with help of Other Contributers.
+=>The numpy module developed by TRAVIS OLIPHANT in C and PYTHON
+=>Hence "numpy" module is one of the third pary module but it is not a pre-defined module of Python Language and it must installed explicitly by using a tool called pip.
+=>Syntax:-  pip install  numpy.
+
+=>Numpy module is always with organizing the like arrays.

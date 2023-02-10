@@ -1,0 +1,15 @@
+		======================================================
+				 Similaries of Traditional Python List and ndarray of Numpy module
+		======================================================
+=>Both the objects of <class,'list'> and <class,'numpy.ndarray'> stores the data.
+=>Both the objects of <class,'list'> and <class,'numpy.ndarray'> maintains insertion order.
+=>Both the objects of <class,'list'> and <class,'numpy.ndarray'> are belongs Mutable.
+=>On the the objects of <class,'list'> and <class,'numpy.ndarray'> , we can perform Indexing and Sciling Operations.
+
+	==========================================================
+		Differences between Traditional Python List and ndarray of Numpy module
+	==========================================================
+=>Traditional Python List Based Application Takes More Memory Space and More Execution Time. where as Numpy based applications takes Less Memory space  and less Execution Time (fastest execution ).
+=>Traditional Python List  is a pre-defined class in Python Language itself. where as ndarray class of numpy is one of the third party module.
+=>On the object of Traditional Python List, we can't perform vector based operations where as on the object of ndarray class of numpy, we can perform Vector based Operations.
+==============================X==============================

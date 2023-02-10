@@ -1,0 +1,113 @@
+		=========================================
+				Numpy-Statistical  Operations 
+		=========================================
+=>On the object of ndarray , we can perform the following Stastical  Operations .
+		a) amax()
+		b) amin()
+		c) mean()
+		d) var()
+		e) std()
+-----------------
+a) amax():
+-----------------
+=>This function is used for finding Highest element in the given matrix (nd array object)
+=>Syntax:       varname=numpy.amax(ndarray object / matrix)
+-----------------
+b) amin():
+-----------------
+=>This function is used for finding smallest element in the given matrix (nd array object)
+=>Syntax:       varname=numpy.amin(ndarray object / matrix)
+---------------
+Examples:
+---------------
+>>> import numpy as np
+>>> a=np.array([3,4,5,6,2,8,2,5,9])
+>>> a
+array([3, 4, 5, 6, 2, 8, 2, 5, 9])
+>>> mat=a.reshape(3,3)
+>>> mat
+		array([[3, 4, 5],
+		       [6, 2, 8],
+		       [2, 5, 9]])
+>>> np.amax(mat)----------------9
+>>> np.amin(mat)--------------2
+---------------
+c) mean():
+---------------
+=>This Function is used for finding average of the elements of given matrix.
+=>Syntax:-     varname=numpy.mean(ndarray / matrix)
+--------------
+Examples:
+--------------
+>>> import numpy as np
+>>> a=np.array([3,4,5,6,2,8,2,5,9])
+>>> a----------array([3, 4, 5, 6, 2, 8, 2, 5, 9])
+>>> mat=a.reshape(3,3)
+>>> mat
+		array([[3, 4, 5],
+		       [6, 2, 8],
+		       [2, 5, 9]])
+>>> np.mean(mat)---------4.888888888888889
+------------
+d) var():
+------------
+=>Syntax:-     varname=numpy.var(ndarray / matrix)
+=>The formula for Variance = square( mean(ndarray/matrix)-each element of matrix) ddivide by total number of elements in matrix. ( See paint document for more)
+----------------
+Examples:
+----------------
+>>> import numpy as np
+>>> a=np.array([3,4,5,6,2,8,2,5,9])
+>>> a-------	array([3, 4, 5, 6, 2, 8, 2, 5, 9])
+>>> mat=a.reshape(3,3)
+>>> mat
+		array([[3, 4, 5],
+		       [6, 2, 8],
+		       [2, 5, 9]])
+>>> m=np.mean(mat)
+>>> v=np.var(mat)
+>>> print("Mean=",m)--------Mean= 4.888888888888889
+>>> print("Var=",v)-------------Var= 5.432098765432098
+--------------------------------------------------------
+>>> a=np.array([10,20,30,40])
+>>> mat=a.reshape(2,2)
+>>> mat
+	array([[10, 20],
+	       [30, 40]])
+>>> m=np.mean(mat)
+>>> print("mean=",m)------mean= 25.0
+>>> v=np.var(mat)
+>>> print("variance=",v)-----variance= 125.0
+------------
+e) std():
+------------
+=>Syntax:-      varname=numpy.std(matrix/ ndarray)
+=>The formula for std= sqrt(var)
+-----------------
+Examples:
+-----------------
+>>> a=np.array([3,4,5,6,2,8,2,5,9])
+>>> mat=a.reshape(3,3)
+>>> mat
+		array([[3, 4, 5],
+		       [6, 2, 8],
+		       [2, 5, 9]])
+>>> m=np.mean(mat)
+>>> v=np.var(mat)
+>>> print("Mean=",m)------Mean= 4.888888888888889
+>>> print("Var=",v)-----Var= 5.432098765432098
+>>> s=np.std(mat)
+>>> print("standard deviation=",s)------standard deviation= 2.3306863292670035
+------------------------------------------------------------------
+>>> a=np.array([10.4,20.6,30.7,40])
+>>> mat=a.reshape(2,2)
+>>> mat
+		array([[10.4, 20.6],
+		       [30.7, 40. ]])
+>>> m=np.mean(mat)
+>>> v=np.var(mat)
+>>> s=np.std(mat)
+>>> print("Mean=",m)--------Mean= 25.425
+>>> print("Var=",v)---------Var= 122.321875
+>>> print("standard deviation=",s)----standard deviation= 11.059922015999932
+=========================X=====================================

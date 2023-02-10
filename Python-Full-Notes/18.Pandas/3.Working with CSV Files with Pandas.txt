@@ -1,0 +1,33 @@
+	=================================================
+			Working with CSV Files with Pandas 
+	=================================================
+=>CSV stands for Comma Separated Values
+=>CSV file is one of the Simple file format used for storing Tabular data such as spread sheet or data base
+=>CSV files stores Tabular data (Numbers and text) in plain text.
+=>Each line of CSV is a data record. Each record contains contains collection 
+    of values separated by comma
+=>CSV files must be saved on some file name with an extension .csv ( internally treated as excel sheet )
+=>To deal with CSV file, we must import a pre-defined module called "csv"
+
+Examples:
+-----------------
+			stud.csv
+                     --------------------
+		       stno,sname,marks
+		      10,Rossum,34.56
+		      20,Gosling,45.67
+		      30,Ritche,56.78
+		      40,Kinney,66.67
+		      50,Oliphant,66.99
+
+			peoples.csv
+                    -----------------------------
+		id,name,age,profession
+		100,ajay,22,Student
+		101,Rossum,77,Author
+		102,Gosling,88,Author
+		103,Trump,79,Politician
+		104,Srinivar,50,Doctor
+		105,Madhu,23,Musician
+
+

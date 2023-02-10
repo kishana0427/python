@@ -1,0 +1,82 @@
+		================================================
+				Number of approaches to create an object of ndarray
+		================================================
+=>Dealing with Arrays in Python is nothing but learning about numpy module and 
+    ndarray object.
+=>In the Numpy Programming, an object of ndrray class is used for organizing the data.
+=>In Numpy Programming, we can create an object of ndrray class in 7 ways.
+		1) array()
+		2) arange()
+		3) zeros()
+		4) ones()
+		5) full()
+		6) eye()
+		7) identity()
+=>All the above Functions are present in numpy module and using the above we can create an object of ndarray.
+---------------
+1) array():
+---------------
+=>The array() is used for converting any Iterable object into the object of ndarray.
+
+=>Syntax:-          varname=numpy.array(object,dtype)
+=>here varname is an object of <class,'numpy.ndrray'>
+=>numpy is one of the third party module 
+=>array() is pre-defined function in numpy module
+=>object can be list, tuple,set,frozenset..etc
+=>dtype represents data type of C lang Internally (int16, int32, int 64, float 32,float64...etc)
+------------------
+2) arange():
+------------------
+=>This Function is used for creating 1-D array only  by default and it can't create 2-D and 3-D matrices by deafult. To create 2-D and 3-D matrices, we use reshape() programatically.
+=>Syntax1:-  varname=numpy.arange(Value)---> generates values from 0 to value-1
+=>Syntax2:-  varname=numpy.arange(start,stop)---->Generates values from Start to Stop-1 
+=>Syntax3:-  varname=numpy.arange(start,stop,step)---Generates values from Start to Stop-1												with step values as Interval
+
+---------------
+3) zeros():
+---------------
+=>This function is used for creating zero matrix. In otherwords, This function initlizes all the elements of ndarray object with zero value.
+
+=>Syntax:-  varname=numpy.zeros(shape,dtype)
+=>Varname is an object of class ndarray
+=>zeros() is pre-defined function in ndarray
+=>shape can be 1-D or 2-D or n-D
+---------------
+4) ones():
+---------------
+=>This function is used for creating one's matrix. In otherwords, This function initlizes all the elements of ndarray object with one ( 1 ) value.
+
+=>Syntax:-  varname=numpy.ones(shape,dtype)
+=>Varname is an object of class ndarray
+=>ones() is pre-defined function in ndarray
+=>shape can be 1-D or 2-D or n-D
+------------
+5) full():
+------------
+=>This function is used used creating a matrix / array of values with programmer choice value. 
+
+=>Syntax:-    varname=numpy.full(shape,fill_value,dtype)
+=>Varname is an object of class ndarray
+=>full() is pre-defined function in ndarray
+=>shape can be 1-D or 2-D or n-D
+-------------
+6) eye():
+-------------
+=>This function is used for forming / creating / preparing Identity matrix
+
+=>Syntax:-  varname=numpy.eye(N,M=None,K=0,dtype)
+=>here N represents Number of Rows
+=>Here M represents Number of Columns and whose default value is None which  Means if we specify N value and Not specifying M value then PVM takes M values as N value and Prepares Identity matrix (where N and M values are equal)
+=>If N and M values not equal then PVM Prepares Possible Square Identity Matrix and remaining elements becomes zeros(0s).
+=>Here K represents Principle Diagnol and whose default value is Zero(0).
+=>If K=-1,-2,-3... then PVM referes Bellow  Principle Diagnol 
+=>If K=1,2,3... then PVM referes  above Principle Diagnol 
+-----------------
+7) identity():
+-----------------
+=>This is used for creating Identity Matrix only 
+
+=>Syntax:-    varname=numpy.identity(N,dtype)
+=>here N repersents Rows and It can be considered as Number of Coumuns also.
+=>Note: eye() is an advanced Function for identity()
+==========================X=====================================

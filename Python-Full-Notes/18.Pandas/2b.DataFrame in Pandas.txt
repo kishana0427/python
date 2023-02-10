@@ -1,0 +1,214 @@
+		==============================================
+				DataFrame in Pandas
+		==============================================
+=>A DataFrame is a Two-Dimensional Data Structure to organize the data 
+		(OR)
+=>A DataFrame organizes the data in the tabular form and in contains Rows 
+    and  Columns.
+=>The size of the DataFrame is mutable
+----------------------------------------------------------------------------------------------------------
+	Number of approaches to create DataFrame in pandas
+----------------------------------------------------------------------------------------------------------
+=>To create DataFrame in Pandas, we use DataFrame(), which is present in pandas module and gives an object of DataFrame class.
+=>To create a DataFrame, we have 5 approaches. They are
+		a) list
+		b) dict
+		c) Series
+		d) ndarray
+		e) CSV files
+-----------------------------------------------------------------------------------------
+Syntax for creating DataFrame in Pandas:
+--------------------------------------------------------------------
+		varname=pandas.DataFrame(object, index,columns,dtype)
+Explanation:
+---------------------
+=>here varname is an object of <class,'pandas.core.frame.DataFrame'>
+=>object represents List types,dict type, Series and ndarray types
+=>index represents row indices (Axis=1) and by default whose indices starts 
+    from 0 to n-1
+=>columns represents column indices (Axis=0)  and by default whose indices 
+    0,1,....
+=>Here Both Row and Column Indices can  Programmer defined also.
+=>dtype represents Column data type and it depends on column value.
+==============================================================
+Example:-   DataFrame object with list data
+---------------------------------------------------------------------------
+>>> import pandas as pd
+>>> import numpy as np
+>>> lst=[100,200,300,400]
+>>> df=pd.DataFrame(lst)
+>>> df
+     0
+0  100
+1  200
+2  300
+3  400
+>>> print(df)
+     0
+0  100
+1  200
+2  300
+3  400
+>>> lst=[ [10,20,30,40], ["RS","JG","RT","MCK"]]
+>>> df=pd.DataFrame(lst)
+>>> df
+    0   1   2    3
+0  10  20  30   40
+1  RS  JG  RT  MCK
+>>> lst=[[10,"RS"],[20,"JG"],[30,"RT"],[40,"MCK"]]
+>>> df=pd.DataFrame(lst)
+>>> print(df)
+     0      1
+0  10   RS
+1  20   JG
+2  30   RT
+3  40  MCK
+>>> lst=[[10,"RS"],[20,"JG"],[30,"RT"],[40,"MCK"]]
+>>> df=pd.DataFrame(lst,columns=["stno","name"])
+>>> df
+   stno name
+0    10   RS
+1    20   JG
+2    30   RT
+3    40  MCK
+>>> df=pd.DataFrame(lst,index=[1,2,3,4],columns=["stno","name"])
+>>> df
+   stno name
+1    10   RS
+2    20   JG
+3    30   RT
+4    40  MCK
+
+>>> lst=[["Rossum",75],["Gosling",85],["Ritche",90]]
+>>> df=pd.DataFrame(lst)
+>>> print(df)
+         0   1
+0   Rossum  75
+1  Gosling  85
+2   Ritche  90
+>>> df=pd.DataFrame(lst,index=["rec1","rec2","rec3"],columns=["Name","Age"])
+>>> print(df)
+         Name  Age
+rec1   Rossum   75
+rec2  Gosling   85
+rec3   Ritche   90
+---------------------------------------------------------------------------
+
+>>> d={"subcodes":[10,20,30,40],"subjects":["Python","DataSci","ML","DL"] }
+>>> print(d)
+{'subcodes': [10, 20, 30, 40], 'subjects': ['Python', 'DataSci', 'ML', 'DL']}
+>>> df=pd.DataFrame(d)
+>>> print(df)
+   subcodes subjects
+0        10      Python
+1        20     DataSci
+2        30       ML
+3        40       DL
+>>> df=pd.DataFrame(d,index=[1,2,3,4])
+>>> df
+     subcodes  subjects
+1        10        Python
+2        20        DataSci
+3        30        ML
+4        40        DL
+>>> d={"Names":["JG","RS","RT","MC"],"sub":["Java","Python","C","Pandas"] }
+>>> df=pd.DataFrame(d)
+>>> df
+  Names     sub
+0    JG    Java
+1    RS  Python
+2    RT       C
+3    MC  Pandas
+
+>>> df=pd.DataFrame(d,index=[1,2,3,4])
+>>> df
+   Names     sub
+1    JG    Java
+2    RS  Python
+3    RT       C
+4    MC  Pandas
+----------------------------------------------------------------------------------------
+>>> data={"one": pd.Series([10,20,30,40], index=['a','b','c','d']), "two":pd.Series([100,200,300,400],index=['a','b','c','d'])  }
+>>> df=pd.DataFrame(data)
+>>> print(df)
+   one  two
+a   10  100
+b   20  200
+c   30  300
+d   40  400
+>>>df['three']=df['one']+df['two']
+>>> print(df)
+   one  two    three
+a   10  100      110
+b   20  200      220
+c   30  300      330
+d   40  400      440
+---------------------------------------------------------------------
+>>> data={"one":pd.Series([10,20,30,40], index=['a','b','c','d']), "two":pd.Series([100,200,300,400],index=[1,2,3,4])}
+>>> df=pd.DataFrame(data)
+>>> print(df)
+    one    two
+a  10.0    NaN
+b  20.0    NaN
+c  30.0    NaN
+d  40.0    NaN
+1   NaN  100.0
+2   NaN  200.0
+3   NaN  300.0
+4   NaN  400.0
+=>To update the values of df we use loc.
+>>> df.loc['a','two']=222
+>>> print(df)
+    one    two
+a  10.0    222
+b  20.0    NaN
+c  30.0    NaN
+d  40.0    NaN
+1   NaN  100.0
+2   NaN  200.0
+3   NaN  300.0
+4   NaN  400.0
+-------------------------------------------------------------------------------------
+
+>>> df['three']=pd.Series([1,2,3,4],index=['a','b','c','d'])
+>>> print(df)
+   one  two  three
+a   10  100      1
+b   20  200      2
+c   30  300      3
+d   40  400      4
+>>> df['total']=df['one']+df['two']+df['three']
+>>> print(df)
+   one  two  three  total
+a   10  100      1    111
+b   20  200      2    222
+c   30  300      3    333
+d   40  400      4    444
+================================
+>>> import pandas as pd
+>>> import numpy as np
+>>> l=[[10,20,30],["RS","RT","MCK"]]
+>>> a=np.array(l)
+>>> a
+array([['10', '20', '30'],
+       ['RS', 'RT', 'MCK']], dtype='<U11')
+>>> print(a,type(a))
+[['10' '20' '30']
+ ['RS' 'RT' 'MCK']] <class 'numpy.ndarray'>
+>>> df=pd.DataFrame(a)
+>>> print(df)
+    0   1    2
+0  10  20   30
+1  RS  RT  MCK
+===================================================
+
+
+
+
+
+
+
+
+
+
+
